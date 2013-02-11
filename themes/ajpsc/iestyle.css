@@ -1,0 +1,39 @@
+/* Les navigateurs civilisés comprennent que lorsqu'un bloc a ses marges "auto" 
+(margin-left:auto; margin-right:auto;), il faut le centrer à l'écran. Pas IE. Il est donc
+nécessaire d'utiliser un hack pour IE. Ce hack consiste à indiquer "text-align:center" pour
+le bloc qui contient le bloc que l'on veut centrer (ici on veut centrer #corps, qui est
+contenu dans body). Le problème est que le texte est alors centré dans le bloc centré... il
+faut donc rétablir dans ce bloc l'orientation du texte (text-align:left; dans #corps et #menu).
+*/
+body
+{
+	text-align: center;
+}
+
+#corps
+{
+	text-align: left;
+}
+
+#menu
+{
+	text-align: left;
+}
+
+.menu_deroulant
+{
+	text-align: left;
+}
+
+/* Les navigateurs KHTML et Gecko arrivent à placer le champ de recherche au centre, dans
+la dimension verticale, de son conteneur. IE n'y arrive pas: il l'affiche tout en haut de
+son conteneur (= son background), ce qui donne une nette impression d'avoir affaire à une
+interface mal ajustée, à un jeu de Lego mal monté. Il faut donc décaler ce champ de texte
+de 10px depuis le haut.
+*/
+
+#ch_recherche
+{	
+	position: relative;
+	top: 10px;
+}

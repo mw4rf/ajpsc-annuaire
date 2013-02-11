@@ -1,0 +1,570 @@
+/*
+
+
+
+
+
+PLACEMENT
+Conteneurs génériques
+
+
+
+
+
+*/
+
+/* Le fond de la page */
+body, html
+{
+	/* Par de marge en haut pour coller l'en-tête en haut de l'écran */
+	margin-top: 0;
+	/* Couleur de fond */
+	background-color:#ffffff; /*E6E6E6*/
+	
+	/* Sinon min-height n'est pas pris en compte par Firefox et IE 7 !! */
+	/* Sous KHTML (Safari, Omniweb), cette ligne n'est pas nécessaire */
+	height:100%;
+}
+
+/* Le corps de la page: bloc d'affichage principal */
+#corps
+{	
+	/* Taille relative calculée en fonction de la taille de la police*/
+	width:60em;
+	
+	/* Au minimum la taille de la page. La couleur de bg de body et de ce bloc diffèrent */
+	min-height:82%;
+	
+	/* Les marges en 'auto' permettent de centrer le bloc à l'écran */
+	margin-left:auto;
+	margin-right:auto;
+	
+	background-color:#E1E4F2;
+	
+	/* Nécessaire pour le menu ul/li vertical */
+	 /*clear:both; */
+}
+
+/* Le menu */
+#menu
+{
+	/* La taille relative calculée en fonction de la taille de la police*/
+	width:60em;
+	
+	/* Les marges en 'auto' permettent de centrer le bloc à l'écran */
+	margin-left:auto;
+	margin-right:auto;
+	
+	background-color:#FFCC66;	
+	
+}
+
+/* L'en-tête défini dans header.inc.php */
+#header
+{
+	/* La taille relative calculée en fonction de la taille de la police*/
+	width:60em;
+	
+	/* Hauteur fixe: la taille de l'image qui sert de logo */
+	height:85px;
+	
+	/* Les marges en 'auto' permettent de centrer le bloc à l'écran */
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#logo
+{
+	/* Positionnement: à gauche */
+	float:left;
+	clear:both;
+	/* Fond: logo */
+	background-color:#ffffff; /*E6E6E6*/
+	background-image:url(logo_header.jpg); 
+	background-repeat:no-repeat;
+	/* Hauteur fixe: la taille de l'image qui sert de logo */
+	height:85px;
+	/* Largeur minimale: la taille de l'image qui sert de logo*/
+	width:30em;
+	min-width:400px;	
+}
+
+#recherche
+{
+	/* Positionnement: à droite */
+	float: right;
+	/* Hauteur fixe: la taille du header calquée sur la taille du logo */
+	height:85px;
+	width: 30em;
+	
+	background-color:#ffffff; /*E6E6E6*/
+	background-image:url(rech.jpg); 
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	
+	text-align:right;
+	vertical-align:middle;
+}
+
+#ch_recherche
+{
+	/* Centrer le champ de recherche dans le carré de background */
+	padding-right: 20px;
+}
+
+/* Le pied de page défini dans footer.inc.php */
+#footer
+{	
+	/* La même taille que pour le header*/
+	width:60em;
+	height:20px;
+	
+	/* Les marges en 'auto' permettent de centrer le bloc à l'écran */
+	margin-left:auto;
+	margin-right:auto;
+	
+	background-color:#FFCC66;		
+}
+
+/*
+
+
+
+
+
+Eléments spécifiques
+MENU de NAVIGATION
+
+
+
+
+
+*/
+
+
+
+#menu ul
+{
+	margin : 0;
+	/* Le padding horizontal doit être 0 ou exprimé en valeur ABSOLUTE, car s'il est
+	exprimé en valeur RELATIVE, les navigateurs GECKO affichent mal le menu  et les 
+	navigateurs KHTML affichent mal la position des sous-menus */
+	padding : 5px 0 5px 0;
+	list-style-type : none;	
+}
+
+
+
+#menu li
+{
+	padding-left : 1em; /* Espacement entre les items du menu*/
+	/*display:table-cell; /* Peut poser des problèmes avec certains navigateurs */
+	display:inline;
+}
+
+
+/* ABBR : popups : v. SweetTitles */
+
+abbr, acronym { }
+body div#toolTip /* Le conteneur du tooltip*/
+{ 
+	position:absolute;
+	z-index:1000;
+	width:220px;
+	
+	background:#FFF4BF;
+	border:2px solid #FFCC66;
+	
+	text-align:left;
+	padding:5px;
+	min-height:2em;
+	-moz-border-radius:5px; 
+}
+body div#toolTip p /* le texte de la balise title*/
+{ 
+	margin:0;
+	padding:0;
+	color:#000080;
+	font:11px/12px verdana,arial,sans-serif; 
+	font-weight: bold; 
+}
+body div#toolTip p em /* le texte entre les balises abbr (à cacher)*/
+{ 
+	display:block;
+	color:#FFCC66; 
+}
+body div#toolTip p em span 
+{ 
+}
+
+
+/*
+
+
+
+
+
+Eléments génériques
+LIENS et FORMULAIRES
+
+
+
+
+
+*/
+
+/* TAGS: Images */
+img
+{
+	border:none;
+}
+
+/* TAGS: liens*/
+a
+{	
+	color: #748ab3;
+	text-decoration: none;
+	cursor: default;
+}
+
+a:hover 
+{
+	color: #4242A6;
+	text-decoration: none;
+	cursor: default;
+}
+
+/* TAGS: Eléments de formulaire */
+input, textarea, select 
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-width : 1px;
+	border-color : #3873B3;
+	border-style: groove;
+	color: #000000;
+	background-color: #F5F5FF;/*FFFFCC*/
+	font-size: 12pt;
+}
+
+#input_recherche
+{
+	font-size: 9pt;
+}
+
+#option_recherche
+{
+	font-size: 9pt;
+}
+
+input:hover, textarea:hover, select:hover 
+{
+	background-color: #E6E6E6;
+}
+
+input[type=button]:hover 
+{
+	background-color: #E6E6E6;
+}
+
+/*
+
+
+
+
+
+Eléments génériques
+CLASSES Génériques
+
+
+
+
+
+*/
+
+.orange
+{
+	background-color: #FFCC66;
+}
+
+.transparent
+{
+	background-color: #E1E4F2;
+}
+
+.commentaires 
+{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 10px;
+	color: #666666;
+}
+
+.question 
+{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.reponse 
+{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+}
+
+.petites-majuscules 
+{
+	font-variant: small-caps;
+}
+
+.plus-gros 
+{
+	font-size: 24px
+}
+
+.plus-petit 
+{
+	font-size: 10px
+}
+
+.bas
+{
+	vertical-align:bottom;
+}
+
+.tri
+{
+	font-size:12px;
+	text-align: center;
+}
+
+.pertinence
+{
+	/*background-color:#748ab3;*/
+	background-color:#B3B3B3;
+}
+
+.message
+{
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-size:26pt;
+	text-align: center;
+	color:#F00;
+}
+
+/*
+
+
+
+
+
+IMPRESSION
+
+
+
+
+
+
+*/
+
+#imprimer
+{
+	
+}
+
+.imprimer_orange
+{
+	background-color: #FFFFFF;
+}
+
+.imprimer_separateur
+{
+	background-color: #666666;
+	height: 10px;
+	width: 100%;
+}
+
+.imprimer_question 
+{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.imprimer_reponse 
+{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+}
+
+.imprimer_petites-majuscules 
+{
+	font-variant: small-caps;
+}
+
+.imprimer_plus-gros 
+{
+	font-size: 24px
+}
+
+.imprimer_plus-petit 
+{
+	font-size: 10px
+}
+
+/*
+
+
+
+
+
+SOUS-MENUS
+
+
+
+
+
+
+*/
+.menu_deroulant
+{
+	position: absolute;
+	border: 1px solid #000000;
+	background-color: #FFCC66;
+	
+	font-size:1em;
+}
+
+.menu_deroulant ul
+{
+	margin : 0;
+	padding : 5px 0 5px 0;
+	list-style-type : none;
+	
+}
+
+.menu_deroulant li
+{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.menu_deroulant li:hover
+{
+	background-color:#FFF694;
+}
+
+/*
+
+
+
+
+
+AIDE
+
+
+
+
+
+
+*/
+
+.aide_chapitre
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #ffffff;
+	background-color: #869BBF;/*FFCC00*/
+	background-repeat: repeat-x;
+	text-indent: 10px;
+}
+
+.aide_section
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	text-indent: 20px;
+}
+
+.aide_section_light
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-indent: 10px;
+}
+
+/*
+
+
+
+
+
+ADMINISTRATION
+
+
+
+
+
+
+*/
+
+#admin
+{
+	z-index:100;
+	height:85px;
+	width: 320px;
+
+	position: absolute;
+	top: 0px;
+	left: 40%;
+	
+	background-color: #FF0000;
+	color:#FFFFFF;
+	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 22pt;
+	font-weight: bold;
+	text-align:center;
+}
+
+.admintitre
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.adminsoustitre
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: normal;
+	font-style: italic;
+}
+
+.adminresultat
+{
+	background-color:#FF0000; 
+	color:#ffffff;
+}
