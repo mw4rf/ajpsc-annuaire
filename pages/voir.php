@@ -27,11 +27,11 @@ $afficher['modif'] = formater_date($data['modif'],false);
 
 /* Photo */
 $sql2 = "SELECT * FROM photo WHERE user_id='$voir_id'";
-$req2 = mysql_query($sql2) die("Erreur: $sql2<br />".mysql_error());
+$req2 = mysql_query($sql2) or die("Erreur: $sql2<br />".mysql_error());
 $data2 = mysql_fetch_assoc($req2);
 
 $photo = "&nbsp;";
-if(!is_empty($data2)) {
+if(!empty($data2)) {
     $imgW =  $data2['width'];
     $imgH = $data2['height'];
     if($imgW == 0) $imgW = 1;
@@ -42,6 +42,8 @@ if(!is_empty($data2)) {
 
     $photo = "<img height=\"$thumb_height\" width=\"$thumb_width\" src=\"includes/photo.php?id=$voir_id\">";
 }
+
+echo("DATA: $data");
 
 
 ?>
