@@ -201,8 +201,14 @@ while($data = mysql_fetch_assoc($req))
 	$thumb_width = $_config['images_largeur_galerie'];
 	$thumb_height = round($imgH / $imgW * $thumb_width);
 
+    // Stockage dans la BDD ou sur le système de fichiers ?
+    if($_config['photos_storage'] == "FS")
+        $src = $_config['data_folder']."/photos/".$data2['user_id'].'.'.$data2['extension'];
+    else
+        $src = "includes/photo.php?id=$userid";
+
 	// affichage
-	$photo = "<a href=\"index.php?action=page_voir&id=$userid\"><img height=\"$thumb_height\" width=\"$thumb_width\" src=\"includes/photo.php?id=$userid\"></a>";
+	$photo = "<a href=\"index.php?action=page_voir&id=$userid\"><img height=\"$thumb_height\" width=\"$thumb_width\" src=\"$src\"></a>";
 
 	// Taille de chaque colonne, en pourcentage
 	$tdp = round( 100 / $images_par_ligne );
