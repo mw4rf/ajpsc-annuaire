@@ -43,9 +43,6 @@ if(!empty($data2)) {
     $photo = "<img height=\"$thumb_height\" width=\"$thumb_width\" src=\"includes/photo.php?id=$voir_id\">";
 }
 
-echo("DATA: $data");
-
-
 ?>
 
 <table width="80%" border="0" align="center" cellpadding="2" cellspacing="2" class="reponse">
