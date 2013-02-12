@@ -4,7 +4,7 @@ connexion();
 /* $voir_id est transmise depuis index.php, juste avant l'include de voir.php */
 $sql = "SELECT * FROM utilisateur WHERE id='$voir_id'";
 
-$req = mysql_query($sql) or die('Erreur');
+$req = mysql_query($sql) or die("Erreur: $sql<br />".mysql_error());
 $data = mysql_fetch_assoc($req);
 
 $afficher['nom'] = (formater_nom(stripslashes($data['nom'])));
@@ -27,7 +27,7 @@ $afficher['modif'] = formater_date($data['modif'],false);
 
 /* Photo */
 $sql2 = "SELECT * FROM photo WHERE user_id='$voir_id'";
-$req2 = mysql_query($sql2) or die('Erreur');
+$req2 = mysql_query($sql2) die("Erreur: $sql2<br />".mysql_error());
 $data2 = mysql_fetch_assoc($req2);
 
 $imgW =  $data2['width'];
