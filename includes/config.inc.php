@@ -28,7 +28,7 @@ $_config['passwd'] = 'devpwd';
 * Si cette valeur est placée à "1", le système de protection par mot de passe est actif.
 * Si elle est placée à "0", le système est désactivé.
 */
-$_config['auth'] = 1;
+$_config['auth'] = 0;
 
 /*
 * INT_AUTH
@@ -38,6 +38,12 @@ $_config['auth'] = 1;
 */
 $_config['int_auth'] = 0;
 $_config['int_auth_address'] = "";
+
+/*
+* RECHERCHE_ADMIN_ONLY
+* Si activé, seuls les administrateurs peuvent utiliser le moteur de recherche de l'annuaire. Sinon (par défaut 0), tous les utilisateurs le peuvent
+*/
+$_config['recherche_admin_only'] = 0;
 
 /* PAGINATION
 * Indique combien d'enregistrements doivent être affichés par page.

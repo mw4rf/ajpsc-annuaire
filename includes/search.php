@@ -1,4 +1,6 @@
-<?php if(checkauth() and isadmin()) { // Recherche: uniquement si l'on est connecté ?>
+<?php if(checkauth()) { // Recherche: uniquement si l'on est connecté
+        if( ($_config['recherche_admin_only'] and isadmin()) or !$_config['recherche_admin_only']) {
+?>
 	<div id="recherche">
 
 		<p>&nbsp;</p>
@@ -31,4 +33,4 @@
 		</form>
 
 	</div>
-<?php } ?>
+<?php }} ?>
