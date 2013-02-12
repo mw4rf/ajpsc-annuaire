@@ -30,15 +30,19 @@ $sql2 = "SELECT * FROM photo WHERE user_id='$voir_id'";
 $req2 = mysql_query($sql2) die("Erreur: $sql2<br />".mysql_error());
 $data2 = mysql_fetch_assoc($req2);
 
-$imgW =  $data2['width'];
-$imgH = $data2['height'];
-if($imgW == 0) $imgW = 1;
+$photo = "&nbsp;";
+if(!is_empty($data2)) {
+    $imgW =  $data2['width'];
+    $imgH = $data2['height'];
+    if($imgW == 0) $imgW = 1;
 
 // Resizing image to make a thumbnail
-$thumb_width = $_config['images_largeur_fiches'];
-$thumb_height = round($imgH / $imgW * $thumb_width);
+    $thumb_width = $_config['images_largeur_fiches'];
+    $thumb_height = round($imgH / $imgW * $thumb_width);
 
-$photo = "<img height=\"$thumb_height\" width=\"$thumb_width\" src=\"includes/photo.php?id=$voir_id\">";
+    $photo = "<img height=\"$thumb_height\" width=\"$thumb_width\" src=\"includes/photo.php?id=$voir_id\">";
+}
+
 
 ?>
 
