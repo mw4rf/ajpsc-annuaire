@@ -167,9 +167,15 @@ function generer_requete()
 	// 3 -  Si l'on n'exporte qu'une seule fiche
 	if($_GET['pdf'] == "fiche" and isset($_GET['id']) and is_numeric($_GET['id']))
 	{
-		$sql = "SELECT * FROM utilisateur WHERE id=".$_GET['id'].";";
+        // Security
+        $id = $_GET['id'];
+        if(!is_numeric($id))
+            die("No injection, please :)");
+        // Query
+		$sql = "SELECT * FROM utilisateur
+                JOIN photo ON utilisateur.id = photo.user_id
+                WHERE utilisateur.id=$id";
 	}
-
 
 	return $sql;
 }

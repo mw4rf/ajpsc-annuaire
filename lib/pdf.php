@@ -283,6 +283,10 @@ function PageBreak()
     }
 }
 
+function inserer_photo($data) {
+    // TODO
+}
+
 /* Ajoute une page au PDF avec les infos passées en argument*/
 function ajouter_page($data)
 {
@@ -296,6 +300,11 @@ function ajouter_page($data)
 	// Bloc 1: nom et prénom
 	$this->SetFont('Times','B',24);
 	$this->Cell(0,7, formater_nom($data['prenom'])." ".formater_nom($data["nom"]), 0, 0);
+
+    // Bloc PHOTO
+    $this->SetFont('Times','B',14);
+    $this->Cell(0,7, "ET ICI, LE TEXTE AHAHAHAHAHAHAHA".$data[''], 0, 2, "R");
+    $this->ln();
 
 	// Bloc 2: promotion
 	$this->SetFont('Times','B',14);
