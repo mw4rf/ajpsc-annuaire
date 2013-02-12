@@ -30,6 +30,11 @@ $_config['passwd'] = 'devpwd';
 */
 $_config['auth'] = 0;
 
+/* ADMIN_PASSWORD
+* Mot de passe pour accéder à l'administration de l'annuaire.
+*/
+$_config['admin_password'] = "admin";
+
 /*
 * INT_AUTH
 * Authentification intelligente: si cette option est activée, seules les personnes qui ont accès à l'espace privé correspondand des forums vBulletin pourront accéder au contenu de l'annuaire.
