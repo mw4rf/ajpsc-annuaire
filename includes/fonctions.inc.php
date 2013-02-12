@@ -530,12 +530,12 @@ function ajouter($post)
 		return $data['id'];
 }
 
-function ajouter_photo($_FILES,$id)
+function ajouter_photo($_UPLOADED_UPLOADED_FILES,$id)
 {
 	// debug
-	//print_r($_FILES);
+	//print_r($_UPLOADED_UPLOADED_FILES);
 
-	@list($width, $height, $imgtype, $strtag) = getimagesize($_FILES['image']['tmp_name']);
+	@list($width, $height, $imgtype, $strtag) = getimagesize($_UPLOADED_UPLOADED_FILES['image']['tmp_name']);
 
 	switch($imgtype)
 	{
@@ -548,7 +548,7 @@ function ajouter_photo($_FILES,$id)
 	if(!$ext) // unknown file format
 		die(dire("photo1"));
 
-	$imgdata = file_get_contents($_FILES['image']['tmp_name']);
+	$imgdata = file_get_contents($_UPLOADED_UPLOADED_FILES['image']['tmp_name']);
 	$imgdata = addslashes($imgdata); // mysql_real_escape_string seems broken on some configurations...
 
 	/* Insérer dans la bdd */
@@ -625,11 +625,11 @@ function modifier($post)
 	mysql_query($sql) or die ("Erreur: ".$sql);
 }
 
-function modifier_photo($_FILES,$id)
+function modifier_photo($_UPLOADED_FILES,$id)
 {
-	if(empty($_FILES['image']['tmp_name'])) return;
+	if(empty($_UPLOADED_FILES['image']['tmp_name'])) return;
 
-	@list($width, $height, $imgtype, $strtag) = getimagesize($_FILES['image']['tmp_name']);
+	@list($width, $height, $imgtype, $strtag) = getimagesize($_UPLOADED_FILES['image']['tmp_name']);
 
 	switch($imgtype)
 	{
@@ -642,7 +642,7 @@ function modifier_photo($_FILES,$id)
 	if(!$ext) // unknown file format
 		die(dire('photo1'));
 
-	$imgdata = file_get_contents($_FILES['image']['tmp_name']);
+	$imgdata = file_get_contents($_UPLOADED_FILES['image']['tmp_name']);
 	$imgdata = addslashes($imgdata); // mysql_real_escape_string seems broken on some configurations...
 
 	/* Opérations sur la bdd */
