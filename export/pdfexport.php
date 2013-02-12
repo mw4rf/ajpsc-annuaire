@@ -155,12 +155,15 @@ function generer_requete()
 		// On exporte tout
 		if($_config['exporter_tout'] == 1)
 		{
-			$sql = "SELECT nom, prenom, promotion, nationalite, naissance, adresse, email, q1, q2, q3, q4, q5, q6, q7 FROM utilisateur ORDER BY promotion ASC;";
+			$sql = "SELECT * FROM utilisateur
+                    LEFT JOIN photo ON utilisateur.id = photo.user_id
+                    ORDER BY promotion ASC;";
 		}
 		// A défaut, on exporte seulement une partie (=> si $_config['exporter_tout'] != 1)
 		else
 		{
-			$sql = "SELECT nom, prenom, promotion, email FROM utilisateur;";
+			$sql = "SELECT nom, prenom, promotion, email FROM utilisateur
+                    LEFT JOIN photo ON utilisateur.id = photo.user_id;";
 		}
 	}
 
@@ -173,7 +176,7 @@ function generer_requete()
             die("No injection, please :)");
         // Query
 		$sql = "SELECT * FROM utilisateur
-                JOIN photo ON utilisateur.id = photo.user_id
+                LEFT JOIN photo ON utilisateur.id = photo.user_id
                 WHERE utilisateur.id=$id";
 	}
 
