@@ -283,13 +283,10 @@ function PageBreak()
     }
 }
 
-function inserer_photo($data) {
-    // TODO
-}
-
 /* Ajoute une page au PDF avec les infos passées en argument*/
 function ajouter_page($data)
 {
+    global $_config;
 	// Nettoyer les données
 	foreach($data as $key=>$value)
 		$data[$key] = html_vers_texte(stripslashes($value));
@@ -302,13 +299,13 @@ function ajouter_page($data)
 	$this->Cell(0,7, formater_nom($data['prenom'])." ".formater_nom($data["nom"]), 0, 0);
 
     // Bloc PHOTO
-    $this->SetFont('Times','B',14);
-    $this->Cell(0,7, "ET ICI, LE TEXTE AHAHAHAHAHAHAHA".$data[''], 0, 2, "R");
+    $img = '../'.$_config['data_folder'].'/photos/'.$data['user_id'].'.'.$data['extension'];
+    $this->Image($img, 149, 33, 60, 0);
     $this->ln();
 
 	// Bloc 2: promotion
 	$this->SetFont('Times','B',14);
-	$this->Cell(0,7, donner("c3")." ".$data["promotion"], 0, 2, "R");
+	$this->Cell(0,7, donner("c3")." ".$data["promotion"], 0, 2); // "R" pour placer à droite
 	$this->ln();
 
 	// Bloc 3: date et lieu de naissance
