@@ -1,5 +1,12 @@
 <span>&nbsp;</span>
 
+<p>Version 1.5 (XX/XX/2013)
+<ul>
+    <li />Retour du moteur de recherche.
+    <li />Affichage conditionnelle du moteur de recherche (v. fichier de configuration)
+</ul>
+</p>
+
 <p>Version 1.4.2 (16/11/2010)
 <ul>
 	<li />[Bug] Correction d'une faille de sécurité dans le script d'exportation "imprimer".
