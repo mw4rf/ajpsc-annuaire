@@ -36,11 +36,17 @@ if(!empty($data2)) {
     $imgH = $data2['height'];
     if($imgW == 0) $imgW = 1;
 
-// Resizing image to make a thumbnail
+    // Resizing image to make a thumbnail
     $thumb_width = $_config['images_largeur_fiches'];
     $thumb_height = round($imgH / $imgW * $thumb_width);
 
-    $photo = "<img height=\"$thumb_height\" width=\"$thumb_width\" src=\"includes/photo.php?id=$voir_id\">";
+    // Storage: DB / FS ?
+    if($_config['photos_storage'] == "DB")
+        $src = "includes/photo.php?id=$voir_id";
+    else
+        $src = $_config['data_folder']."/photos/".$data2['user_id'].'.'.$data2['extension'];
+
+    $photo = "<img height=\"$thumb_height\" width=\"$thumb_width\" src=\"$src\">";
 }
 
 ?>

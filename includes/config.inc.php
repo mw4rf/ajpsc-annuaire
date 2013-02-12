@@ -45,6 +45,19 @@ $_config['int_auth_address'] = "";
 */
 $_config['recherche_admin_only'] = 0;
 
+/* DATA_FOLDER
+* Chemin vers le dossier contenant les données.
+* Ce dossier doit être accessible en écriture par le serveur.
+* PAS DE SLASH A LA FIN DU CHEMIN !
+*/
+$_config['data_folder'] = "data";
+
+/* PHOTOS_STORAGE
+* Les photos doivent-elles être stockées dans la base de données ou sur le système de fichiers (dans data/photos) ?
+* Valeurs possibles : DB, FS
+*/
+$_config['photos_storage'] = "FS";
+
 /* PAGINATION
 * Indique combien d'enregistrements doivent être affichés par page.
 * S'il y a 10 enregistrements et que cette valeur est à 5, alors 2 pages seront créées.
