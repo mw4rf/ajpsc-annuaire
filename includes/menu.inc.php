@@ -10,6 +10,7 @@
             </a>
         </li>
 
+        <?php if($_config['auth']) { ?>
         <li>
             <a href="index.php?action=logout">
                 <img src="themes/<?php echo obtenir_theme(); ?>/icones/m-deconnexion.png"
@@ -18,6 +19,7 @@
                 <?php dire("menu1"); ?>
             </a>
         </li>
+        <?php } ?>
 
         <li>
             <a href="index.php?action=page_liste">
