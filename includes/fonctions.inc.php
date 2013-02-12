@@ -483,6 +483,7 @@ Info: Guillaume Florimond, 9/12/2006
 function ajouter($post)
 {
 	connexion();
+
 	/* Collecte des données depuis le formulaire */
 	/* Cela permettra de manipuler ces données, p. ex. pour contrôler leur conformité */
 	$data["nom"] = addslashes(texte_vers_html(formater_nom($post["nom"])));
@@ -506,7 +507,7 @@ function ajouter($post)
 
 	/* Système anti-doublons */
 	$sql = "SELECT id FROM utilisateur WHERE nom='".$data["nom"]."' AND prenom='".$data["prenom"]."'";
-    $req = mysql_query($sql) or die("Erreur");
+    $req = mysql_query($sql) or die("Erreur: $sql<br />".mysql_error());
 	$res = mysql_num_rows($req);
 	if($res!=0) { message("doublon"); return "erreur"; }
 
@@ -517,7 +518,7 @@ function ajouter($post)
 	$sql = "INSERT INTO utilisateur (nom, prenom, promotion, nationalite, naissance, adresse, email, q1, q2, q3, q4, q5, q6, q7, secret_question, secret_reponse, modif) VALUES ('".$data["nom"]."', '".$data["prenom"]."', '".$data["promotion"]."', '".$data["nationalite"]."', '".$data["naissance"]."', '".$data["adresse"]."', '".$data["email"]."', '".$data["q1"]."', '".$data["q2"]."', '".$data["q3"]."', '".$data["q4"]."', '".$data["q5"]."', '".$data["q6"]."', '".$data["q7"]."', '".$data["secret_question"]."', '".$data["secret_reponse"]."', '$modif');";
 
 	/* Exécution de la requête */
-	mysql_query($sql) or die ("Erreur: ".$sql);
+	mysql_query($sql) or die ("Erreur: $sql<br />".mysql_error());
 
 	/* Message ok */
 	message("enre");
