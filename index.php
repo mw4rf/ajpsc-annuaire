@@ -289,7 +289,6 @@ elseif($_GET["action"] == "admindeco" and isadmin())
 	message("admin_deco");
 }
 
-
 } /* if 2 */
 
 /* Afficher la page d'accueil si aucune action n'est définie */
