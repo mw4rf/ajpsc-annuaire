@@ -1,6 +1,6 @@
 <span>&nbsp;</span>
 
-<p>Version 1.5 (13/02/2013)
+<p>Version 1.5.0 (13/02/2013)
 <ul>
     <li />Retour du moteur de recherche.
     <li />Affichage conditionnelle du moteur de recherche (v. fichier de configuration)
