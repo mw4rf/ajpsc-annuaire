@@ -37,6 +37,7 @@
                 <li>Votre profil sur l'Annuaire est conservé tant que vous ne le supprimez pas. Vous pouvez le supprimer, et vous retirer de l'Annuaire, à tout moment.</li>
                 <li>L'AJPSC se réserve le droit de transmettre vos données, dans le cadre d'une communication de l'Annuaire dans son ensemble, à ses <a href="http://www.ajpsc.com/category/association/partenaires-association/">partenaires</a>.</li>
                 <li>L'AJPSC n'utilisera pas vos données à des fins commerciales ou publicitaires.</li>
+                <li>L'annuaire est dans l'intranet de l'AJPSC. Ainsi, l'accès à l'annuaire est strictement réservé aux étudiants et anciens étudiants de la double-maîtrise. <i>Vos données <u>ne</u> sont <u>pas</u> en libre accès sur Internet.</i></li>
             </ul>
         </div>
     </div>
