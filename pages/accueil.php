@@ -5,10 +5,10 @@
                 <h1>Annuaire AJPSC</h1>
                 <p>des étudiants et des anciens étudiants de la double-maîtrise en droits français et espagnol.</p>
                 <p>
-                    <a class="btn btn-primary btn-large" href="index.php?action=page_liste">
+                    <a class="btn btn-info btn-large" href="index.php?action=page_liste">
                         <?php abbr("menu2b"); ?>
                     </a>
-                    <a class="btn btn-primary btn-large" href="index.php?action=page_ajouter">
+                    <a class="btn btn-info btn-large" href="index.php?action=page_ajouter">
                         <?php abbr("menu2a"); ?>
                     </a>
                 </p>
