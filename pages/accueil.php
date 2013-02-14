@@ -35,7 +35,7 @@
                 <li>Seules les données que vous ajoutez à votre profil de l'Annuaire sont collectées par l'AJPSC.</li>
                 <li>Vous pouvez modifier votre profil à tout moment, afin de mettre à jour les données vous concernant.</li>
                 <li>Votre profil sur l'Annuaire est conservé tant que vous ne le supprimez pas. Vous pouvez le supprimer, et vous retirer de l'Annuaire, à tout moment.</li>
-                <li>L'AJPSC se réserve le droit de transmettre vos données, dans le cadre d'une communication de l'Annuaire dans son ensemble, à ses <a href="http://wiki.ajpsc.com/Partenaires">partenaires</a>.</li>
+                <li>L'AJPSC se réserve le droit de transmettre vos données, dans le cadre d'une communication de l'Annuaire dans son ensemble, à ses <a href="http://www.ajpsc.com/category/association/partenaires-association/">partenaires</a>.</li>
                 <li>L'AJPSC n'utilisera pas vos données à des fins commerciales ou publicitaires.</li>
             </ul>
         </div>
