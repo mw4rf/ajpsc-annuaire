@@ -120,8 +120,8 @@ else
 {
 
 include('includes/header.inc.php');
-
 include('includes/menu.inc.php');
+include('includes/back.inc.php');
 ?>
 
 <div id="corps">

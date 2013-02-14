@@ -251,7 +251,7 @@ while($data = mysql_fetch_assoc($req))
     <td><?php echo abbr3($afficher["prenom"], donner("voir")); ?></td>
     <td><?php echo abbr3($afficher["promotion"], donner("voir")); ?></td>
     <td><?php echo abbr3($afficher["email"], donner("voir")); ?></td>
-	<td></td>
+	<td><i class="icon-eye-open"></i></td>
   </tr>
 
 <?php } ?>

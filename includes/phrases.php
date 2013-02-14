@@ -210,7 +210,7 @@ $phrase["fr"]["<"] = "<";
 $phrase["fr"]["<<"] = "<<";
 
 /* Recherche */
-$phrase["fr"]["retour_recherche"] = "<< Retourner aux résultats de la recherche";
+$phrase["fr"]["retour_recherche"] = "Retourner aux résultats de la recherche";
 $phrase["fr"]["@retour_recherche"] = "Cliquez ici pour retourner sur la page d'affichage des résultats de recherche.";
 $phrase["fr"]["pertinence"] = "Pertinence";
 $phrase["fr"]["rech_resultat_singulier"] = "résultat";
@@ -495,7 +495,7 @@ $phrase["es"]["@tri-asc-em"] = "Organizar los cambios por Dirección de Correo El
 $phrase["es"]["@tri-desc-em"] = "Organizar los cambios por Dirección de Correo Electrónico, de la Z a la A";
 
 /* Recherche */
-$phrase["es"]["retour_recherche"] = "<< Volver a los resultados de busqueda";
+$phrase["es"]["retour_recherche"] = "Volver a los resultados de busqueda";
 $phrase["es"]["@retour_recherche"] = "Pinché aquí para volver a los resultados de la ultima busqueda";
 $phrase["es"]["pertinence"] = "Pertinencia";
 $phrase["es"]["rech_resultat_singulier"] = "resultado";
@@ -733,7 +733,7 @@ $phrase["en"]["<"] = "<";
 $phrase["en"]["<<"] = "<<";
 
 /* Recherche */
-$phrase["en"]["retour_recherche"] = "<< Back to search results";
+$phrase["en"]["retour_recherche"] = "Back to search results";
 $phrase["en"]["@retour_recherche"] = "Click here to go back to the results page";
 $phrase["en"]["pertinence"] = "Relevance";
 $phrase["en"]["rech_resultat_singulier"] = "result";

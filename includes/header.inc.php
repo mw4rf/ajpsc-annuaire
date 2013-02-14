@@ -69,22 +69,3 @@
 <div id="header">
 	<div id="logo"></div>
 </div>
-
-
-    <?php
-    /* Afficher le lien de retour vers les résultats de la recherche  */
-    if(isset($_GET["action"])
-        and $_GET["action"] == "page_voir"
-        and isset($_SESSION["searchquery-rq"])
-        and isset($_SESSION["searchquery-ch"])
-        and isset($_GET["prov"])
-        and $_GET["prov"]=="search")
-    {
-        echo "<br />
-        <center>
-        <a href=\"index.php?action=action_recherche&searchquery=1\">
-        ".abbr2("retour_recherche")."
-        </a>
-        </center>";
-    }
-    ?>
