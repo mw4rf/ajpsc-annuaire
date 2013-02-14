@@ -51,134 +51,96 @@ if(!empty($data2)) {
 
 ?>
 
-<table width="80%" border="0" align="center" cellpadding="2" cellspacing="2" class="reponse">
-  <tr>
-	<td>
-		<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" class="reponse">
-			<tr>
-				<td>
-					<table width="100%" border="0" align="left" cellpadding="2" cellspacing="2" class="reponse">
-					<tr>
-						<td class="plus-gros"><span class="petites-majuscules"><?php echo $afficher['nom']; ?></span>&nbsp;<?php echo $afficher['prenom']; ?></td>
-					</tr>
-					<tr>
-						<td><?php dire("ne-vp") ?>
-					    	&nbsp;<?php echo $afficher['nationalite']; ?>&nbsp;
-					    	<?php dire("ne-le") ?>
-					    	&nbsp;<?php echo convertir_date($afficher['naissance']); ?>
-						</td>
-					</tr>
-					<tr>
-						<td><?php dire('c3'); ?>&nbsp;<?php echo abbr3($afficher['promotion'], promotion($afficher['promotion'])); ?></td>
-					</tr>
-					</table>
-				</td>
-				<td style="text-align:right;"><?php echo $photo; ?></td>
-			</tr>
-		</table>
-	</td>
-  </tr>
-  <tr>
-	<td>&nbsp;</td>
-  </tr><tr>
-    <td><?php echo $afficher['adresse']; ?></td>
-    </tr>
-  <tr>
-    <td>
-		<?php
-		echo abbr3('<a href="mailto:'.$afficher['email'].'">'.$afficher['email'].'</a>',
-		       donner('env-mail')." ".$afficher['prenom']." ".$afficher['nom']);
-		?>
-	</td>
-    </tr>
-    <tr class="orange">
-      <td height="3">&nbsp;</td>
-    </tr>
+<div class="container">
+    <div class="row-fluid">
+        <div  class="span8 well">
+
+            <h2>
+                <?php echo $afficher['prenom']; ?>
+                <span style="font-variant: small-caps;"><?php echo $afficher['nom']; ?></span>
+            </h2>
+
+            <p><b>
+            <?php dire('c3'); ?>&nbsp;<?php echo abbr3($afficher['promotion'], promotion($afficher['promotion'])); ?>
+            </b></p>
+
+            <p>
+            <i class="icon-user"></i>
+            <?php dire("ne-vp") ?>
+			&nbsp;<?php echo $afficher['nationalite']; ?>&nbsp;
+			<?php dire("ne-le") ?>
+			&nbsp;<?php echo convertir_date($afficher['naissance']); ?>
+            </p>
+
+            <p>
+                <i class="icon-envelope"></i>
+                <?php echo $afficher['adresse']; ?>
+            </p>
+
+            <p>
+                <i class="icon-pencil"></i>
+                <?php
+                    echo abbr3('<a href="mailto:'.$afficher['email'].'">'.$afficher['email'].'</a>',
+                    donner('env-mail')." ".$afficher['prenom']." ".$afficher['nom']);
+                ?>
+            </p>
+
+        </div>
+        <div class="span4 text-center">
+            <?php echo $photo; ?>
+        </div>
+    </div>
+
 
 	<?php if($afficher['q1'] != "") { ?>
-    <tr>
-      <td class="question"><?php dire("r1"); ?></td>
-    </tr>
-    <tr>
-      <td><?php echo $afficher['q1']; ?></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-    </tr>
+        <div class="well well-small">
+            <p class="lead"><?php dire("r1"); ?></p>
+            <blockquote><?php echo $afficher['q1']; ?></blockquote>
+        </div>
     <?php } ?>
 
 	<?php if($afficher['q2'] != "") { ?>
-	<tr>
-      <td class="question"><?php dire("r2"); ?></td>
-    </tr>
-    <tr>
-      <td><?php echo $afficher['q2']; ?></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-    </tr>
+        <div class="well well-small">
+            <p class="lead"><?php dire("r2"); ?></p>
+            <blockquote><?php echo $afficher['q2']; ?></blockquote>
+        </div>
     <?php } ?>
 
 	<?php if($afficher['q3'] != "") { ?>
-	<tr>
-      <td class="question"><?php dire("r3"); ?></td>
-    </tr>
-    <tr>
-      <td><?php echo $afficher['q3']; ?></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-    </tr>
+        <div class="well well-small">
+            <p class="lead"><?php dire("r3"); ?></p>
+            <blockquote><?php echo $afficher['q3']; ?></blockquote>
+        </div>
     <?php } ?>
 
 	<?php if($afficher['q4'] != "") { ?>
-	<tr>
-      <td class="question"><?php dire("r4"); ?></td>
-    </tr>
-    <tr>
-      <td><?php echo $afficher['q4']; ?></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-    </tr>
+        <div class="well well-small">
+            <p class="lead"><?php dire("r4"); ?></p>
+            <blockquote><?php echo $afficher['q4']; ?></blockquote>
+        </div>
     <?php } ?>
 
 	<?php if($afficher['q5'] != "") { ?>
-	<tr>
-      <td class="question"><?php dire("r5"); ?></td>
-    </tr>
-    <tr>
-      <td><?php echo $afficher['q5']; ?></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-    </tr>
+        <div class="well well-small">
+            <p class="lead"><?php dire("r5"); ?></p>
+            <blockquote><?php echo $afficher['q5']; ?></blockquote>
+        </div>
     <?php } ?>
 
 	<?php if($afficher['q6'] != "") { ?>
-	<tr>
-      <td class="question"><?php dire("r6"); ?></td>
-    </tr>
-    <tr>
-      <td><?php echo $afficher['q6']; ?></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-    </tr>
+        <div class="well well-small">
+            <p class="lead"><?php dire("r6"); ?></p>
+            <blockquote><?php echo $afficher['q6']; ?></blockquote>
+        </div>
     <?php } ?>
 
 	<?php if($afficher['q7'] != "") { ?>
-	<tr>
-      <td class="question"><?php dire("r7"); ?></td>
-    </tr>
-    <tr>
-      <td><?php echo $afficher['q7']; ?></td>
-    </tr>
+        <div class="well well-small">
+            <p class="lead"><?php dire("r7"); ?></p>
+            <blockquote><?php echo $afficher['q7']; ?></blockquote>
+        </div>
 	<?php } ?>
 
-	<tr>
-      <td align="right"><?php dire("modif"); echo " ".$afficher['modif']; ?></td>
-    </tr>
+    <p class="pull-right"><span class="label"><?php dire("modif"); echo " ".$afficher['modif']; ?></span><p>
 
-  </table>
-
+</div>

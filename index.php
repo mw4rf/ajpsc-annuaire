@@ -306,5 +306,4 @@ else
 
 /*NB: il ne doit pas y avoir de paragraphe HTML <p></p> dans le code avant l'inclusion du footer, sinon cela fait une ligne blanche minable entre le background gris du corps et le background orange du footer !*/
 include('includes/footer.inc.php');
-
 ?>
