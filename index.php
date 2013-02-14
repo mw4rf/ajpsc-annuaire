@@ -286,7 +286,13 @@ elseif($_GET["action"] == "admin" and isadmin())
 elseif($_GET["action"] == "admindeco" and isadmin())
 {
 	$_SESSION["isadmin"] = null;
-	message("admin_deco");
+	?>
+    <div class="container well text-center">
+    <?php
+        message("admin_deco");
+    ?>
+    </div>
+    <?php
 }
 
 } /* if 2 */
