@@ -167,65 +167,53 @@ $xa = $x;
 <table class="table table-hover">
 <thead>
   <tr>
-    <th width="30%"><?php dire("c1"); ?>
-	<br />
-		<span class="tri">
-		<a href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=n-asc">
-			<?php echo abbr3(donner("tri-asc"), donner("@tri-asc-n")); ?>
-		</a>
-		</span>
-		<span class="tri">
-		<a href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=n-desc">
-			<?php echo abbr3(donner("tri-desc"), donner("@tri-desc-n")); ?>
-		</a>
-		</span>
+    <th width="25%">
+        <span class="btn-group">
+		    <a class="btn btn-mini" href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=n-asc">
+    			<i class="icon-chevron-up"></i>
+    		</a>
+    		<a class="btn btn-mini" href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=n-desc">
+    			<i class="icon-chevron-down"></i>
+    		</a>
+        </span>
+        <?php dire("c1"); ?>
 	</th>
-    <th width="30%"><?php dire("c2"); ?>
-		<br />
-		<span class="tri">
-		<a href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=pn-asc">
-			<?php echo abbr3(donner("tri-asc"), donner("@tri-asc-pn")); ?>
-		</a>
-		</span>
-		<span class="tri">
-		<a href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=pn-desc">
-			<?php echo abbr3(donner("tri-desc"), donner("@tri-desc-pn")); ?>
-		</a>
-		</span>
+    <th width="25%">
+        <span class="btn-group">
+            <a class="btn btn-mini" href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=pn-asc">
+                <i class="icon-chevron-up"></i>
+            </a>
+            <a class="btn btn-mini" href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=pn-desc">
+                <i class="icon-chevron-down"></i>
+            </a>
+        </span>
+        <?php dire("c2"); ?>
 	</th>
-    <th><?php dire("c3"); ?>
-		<br />
-		<span class="tri">
-		<a href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=pr-asc">
-			<?php echo abbr3(donner("tri-asc"), donner("@tri-asc-pr")); ?>
-		</a>
-		</span>
-		<span class="tri">
-		<a href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=pr-desc">
-			<?php echo abbr3(donner("tri-desc"), donner("@tri-desc-pr")); ?>
-		</a>
-		</span>
+    <th>
+        <span class="btn-group">
+            <a class="btn btn-mini" href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=pr-asc">
+                <i class="icon-chevron-up"></i>
+            </a>
+            <a class="btn btn-mini" href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=pr-desc">
+                <i class="icon-chevron-down"></i>
+            </a>
+        </span>
+        <?php dire("c3"); ?>
 	</th>
-    <th><?php dire("c7"); ?>
-		<br />
-		<span class="tri">
-		<a href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=em-asc">
-			<?php echo abbr3(donner("tri-asc"), donner("@tri-asc-em")); ?>
-		</a>
-		</span>
-		<span class="tri">
-		<a href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=em-desc">
-			<?php echo abbr3(donner("tri-desc"), donner("@tri-desc-em")); ?>
-		</a>
-		</span>
-	</th>
+    <th>
+        <span class="btn-group">
+            <a class="btn btn-mini" href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=em-asc">
+                <i class="icon-chevron-up"></i>
+            </a>
+            <a class="btn btn-mini" href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=em-desc">
+                <i class="icon-chevron-down"></i>
+            </a>
+        </span>
+        <?php dire("c7"); ?>
 	<th>
-		<br />
-		<span class="tri">
-		<a href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=no">
-			<?php echo abbr3(donner("tri-no"), donner("@tri-no")); ?>
+		<a class="btn btn-mini" href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=no">
+			<i class="icon-remove"></i>
 		</a>
-		</span>
 	</th>
   </tr>
 </thead>
