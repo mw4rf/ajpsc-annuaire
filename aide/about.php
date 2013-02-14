@@ -5,7 +5,7 @@
     </div>
 
     <ul class="aide_section_light">
-    	<li />Auteur: Guillaume Florimond (<a href="mailto:gflorimond at gmail dot com">e-mail</a>)
+    	<li />Auteur: Guillaume Florimond (<script type="text/javascript">document.write("tsybevzbaq\100nwcfp\056pbz".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));</script>)
     	<li />Contrat de licence: <a href="http://creativecommons.org/licenses/by-sa/2.0/fr/legalcode">Creative Commons Paternité-ShareAlike 2.0 France</a>
     	<li />Licence 2006-<?php echo date("Y");?> pour AJPSC.Com
     	<li />Code source disponible: <a href="https://bitbucket.org/mw4rf/ajpsc-annuaire">Bitbucket Git</a>
