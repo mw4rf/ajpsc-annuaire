@@ -1,4 +1,4 @@
-<div style='font-family: "Times New Roman", Times, serif'>
+<div class="container">
 
 <span style="font-size:12pt;">1. <a href="#1">Connexion et déconnexion</a></span>
 <ul style="list-style-type : none;">
