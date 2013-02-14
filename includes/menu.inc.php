@@ -3,7 +3,7 @@
   <div class="navbar-inner">
     <!-- ADMIN -->
     <?php if(isadmin()) { ?>
-        <a class="brand alert-error" href="#">Mode Administration</a>
+        <a class="brand alert-error" href="index.php?action=adminlogin">Mode Administration</a>
     <?php } else { ?>
         <a class="brand" href="index.php">AJPSC Annuaire</a>
     <?php } ?>
@@ -48,6 +48,7 @@
                 </li>
                 <!-- Actions à afficher lorsqu'on est sur la page d'une fiche -->
                 <?php if(isset($_GET["action"]) and $_GET['action'] == "page_voir" and is_numeric($_GET['id'])) {?>
+                <li class="divider"></li>
                 <!-- Modifier la fiche -->
                 <li role="presentation">
                     <a role="menuitem" tabindex="-1" href="index.php?action=page_modifier&id=<?php echo $_GET['id']; ?>">
@@ -62,6 +63,7 @@
                 </li>
                 <?php } ?>
                 <?php if(isset($_GET["action"]) and $_GET['action'] == "action_modifier") {?>
+                <li class="divider"></li>
                 <!-- Modifier la fiche -->
                 <li role="presentation">
                     <a role="menuitem" tabindex="-1" href="index.php?action=page_modifier&id=<?php echo $_POST['id']; ?>">
@@ -75,6 +77,7 @@
                     </a>
                 </li>
                 <?php } ?>
+                <li class="divider"></li>
                 <!-- Affichage (les dernières, tri...) -->
                 <li role="presentation">
                     <a role="menuitem" tabindex="-1" href="index.php?action=page_liste&tri=maj">
@@ -130,6 +133,7 @@
                 <?php }
                 if(!isset($_GET['action']) or $_GET['action'] != "action_recherche"){
                 ?>
+                <li class="divider"></li>
                 <!-- Génération de PDF à la volée: tout l'annuaire -->
                 <li role="presentation">
                     <a role="menuitem" tabindex="-1" href="export/pdfexport.php?pdf=tout">
@@ -140,6 +144,7 @@
                 }
                 /* CAS n°2 => Affichage des résultats de recherche                                */
                 if(isset($_GET['action']) and $_GET['action'] == "action_recherche") {?>
+                <li class="divider"></li>
                 <!-- Génération de PDF à la volée: résultats de la recherche -->
                 <li role="presentation">
                     <a role="menuitem" tabindex="-1" href="export/pdfexport.php?pdf=recherche">
@@ -172,6 +177,7 @@
                 </li>
                 <?php } ?>
 
+                <li class="divider"></li>
                 <!-- Exportation rapide (CSV) -->
                 <li role="presentation">
                     <a role="menuitem" tabindex="-1" href="export/csvexport.php?tout=0">
@@ -192,6 +198,7 @@
                 </li>
 
                 <?php if($_config['exporter_tout'] == 1) { ?>
+                <li class="divider"></li>
                 <!-- Exportation rapide (CSV) -->
                 <li role="presentation">
                     <a role="menuitem" tabindex="-1" href="export/csvexport.php?tout=1">
@@ -212,6 +219,7 @@
                 </li>
                 <?php } ?>
 
+                <li class="divider"></li>
                 <!-- Imprimer tout -->
                 <li role="presentation">
                     <a role="menuitem" tabindex="-1" href="export/imprimer.php?tout=1">
@@ -282,6 +290,7 @@
                         <?php dire("menu5c"); ?>
                     </a>
                 </li>
+                <li class="divider"></li>
                 <li role="presentation">
                     <a role="menuitem" tabindex="-1" href="index.php?action=adminlogin">
                         <?php dire("menu5d"); ?>
