@@ -12,13 +12,11 @@ if(isset($_GET["step"]) and $_GET["step"] == 2) {
 // Afficher le formulaire de connexion
 else {
 ?>
-<form method="post" action="index.php?action=adminlogin&step=2">
-    <table width="45%" border="0" align="center" cellpadding="2" cellspacing="2">
-        <tr>
-            <td><?php dire("mdp"); ?></td>
-            <td><input type="password" name="adminpwd" /></td>
-            <td><input type="submit" value="<?php dire("co"); ?>" /></td>
-        </tr>
-    </table>
+<div class="container well">
+<form class="form text-center" method="post" action="index.php?action=adminlogin&step=2">
+    <label><?php dire("mdp"); ?></label>
+    <input type="password" name="adminpwd" />
+    <p><input class="btn btn-small btn-info" type="submit" value="<?php dire("co"); ?>" /></p>
 </form>
+</div>
 <?php } ?>
