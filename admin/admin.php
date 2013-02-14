@@ -11,29 +11,17 @@ include("admin/adminfct.php");
 ?>
 
 <!-- En-tête -->
-<div style="text-align:center; font-size:20pt;">
-	<?php dire("admin_accueil"); ?>
-</div>
-<div style="text-align:center; font-size:14pt; color:#FF0000; font-weight:bold;">
-	<?php dire("admin_accueil2"); ?>
+<div class="container hero-unit">
+  <h1><?php dire("admin_accueil"); ?></h1>
+  <p style="color:#FF0000;"><?php dire("admin_accueil2"); ?></p>
+  <p>
+    <a class="btn btn-large btn-inverse" href="index.php?action=admindeco"><?php dire("admin_menu0a"); ?></a>
+  </p>
 </div>
 
 <!-- Conteneur principal -->
-<div>
+<div class="container">
 <ol>
-
-<!-- 1. Se déconnecter au mode administration -->
-<li>
-	<p>
-		<span class="admintitre">
-			<a href="index.php?action=admindeco">
-			<?php dire("admin_menu0a"); ?>
-			</a>
-		</span>
-		<br />
-		<span class="adminsoustitre"><?php dire("admin_menu0b"); ?></span>
-	</p>
-</li>
 
 <!-- 2. Statistiques -->
 <li>
