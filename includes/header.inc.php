@@ -21,14 +21,15 @@
 	<!-- Date: 2006-12-08 -->
 
 	<!-- JavaScript -->
-		<!-- @Theme -->
-		<script src="themes/<?php echo obtenir_theme(); ?>/variables.js" type="text/javascript">
-		</script>
 		<!-- @GF -->
 		<script src="includes/js/scripts.js" type="text/javascript"></script>
-		<!-- @Tierce-Partie : SweetTitles -->
+		<!-- @Tiecre-Partie : SweetTitles -->
 		<script src="includes/js/sweettitles/addEvent.js" type="text/javascript"></script>
 		<script src="includes/js/sweettitles/titles.js" type="text/javascript"></script>
+        <!-- jQuery -->
+        <script src="lib/jquery.js" type="text/javascript"></script>
+        <!-- Twitter Bootstrap -->
+        <script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 	<!-- // JavaScript -->
 
 	<!-- Favicon -->
@@ -36,12 +37,8 @@
 
 	<!-- Style CSS -->
 	<style type="text/css" media="screen">
-		@import url("themes/<?php echo obtenir_theme(); ?>/style.css");
+		@import url("lib/bootstrap/css/bootstrap.min.css");
 	</style>
-	<!--[if IE]>
-	<link rel="stylesheet" type="text/css"
-	      href="themes/<?php echo obtenir_theme(); ?>/iestyle.css" />
-	<![endif]-->
 
 	<!-- Google Analytics - @ GF -->
 	<!-- Statistiques globale (ajpsc.com) -->
@@ -70,8 +67,24 @@
 <body>
 
 <div id="header">
-
 	<div id="logo"></div>
-	<?php include('search.php'); ?>
-
 </div>
+
+
+    <?php
+    /* Afficher le lien de retour vers les résultats de la recherche  */
+    if(isset($_GET["action"])
+        and $_GET["action"] == "page_voir"
+        and isset($_SESSION["searchquery-rq"])
+        and isset($_SESSION["searchquery-ch"])
+        and isset($_GET["prov"])
+        and $_GET["prov"]=="search")
+    {
+        echo "<br />
+        <center>
+        <a href=\"index.php?action=action_recherche&searchquery=1\">
+        ".abbr2("retour_recherche")."
+        </a>
+        </center>";
+    }
+    ?>

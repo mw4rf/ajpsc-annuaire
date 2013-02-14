@@ -67,7 +67,7 @@ $_config['photos_storage'] = "FS";
 * Indique combien d'enregistrements doivent être affichés par page.
 * S'il y a 10 enregistrements et que cette valeur est à 5, alors 2 pages seront créées.
 */
-$_config['pagination'] = 20;
+$_config['pagination'] = 1;
 
 /* PAGINATION de la galerie
 * Indique combien de photos doivent être affichés par page.

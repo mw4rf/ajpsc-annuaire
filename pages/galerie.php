@@ -69,94 +69,87 @@ $xa = $x;
 
 /* /PAGINATION */
 ?>
-<table width="100%" align="center" cellpadding="4" cellspacing="0" border="0" class="orange">
-  <tr class="orange">
-    <td style="border-top: 1px solid #FF8000; border-bottom: 1px solid #FF8000;">
-    	<?php
-	/* Construction et affichage du système de pagination */
-	$avant =      abbr2("p-");
-	$apres =      abbr2("p+");
-	$avantx =     donner("p-");
-	$apresx =     donner("p+");
-	$il_y_a =     donner("p1");
-	$fiches_sur = donner("p2b");
-	$pages =      donner("p3");
-	$page =       donner("p4");
+
+<div class="container well">
+        <?php
+            /* Construction et affichage du système de pagination */
+            $avant =      abbr2("p-");
+            $apres =      abbr2("p+");
+            $avantx =     donner("p-");
+            $apresx =     donner("p+");
+            $il_y_a =     donner("p1");
+            $fiches_sur = donner("p2b");
+            $pages =      donner("p3");
+            $page =       donner("p4");
 
 
-	$result =  "<table style=\"width:100%;\"><tr><td align=\"left\">";
-	$result .= "$il_y_a <b>".$t."</b> $fiches_sur <b>".$p."</b> $pages";
-	$result .= "</td>";
+            $result =  "<table style=\"width:100%;\"><tr><td align=\"left\">";
+            $result .= "<span class=\"label\">$il_y_a <b>".$t."</b> $fiches_sur <b>".$p."</b> $pages</span>";
+            $result .= "</td>";
 
-	// Combobox qui permet de sauter d'une page à l'autre
-	  $co  = "<select name=\"menu_pagination\" "
-	       ."onchange=\"MM_jumpMenu('parent',this,0)\">";
+            // Combobox qui permet de sauter d'une page à l'autre
+              $co  = "<select class=\"span1 btn\" name=\"menu_pagination\" "
+                   ."onchange=\"MM_jumpMenu('parent',this,0)\">";
 
-	for($ix = 1 ; $ix <= $p ; $ix++)
-	{
-		// Page courante
-		if($ix == $c)
-		{
-			$co .= "<option selected=\"selected\">$c</option>";
-		}
-		// Autre page
-		else
-		{
-			/* $ix indique la page à laquelle on veut aller, mais quel sera la
-			 valeur de x pour cette page (x=premier enregistrement de la page)
-			Réponse: page désirée ($ix) * seuil de pagination ($z)
-			MAIS: la première page porte le numéro 1, alors qu'elle est
-			construite avec un $x égal à 0 (limit $x=O,$z) => donc, il faut
-			en réalité utiliser ($ix - 1) au lieu de $ix*/
-			$xgo = ($ix - 1) * $z;
+            for($ix = 1 ; $ix <= $p ; $ix++)
+            {
+                // Page courante
+                if($ix == $c)
+                {
+                    $co .= "<option selected=\"selected\">$c</option>";
+                }
+                // Autre page
+                else
+                {
+                    /* $ix indique la page à laquelle on veut aller, mais quel sera la
+                     valeur de x pour cette page (x=premier enregistrement de la page)
+                    Réponse: page désirée ($ix) * seuil de pagination ($z)
+                    MAIS: la première page porte le numéro 1, alors qu'elle est
+                    construite avec un $x égal à 0 (limit $x=O,$z) => donc, il faut
+                    en réalité utiliser ($ix - 1) au lieu de $ix*/
+                    $xgo = ($ix - 1) * $z;
 
-			$co .= "<option value=\"index.php?action=galerie&x=$xgo"
-			    ."\">$ix</option>";
-		}
-	}
-	$co .= "</select>";
+                    $co .= "<option value=\"index.php?action=galerie&x=$xgo"
+                        ."\">$ix</option>";
+                }
+            }
+            $co .= "</select>";
 
-	$provresult = "<td align=\"center\">";
-	// si $x>$z c'est qu'on est plus à la première page
-	if($x > $z)
-	{
-		$provresult	.="<a href=\"index.php?action=galerie\">".abbr2("<<")."</a> | "
-				."<a href=\"index.php?action=galerie&x=$y\">"
-				."".abbr2("<")." $avant</a>";
-	}
-	// sinon c'est qu'on est à la première page
-	else
-	{
-		$provresult .= "<< | < $avantx";
-	}
+            $provresult = "<td align=\"center\"><div class=\"btn-group\">";
+            // si $x>$z c'est qu'on est plus à la première page
+            if($x > $z)
+            {
+                $provresult .="<a class=\"btn btn-small\" href=\"index.php?action=galerie\"><i class=\"icon-fast-backward\"></i></a>"
+                        ." <a class=\"btn btn-small\" href=\"index.php?action=galerie&x=$y\"><i class=\"icon-backward\"></i></a>";
+            }
+            // sinon c'est qu'on est à la première page
+            else
+            {
+                $provresult .= "<a class=\"btn btn-small disabled\"><i class=\"icon-fast-backward\"></i></a> <a class=\"btn btn-small disabled\"><i class=\"icon-backward\"></i></a>";
+            }
 
-	$provresult	.=" | ";
+            //si $x<$t c'est qu'on n'est pas encore à la dernière page
+            if($x < $t)
+            {
+                $provresult .=" <a class=\"btn btn-small\" href=\"index.php?action=galerie&x=$x\"><i class=\"icon-forward\"></i></a>"
+                        ." <a class=\"btn btn-small\" href=\"index.php?action=galerie&x=$l\"><i class=\"icon-fast-forward\"></i></a>";
+            }
+            // sinon c'est qu'on est à la dernière page
+            else
+            {
+                $provresult .= " <a class=\"btn btn-small disabled\"><i class=\"icon-forward\"></i></a> <a class=\"btn btn-small disabled\"><i class=\"icon-fast-forward\"></i></a>";
+            }
+            $result .= $provresult."</div></td>";
 
-	//si $x<$t c'est qu'on n'est pas encore à la dernière page
-	if($x < $t)
-	{
-		$provresult	.="<a href=\"index.php?action=galerie&x=$x\">"
-				."$apres ".abbr2(">")."</a> | "
-				."<a href=\"index.php?action=galerie&x=$l\">"
-				.abbr2(">>")."</a>";
-	}
-	// sinon c'est qu'on est à la dernière page
-	else
-	{
-		$provresult .= $apresx." > | >>";
-	}
-	$result .= $provresult."</td>";
+            // Pour désactiver le Combo, remplacer ci-dessous $co par $c
+            $result .= "<td align=\"right\"><span class=\"label\">$page</span> $co <span class=\"label\">/$p</span></td></tr></table>";
 
-	// Pour désactiver le Combo, remplacer ci-dessous $co par $c
-	$result .= "<td align=\"right\">$page: <b>$co/$p</b></td></tr></table>";
+            echo $result;
+        ?>
+</div>
 
-	echo $result;
-		?>
-    </td>
-  </tr>
-</table>
-
-<table width="100%" align="center" cellpadding="4" cellspacing="0" border="0">
+<div class="container">
+<table class="table" align="center" cellpadding="4" cellspacing="0" border="0">
 <tr>
 
 <?php
@@ -227,7 +220,7 @@ while($data = mysql_fetch_assoc($req))
 if($afficher['promotion'] != $promo and ( $_SESSION['tri_galerie'] == "promotion ASC" or $_SESSION['tri_galerie'] == "promotion DESC" ) )
 {
 	$promo = $afficher['promotion'];
-	echo "</tr><tr><td class=\"orange\" colspan=\"$images_par_ligne\"><b>".donner("c3")." $promo</b></td></tr><tr>";
+	echo "</tr><tr><th class=\"well\" style=\"text-align:center;\" colspan=\"$images_par_ligne\">".donner("c3")." $promo</th></tr><tr>";
 }
 
 
@@ -242,3 +235,4 @@ if($afficher['promotion'] != $promo and ( $_SESSION['tri_galerie'] == "promotion
 <?php } ?>
 </tr>
 </table>
+</div>

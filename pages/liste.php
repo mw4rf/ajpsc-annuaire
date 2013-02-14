@@ -84,9 +84,8 @@ $xa = $x;
 
 /* /PAGINATION */
 ?>
-<table width="100%" align="center" cellpadding="4" cellspacing="0" border="0" class="orange">
-  <tr class="orange">
-    <td style="border-top: 1px solid #FF8000;" colspan="5">
+
+<div class="container well">
     	<?php
 			/* Construction et affichage du système de pagination */
 			$avant =      abbr2("p-");
@@ -100,11 +99,11 @@ $xa = $x;
 
 
 			$result =  "<table style=\"width:100%;\"><tr><td align=\"left\">";
-			$result .= "$il_y_a <b>".$t."</b> $fiches_sur <b>".$p."</b> $pages";
+			$result .= "<span class=\"label\">$il_y_a <b>".$t."</b> $fiches_sur <b>".$p."</b> $pages</span>";
 			$result .= "</td>";
 
 			// Combobox qui permet de sauter d'une page à l'autre
-			  $co  = "<select name=\"menu_pagination\" "
+			  $co  = "<select class=\"span1 btn\" name=\"menu_pagination\" "
 			       ."onchange=\"MM_jumpMenu('parent',this,0)\">";
 
 			for($ix = 1 ; $ix <= $p ; $ix++)
@@ -131,47 +130,44 @@ $xa = $x;
 			}
 			$co .= "</select>";
 
-			$provresult = "<td align=\"center\">";
+			$provresult = "<td align=\"center\"><div class=\"btn-group\">";
 			// si $x>$z c'est qu'on est plus à la première page
 			if($x > $z)
 			{
-				$provresult	.="<a href=\"index.php?action=page_liste\">".abbr2("<<")."</a> | "
-						."<a href=\"index.php?action=page_liste&x=$y\">"
-						."".abbr2("<")." $avant</a>";
+				$provresult	.="<a class=\"btn btn-small\" href=\"index.php?action=page_liste\"><i class=\"icon-fast-backward\"></i></a>"
+						." <a class=\"btn btn-small\" href=\"index.php?action=page_liste&x=$y\"><i class=\"icon-backward\"></i></a>";
 			}
 			// sinon c'est qu'on est à la première page
 			else
 			{
-				$provresult .= "<< | < $avantx";
+				$provresult .= "<a class=\"btn btn-small disabled\"><i class=\"icon-fast-backward\"></i></a> <a class=\"btn btn-small disabled\"><i class=\"icon-backward\"></i></a>";
 			}
-
-			$provresult	.=" | ";
 
 			//si $x<$t c'est qu'on n'est pas encore à la dernière page
 			if($x < $t)
 			{
-				$provresult	.="<a href=\"index.php?action=page_liste&x=$x\">"
-						."$apres ".abbr2(">")."</a> | "
-						."<a href=\"index.php?action=page_liste&x=$l\">"
-						.abbr2(">>")."</a>";
+				$provresult	.=" <a class=\"btn btn-small\" href=\"index.php?action=page_liste&x=$x\"><i class=\"icon-forward\"></i></a>"
+						." <a class=\"btn btn-small\" href=\"index.php?action=page_liste&x=$l\"><i class=\"icon-fast-forward\"></i></a>";
 			}
 			// sinon c'est qu'on est à la dernière page
 			else
 			{
-				$provresult .= $apresx." > | >>";
+				$provresult .= " <a class=\"btn btn-small disabled\"><i class=\"icon-forward\"></i></a> <a class=\"btn btn-small disabled\"><i class=\"icon-fast-forward\"></i></a>";
 			}
-			$result .= $provresult."</td>";
+			$result .= $provresult."</div></td>";
 
 			// Pour désactiver le Combo, remplacer ci-dessous $co par $c
-			$result .= "<td align=\"right\">$page: <b>$co/$p</b></td></tr></table>";
+			$result .= "<td align=\"right\"><span class=\"label\">$page</span> $co <span class=\"label\">/$p</span></td></tr></table>";
 
 			echo $result;
 		?>
-    </td>
-  </tr>
+</div>
 
-  <tr class="orange">
-    <td style="border-top: 1px solid #FF8000;" width="30%"><?php dire("c1"); ?>
+<div class="container">
+<table class="table table-hover">
+<thead>
+  <tr>
+    <th width="30%"><?php dire("c1"); ?>
 	<br />
 		<span class="tri">
 		<a href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=n-asc">
@@ -183,8 +179,8 @@ $xa = $x;
 			<?php echo abbr3(donner("tri-desc"), donner("@tri-desc-n")); ?>
 		</a>
 		</span>
-	</td>
-    <td style="border-top: 1px solid #FF8000;" width="30%"><?php dire("c2"); ?>
+	</th>
+    <th width="30%"><?php dire("c2"); ?>
 		<br />
 		<span class="tri">
 		<a href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=pn-asc">
@@ -196,8 +192,8 @@ $xa = $x;
 			<?php echo abbr3(donner("tri-desc"), donner("@tri-desc-pn")); ?>
 		</a>
 		</span>
-	</td>
-    <td style="border-top: 1px solid #FF8000;" width="10%"><?php dire("c3"); ?>
+	</th>
+    <th><?php dire("c3"); ?>
 		<br />
 		<span class="tri">
 		<a href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=pr-asc">
@@ -209,8 +205,8 @@ $xa = $x;
 			<?php echo abbr3(donner("tri-desc"), donner("@tri-desc-pr")); ?>
 		</a>
 		</span>
-	</td>
-    <td style="border-top: 1px solid #FF8000;" width="30%"><?php dire("c7"); ?>
+	</th>
+    <th><?php dire("c7"); ?>
 		<br />
 		<span class="tri">
 		<a href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=em-asc">
@@ -222,17 +218,18 @@ $xa = $x;
 			<?php echo abbr3(donner("tri-desc"), donner("@tri-desc-em")); ?>
 		</a>
 		</span>
-	</td>
-	<td style="border-top: 1px solid #FF8000;">
+	</th>
+	<th>
 		<br />
 		<span class="tri">
 		<a href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=no">
 			<?php echo abbr3(donner("tri-no"), donner("@tri-no")); ?>
 		</a>
 		</span>
-	</td>
+	</th>
   </tr>
-
+</thead>
+<tbody>
 <?php
 // Pour l'exportation
 /* NB: il faut refuser l'exportation ici (false) pour que soit générée une requête SQL de base, exportant TOUS les enregistrements... et non seulement ceux qui sont sur la page courante*/
@@ -249,11 +246,7 @@ while($data = mysql_fetch_assoc($req))
 	$fiche = "index.php?action=page_voir&id=".$data['id'];
 
 ?>
-  <tr class="transparent" style="cursor:pointer"
-      onClick="javascript:js_direct('<?php echo $fiche; ?>');"
-      onMouseOver="javascript:change_couleur(this, couleur_hover);"
-	  onMouseOut="javascript:restaure_couleur(this, couleur_origine);">
-
+  <tr style="cursor:pointer" onClick="javascript:js_direct('<?php echo $fiche; ?>');">
     <td><?php echo abbr3($afficher["nom"], donner("voir")); ?></td>
     <td><?php echo abbr3($afficher["prenom"], donner("voir")); ?></td>
     <td><?php echo abbr3($afficher["promotion"], donner("voir")); ?></td>
@@ -262,5 +255,6 @@ while($data = mysql_fetch_assoc($req))
   </tr>
 
 <?php } ?>
-
+</tbody>
 </table>
+</div>
