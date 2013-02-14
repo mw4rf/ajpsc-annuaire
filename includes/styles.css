@@ -1,3 +1,20 @@
-#footer {
-    margin:0;
+html,body {
+    height:100%;
+}
+
+#holder{
+    min-height: 100%;
+    position:relative;
+}
+
+#content{
+    padding-bottom: 1.5em;    /* height of footer */
+}
+
+#footer{
+    height: 1.5em;
+    position: absolute;
+    width:100%;
+    left: 0;
+    bottom: 0;
 }

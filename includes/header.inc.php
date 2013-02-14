@@ -38,6 +38,7 @@
 	<!-- Style CSS -->
 	<style type="text/css" media="screen">
 		@import url("lib/bootstrap/css/bootstrap.min.css");
+        @import url("includes/styles.css");
 	</style>
 
 	<!-- Google Analytics - @ GF -->
@@ -66,6 +67,10 @@
 </head>
 <body>
 
-<div id="header">
-	<div id="logo"></div>
-</div>
+<div id="holder">
+
+    <div id="header">
+    	<div id="logo"></div>
+    </div>
+
+    <div id="content">
