@@ -1,11 +1,11 @@
 <!-- Menu principal -->
-<div class="navbar">
+<div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <!-- ADMIN -->
     <?php if(isadmin()) { ?>
-        <a class="brand alert-error" href="index.php?action=adminlogin">Mode Administration</a>
+        <a class="brand alert-error" href="index.php?action=adminlogin">&nbsp;Mode Administration</a>
     <?php } else { ?>
-        <a class="brand" href="index.php">AJPSC Annuaire</a>
+        <a class="brand" href="index.php">&nbsp;AJPSC Annuaire</a>
     <?php } ?>
     <ul class="nav">
         <!-- Voir les fiches -->
