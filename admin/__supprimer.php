@@ -13,21 +13,21 @@ include("../includes/config.inc.php");
 <body>
 
 <?php
-/* Se connecter à la bdd et effectuer les changements voulus  */
+/* Se connecter Ã  la bdd et effectuer les changements voulus  */
 if($_GET["action"] == "supprimer") {
 
-/* Récupération du contenu du formulaire */
+/* RÃ©cupÃ©ration du contenu du formulaire */
 $id = $_POST['id'];
 
-/* Connexion à la base de données */
+/* Connexion Ã  la base de donnÃ©es */
 $db = mysql_connect($_config['host'], $_config['user'], $_config['passwd']);
 mysql_select_db($_config['base'],$db);
 
 $sql = "DELETE FROM utilisateur WHERE id=$id;";
 mysql_query($sql) or die('Erreur');
 
-/* Affichage d'un message pour dire que tout s'est bien passé */
-echo "Fiche supprimée.";
+/* Affichage d'un message pour dire que tout s'est bien passÃ© */
+echo "Fiche supprimÃ©e.";
 }
 else
 {
@@ -36,7 +36,7 @@ else
 <form name="supprimer" method="post" action="supprimer.php?action=supprimer">
 <table width="45%" border="0" align="center" cellpadding="2" cellspacing="2">
   <tr>
-    <td>Numéro de la fiche à supprimer: </td>
+    <td>NumÃ©ro de la fiche Ã  supprimer: </td>
     <td><input type="input" name="id" /></td>
   </tr>
   <tr>

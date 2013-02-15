@@ -13,26 +13,26 @@ include("../includes/config.inc.php");
 <body>
 
 <?php
-/* Se connecter à la bdd et effectuer les changements voulus  */
+/* Se connecter Ã  la bdd et effectuer les changements voulus  */
 if($_GET["action"] == "changer") {
 
-/* Récupération du contenu du formulaire */
+/* RÃ©cupÃ©ration du contenu du formulaire */
 $pass = $_POST['pass'];
 
 /* Chiffrement du mot de passe */
 $pass = sha1($pass);
 
-/* Connexion à la base de données */
+/* Connexion Ã  la base de donnÃ©es */
 $db = mysql_connect($_config['host'], $_config['user'], $_config['passwd']);
 mysql_select_db($_config['base'],$db);
 
-/* Construction de la requête SQL */
+/* Construction de la requÃªte SQL */
 $sql = "UPDATE admin SET pass='$pass' WHERE id='1';";
 
-/* Exécution de la requête */
+/* ExÃ©cution de la requÃªte */
 $req = mysql_query($sql) or die("Erreur");
 
-/* Affichage d'un message pour dire que tout s'est bien passé */
+/* Affichage d'un message pour dire que tout s'est bien passÃ© */
 echo "Modification effectu&eacute;e.";
 }
 else

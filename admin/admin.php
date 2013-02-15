@@ -1,5 +1,5 @@
 <?php
-/* Protection première: isadmin()*/
+/* Protection premiÃ¨re: isadmin()*/
 if(!isadmin())
 {
 	dire("admin_badauth");
@@ -10,7 +10,7 @@ else //if(!isadmin())
 include("admin/adminfct.php");
 ?>
 
-<!-- En-tête -->
+<!-- En-tÃªte -->
 <div class="container hero-unit">
   <h1><?php dire("admin_accueil"); ?></h1>
   <p style="color:#FF0000;"><?php dire("admin_accueil2"); ?></p>
@@ -40,7 +40,7 @@ include("admin/adminfct.php");
 			<li>
 				<?php
 				dire("admin_menu3_1");
-				//Combien d'enregistrements au total dans la table ? Réponse: $t
+				//Combien d'enregistrements au total dans la table ? RÃ©ponse: $t
 				$sql = "SELECT * FROM utilisateur;";
 				$req = mysql_query($sql);
 				$t = mysql_num_rows($req);
@@ -48,7 +48,7 @@ include("admin/adminfct.php");
 				?>
 			</li>
 
-			<!-- Taille de la base de données -->
+			<!-- Taille de la base de donnÃ©es -->
 			<li>
 				<?php
 				dire("admin_menu3_6");
@@ -66,7 +66,7 @@ include("admin/adminfct.php");
 				?>
 			</li>
 
-			<!-- Dernière fiche modifiée -->
+			<!-- DerniÃ¨re fiche modifiÃ©e -->
 			<li>
 				<?php
 				dire("admin_menu3_2");
@@ -130,14 +130,14 @@ include("admin/adminfct.php");
 			<a href="export/csvexport.php"><?php dire("admin_menu4_1"); ?></a>
 		</li>
 
-		<!-- Modèles MS Word -->
+		<!-- ModÃ¨les MS Word -->
 		<li>
 			<a href="msword/"><?php dire("admin_menu4_2"); ?></a>
 		</li>
 	</ol>
 </li>
 
-<!-- 4. Générer le hash SHA1 -->
+<!-- 4. GÃ©nÃ©rer le hash SHA1 -->
 <li>
 	<p>
 		<span class="admintitre"><?php dire("admin_menu1a"); ?></span>
@@ -154,7 +154,7 @@ include("admin/adminfct.php");
 	</form>
 
 	<?php
-	// On affiche le hash sha1 après soumission du formulaire
+	// On affiche le hash sha1 aprÃ¨s soumission du formulaire
 	if(isset($_GET["op"]) and isset($_POST["sha1phrase"]) and $_GET["op"] == "sha1")
 	{
 	?>
@@ -169,7 +169,7 @@ include("admin/adminfct.php");
 	?>
 </li>
 
-<!-- 5. Insérer le hash SHA1 (réponse secrète) -->
+<!-- 5. InsÃ©rer le hash SHA1 (rÃ©ponse secrÃ¨te) -->
 <li>
 	<p>
 		<span class="admintitre"><?php dire("admin_menu2a"); ?></span>
@@ -194,7 +194,7 @@ include("admin/adminfct.php");
 	</form>
 
 	<?php
-	// On affiche le résultat après soumission du formulaire
+	// On affiche le rÃ©sultat aprÃ¨s soumission du formulaire
 	if(isset($_GET["op"]) and isset($_POST["sha1hash"]) and isset($_POST["iduser"])
 	and $_GET["op"] == "repsecrt")
 	{
