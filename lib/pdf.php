@@ -302,7 +302,8 @@ function ajouter_page($data)
     // Bloc PHOTO
     if($_config['photos_storage'] == "FS" and !empty($data['extension'])) {
         $img = '../'.$_config['data_folder'].'/photos/'.$data['user_id'].'.'.$data['extension'];
-        $this->Image($img, 149, 33, 60, 0);
+        if(file_exists($img))
+            $this->Image($img, 149, 33, 60, 0);
     }
     $this->ln();
 
