@@ -60,7 +60,7 @@ $req = mysql_query($sql) or die('Erreur');
 /*******************************************************************************
 ********************************************************************************
 **********                          AJPSC Annuaire                    **********
-**********                            Version 1.4.2                   **********
+**********                            Version <?php echo $_version; ?>                   **********
 **********          Copyright (c) 2006-<?php echo date("Y"); ?> Guillaume Florimond       **********
 **********                       www.ajpsc.com                        **********
 **********                       www.valhalla.fr                      **********
@@ -73,8 +73,6 @@ $req = mysql_query($sql) or die('Erreur');
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>AJPSC.com::Annuaire</title>
 	<meta name="author" content="Guillaume Florimond">
-	<!-- Date: 2006-12-08 -->
-
 	<!-- JavaScript -->
 		<!-- @GF -->
 		<script src="../includes/js/scripts.js" type="text/javascript"></script>

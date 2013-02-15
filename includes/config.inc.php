@@ -1,5 +1,7 @@
 <?php
 
+$_version = "2.0";
+
 /*
 Configuration de la base de données:
 Ces données sont à modifier selon votre configuration MySQL !!
