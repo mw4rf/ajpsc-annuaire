@@ -3,7 +3,7 @@
         <div class="span12">
             <div class="hero-unit">
                 <h1>Annuaire AJPSC</h1>
-                <p>des étudiants et des anciens étudiants de la double-maîtrise en droits français et espagnol.</p>
+                <p>des Ã©tudiants et des anciens Ã©tudiants de la double-maÃ®trise en droits franÃ§ais et espagnol.</p>
                 <p>
                     <a class="btn btn-info btn-large" href="index.php?action=page_liste">
                         <?php abbr("menu2b"); ?>
@@ -19,25 +19,25 @@
     <div class="row-fluid">
         <div class="span6">
             <p>
-                L'annuaire AJPSC a pour but de mettre à disposition des étudiants et des anciens étudiants de la double-maîtrise une liste organisée de leurs pairs. Chaque étudiant ou ancien étudiant de la double-maîtrise peut créer une "fiche" à son nom, en indiquant certaines données permettant de l'identifier (promotion, lieu de naissance, etc.), ainsi que certaines informations sur son parcours: études effectuées avant et après la double-maîtrise, stages et expériences professionnelles, langues connues, etc.
+                L'annuaire AJPSC a pour but de mettre Ã  disposition des Ã©tudiants et des anciens Ã©tudiants de la double-maÃ®trise une liste organisÃ©e de leurs pairs. Chaque Ã©tudiant ou ancien Ã©tudiant de la double-maÃ®trise peut crÃ©er une "fiche" Ã  son nom, en indiquant certaines donnÃ©es permettant de l'identifier (promotion, lieu de naissance, etc.), ainsi que certaines informations sur son parcours: Ã©tudes effectuÃ©es avant et aprÃ¨s la double-maÃ®trise, stages et expÃ©riences professionnelles, langues connues, etc.
             </p>
             <p>
-                Les informations stockées dans l'annuaires sont accessibles aux étudiants et anciens étudiants, et à eux seuls. Elles sont en effet protégées et inaccessibles depuis le reste du Web. Vous pouvez renseigner votre fiche sans crainte.
+                Les informations stockÃ©es dans l'annuaires sont accessibles aux Ã©tudiants et anciens Ã©tudiants, et Ã  eux seuls. Elles sont en effet protÃ©gÃ©es et inaccessibles depuis le reste du Web. Vous pouvez renseigner votre fiche sans crainte.
             </p>
             <p>
-                Il est possible d'éditer une version papier avec les données présentes dans cet annuaire en-ligne. Vous pouvez directement créer votre version papier en imprimant les fiches désirées, consulter un exemplaire de l'annuaire auprès des secrétariats de la double-maîtrise à Paris ou à Madrid, ou encore solliciter un exemplaire auprès de l'AJPSC.
+                Il est possible d'Ã©diter une version papier avec les donnÃ©es prÃ©sentes dans cet annuaire en-ligne. Vous pouvez directement crÃ©er votre version papier en imprimant les fiches dÃ©sirÃ©es, consulter un exemplaire de l'annuaire auprÃ¨s des secrÃ©tariats de la double-maÃ®trise Ã  Paris ou Ã  Madrid, ou encore solliciter un exemplaire auprÃ¨s de l'AJPSC.
             </p>
         </div>
         <div class="span1"></div>
         <div class="span5">
             <u>Utilisation de l'annuaire par l'AJPSC</u>
             <ul>
-                <li>Seules les données que vous ajoutez à votre profil de l'Annuaire sont collectées par l'AJPSC.</li>
-                <li>Vous pouvez modifier votre profil à tout moment, afin de mettre à jour les données vous concernant.</li>
-                <li>Votre profil sur l'Annuaire est conservé tant que vous ne le supprimez pas. Vous pouvez le supprimer, et vous retirer de l'Annuaire, à tout moment.</li>
-                <li>L'AJPSC se réserve le droit de transmettre vos données, dans le cadre d'une communication de l'Annuaire dans son ensemble, à ses <a href="http://www.ajpsc.com/category/association/partenaires-association/">partenaires</a>.</li>
-                <li>L'AJPSC n'utilisera pas vos données à des fins commerciales ou publicitaires.</li>
-                <li>L'annuaire est dans l'intranet de l'AJPSC. Ainsi, l'accès à l'annuaire est strictement réservé aux étudiants et anciens étudiants de la double-maîtrise. <i>Vos données <u>ne</u> sont <u>pas</u> en libre accès sur Internet.</i></li>
+                <li>Seules les donnÃ©es que vous ajoutez Ã  votre profil de l'Annuaire sont collectÃ©es par l'AJPSC.</li>
+                <li>Vous pouvez modifier votre profil Ã  tout moment, afin de mettre Ã  jour les donnÃ©es vous concernant.</li>
+                <li>Votre profil sur l'Annuaire est conservÃ© tant que vous ne le supprimez pas. Vous pouvez le supprimer, et vous retirer de l'Annuaire, Ã  tout moment.</li>
+                <li>L'AJPSC se rÃ©serve le droit de transmettre vos donnÃ©es, dans le cadre d'une communication de l'Annuaire dans son ensemble, Ã  ses <a href="http://www.ajpsc.com/category/association/partenaires-association/">partenaires</a>.</li>
+                <li>L'AJPSC n'utilisera pas vos donnÃ©es Ã  des fins commerciales ou publicitaires.</li>
+                <li>L'annuaire est dans l'intranet de l'AJPSC. Ainsi, l'accÃ¨s Ã  l'annuaire est strictement rÃ©servÃ© aux Ã©tudiants et anciens Ã©tudiants de la double-maÃ®trise. <i>Vos donnÃ©es <u>ne</u> sont <u>pas</u> en libre accÃ¨s sur Internet.</i></li>
             </ul>
         </div>
     </div>

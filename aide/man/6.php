@@ -3,7 +3,7 @@
                ANNUAIRE AIDE
 SECTION : trier les fiches
 
-Fichier inclus à partir de faq.php
+Fichier inclus Ã  partir de faq.php
 */
 ?>
 
@@ -18,34 +18,34 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	La liste des fiches (<a href="#5.3">v. n°5.3</a>) affiche toutes les fiches de l'annuaire, une fiche par ligne.
+	La liste des fiches (<a href="#5.3">v. nÂ°5.3</a>) affiche toutes les fiches de l'annuaire, une fiche par ligne.
 </p>
 
 <p class="aide_texte">
-	Mais comment ces fiches sont-elles classées ? De la plus ancienne à la plus récente ? Par ordre alphabétique en fonction des noms de famille ? Par ordre chronologique en fonction des promotions ?
+	Mais comment ces fiches sont-elles classÃ©es ? De la plus ancienne Ã  la plus rÃ©cente ? Par ordre alphabÃ©tique en fonction des noms de famille ? Par ordre chronologique en fonction des promotions ?
 </p>
 
 <p class="aide_texte">
-	C'est à vous de décider, selon vos préférences et vos besoins. Vous pouvez ainsi choisir de "trier" les fiches selon différents critères, c'est-à-dire de les afficher dans un ordre différent selon que vous accorder plus d'importance à telle ou telle information contenue dans ces fiches.
+	C'est Ã  vous de dÃ©cider, selon vos prÃ©fÃ©rences et vos besoins. Vous pouvez ainsi choisir de "trier" les fiches selon diffÃ©rents critÃ¨res, c'est-Ã -dire de les afficher dans un ordre diffÃ©rent selon que vous accorder plus d'importance Ã  telle ou telle information contenue dans ces fiches.
 </p>
 
-<!-- 6.2 Quels sont les critères de tri ? -->
+<!-- 6.2 Quels sont les critÃ¨res de tri ? -->
 <p class="aide_section"><a name="6.2"></a>
-6.2 Quels sont les critères de tri ?
+6.2 Quels sont les critÃ¨res de tri ?
 </p>
 
 <p class="aide_texte">
-	Vous pouvez trier les fiches selon les critères et les ordres suivants:
+	Vous pouvez trier les fiches selon les critÃ¨res et les ordres suivants:
 	<ul>
-		<li />Par ordre alphabétique basé sur le nom de famille, de A à Z ou de Z à A.
-		<li />Par ordre alphabétique basé sur le prénom, de A à Z ou de Z à A.
-		<li />Par ordre chronologique basé sur les promotions, de la plus ancienne à la plus récente ou de la plus récente à la plus ancienne.
-		<li />Par ordre alphanumérique basé sur l'adresse e-mail, de 0 à Z ou de Z à 0.
+		<li />Par ordre alphabÃ©tique basÃ© sur le nom de famille, de A Ã  Z ou de Z Ã  A.
+		<li />Par ordre alphabÃ©tique basÃ© sur le prÃ©nom, de A Ã  Z ou de Z Ã  A.
+		<li />Par ordre chronologique basÃ© sur les promotions, de la plus ancienne Ã  la plus rÃ©cente ou de la plus rÃ©cente Ã  la plus ancienne.
+		<li />Par ordre alphanumÃ©rique basÃ© sur l'adresse e-mail, de 0 Ã  Z ou de Z Ã  0.
 	</ul>
 </p>
 
 <p class="aide_texte">
-	Par défaut (c'est-à-dire en l'absence de tout autre critère), les fiches sont triées par ordre alphabétique basé sur le nom de famille, de A à Z.
+	Par dÃ©faut (c'est-Ã -dire en l'absence de tout autre critÃ¨re), les fiches sont triÃ©es par ordre alphabÃ©tique basÃ© sur le nom de famille, de A Ã  Z.
 </p>
 
 <!-- Comment trier les fiches ? -->
@@ -54,22 +54,22 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Il existe deux manières de trier les fiches: 1) utiliser un critère rapide pour afficher la liste pré-triée ; 2) afficher la liste et choisir ensuite un critère.
+	Il existe deux maniÃ¨res de trier les fiches: 1) utiliser un critÃ¨re rapide pour afficher la liste prÃ©-triÃ©e ; 2) afficher la liste et choisir ensuite un critÃ¨re.
 </p>
 
 <p class="aide_texte">
-	<i>1) Utiliser le critère rapide pour afficher la liste pré-triée.</i> Vous pouvez choisir de trier les fiches <i>par nom</i> et <i>par promotion</i> en choisissant les options correspondantes dans le menu <b>Fiches</b>.
+	<i>1) Utiliser le critÃ¨re rapide pour afficher la liste prÃ©-triÃ©e.</i> Vous pouvez choisir de trier les fiches <i>par nom</i> et <i>par promotion</i> en choisissant les options correspondantes dans le menu <b>Fiches</b>.
 </p>
 
 <p class="aide_texte">
-	<i>2) Afficher la liste et choisir ensuite un critère.</i> La liste des fiches (<a href="#5">v. n°5</a>) étant affichée à l'écran, vous pouvez changer l'ordre des fiches en choisissant un critère de tri. Entre la première ligne de la liste et l'en-tête des colonnes (sur les colonnes, <a href="#5.3">v. n°5.3</a>) vous verrez, sous chaque en-tête, un signe <b>+</b> (plus) et un signe <b>-</b> (moins). Le signe + (plus) permet de trier les fiches par ordre <i>ascendant</i> (de A à Z, du plus petit au plus grand) en fonction du critère correspondant à la colonne choisie. Le signe - (moins) permet de trier les fiches par ordre <i>descendant</i> (de Z à A, du plus grand au plus petit) en fonction du critère correspondant à la colonne choisie.
+	<i>2) Afficher la liste et choisir ensuite un critÃ¨re.</i> La liste des fiches (<a href="#5">v. nÂ°5</a>) Ã©tant affichÃ©e Ã  l'Ã©cran, vous pouvez changer l'ordre des fiches en choisissant un critÃ¨re de tri. Entre la premiÃ¨re ligne de la liste et l'en-tÃªte des colonnes (sur les colonnes, <a href="#5.3">v. nÂ°5.3</a>) vous verrez, sous chaque en-tÃªte, un signe <b>+</b> (plus) et un signe <b>-</b> (moins). Le signe + (plus) permet de trier les fiches par ordre <i>ascendant</i> (de A Ã  Z, du plus petit au plus grand) en fonction du critÃ¨re correspondant Ã  la colonne choisie. Le signe - (moins) permet de trier les fiches par ordre <i>descendant</i> (de Z Ã  A, du plus grand au plus petit) en fonction du critÃ¨re correspondant Ã  la colonne choisie.
 </p>
 
 <p class="aide_texte">
 	Exemples:
 	<ul>
-		<li />Pour afficher les fiches triées <i>par nom de famille, de A à Z</i>, il faudra cliquer sur + (plus) en dessous de l'en-tête de la colonne "Nom".
-		<li />Pour afficher les fiches triées <i>par promotion, de la plus récente à la plus ancienne</i>, il vous faudra cliquer sur le - (moins) en dessous de l'en-tête de la colonne "Promotion".
+		<li />Pour afficher les fiches triÃ©es <i>par nom de famille, de A Ã  Z</i>, il faudra cliquer sur + (plus) en dessous de l'en-tÃªte de la colonne "Nom".
+		<li />Pour afficher les fiches triÃ©es <i>par promotion, de la plus rÃ©cente Ã  la plus ancienne</i>, il vous faudra cliquer sur le - (moins) en dessous de l'en-tÃªte de la colonne "Promotion".
 	</ul>
 </p>
 
@@ -79,9 +79,9 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Pour annuler tout critère de tri actif et revenir à l'affichage par défaut, cliquez sur la croix (X) tout à droite de la ligne qui contient les critères de tri + (plus) et - (moins).
+	Pour annuler tout critÃ¨re de tri actif et revenir Ã  l'affichage par dÃ©faut, cliquez sur la croix (X) tout Ã  droite de la ligne qui contient les critÃ¨res de tri + (plus) et - (moins).
 </p>
 
 <p class="aide_texte">
-Vous pouvez aussi cliquer sur + (plus) en dessous de l'en-tête de la colonne "Nom", les fiches étant par défaut triées par ordre alphabétique basé sur le nom de famille, de A à Z.
+Vous pouvez aussi cliquer sur + (plus) en dessous de l'en-tÃªte de la colonne "Nom", les fiches Ã©tant par dÃ©faut triÃ©es par ordre alphabÃ©tique basÃ© sur le nom de famille, de A Ã  Z.
 </p>

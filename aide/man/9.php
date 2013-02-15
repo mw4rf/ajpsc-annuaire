@@ -3,7 +3,7 @@
                ANNUAIRE AIDE
 SECTION : 9. Impression
 
-Fichier inclus à partir de faq.php
+Fichier inclus Ã  partir de faq.php
 */
 ?>
 
@@ -18,17 +18,17 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Pour imprimer une fiche, commencez par afficher cette fiche (pour ce faire, <a href="#5.5">v. n°5.5</a>), puis cliquez sur <b>Exportation</b> dans la barre de menu, et choisissez enfin <b>Imprimer la fiche</b> dans le sous-menu. Une nouvelle page, en noir et blanc et à la présentation très sobre, sera affichée. Vous pourrez ainsi imprimer cette page, depuis le penu <b>Fichier</b> > <b>Imprimer</b> de votre navigateur.
+	Pour imprimer une fiche, commencez par afficher cette fiche (pour ce faire, <a href="#5.5">v. nÂ°5.5</a>), puis cliquez sur <b>Exportation</b> dans la barre de menu, et choisissez enfin <b>Imprimer la fiche</b> dans le sous-menu. Une nouvelle page, en noir et blanc et Ã  la prÃ©sentation trÃ¨s sobre, sera affichÃ©e. Vous pourrez ainsi imprimer cette page, depuis le penu <b>Fichier</b> > <b>Imprimer</b> de votre navigateur.
 </p>
 
 
-<!-- 9.2 Comment imprimer les résultats d'une recherche ? -->
+<!-- 9.2 Comment imprimer les rÃ©sultats d'une recherche ? -->
 <p class="aide_section"><a name="9.2"></a>
-9.2 Comment imprimer les résultats d'une recherche ?
+9.2 Comment imprimer les rÃ©sultats d'une recherche ?
 </p>
 
 <p class="aide_texte">
-	Pour imprimer les résultats d'une recherche, cliquez sur <b>Exportation</b> dans la barre de menu, puis sur <b>Imprimer les résultats de la recherche</b> dans le sous-menu. Une nouvelle page, en noir et blanc et à la présentation très sobre, sera affichée. Vous pourrez ainsi imprimer cette page, depuis le penu <b>Fichier</b> > <b>Imprimer</b> de votre navigateur.
+	Pour imprimer les rÃ©sultats d'une recherche, cliquez sur <b>Exportation</b> dans la barre de menu, puis sur <b>Imprimer les rÃ©sultats de la recherche</b> dans le sous-menu. Une nouvelle page, en noir et blanc et Ã  la prÃ©sentation trÃ¨s sobre, sera affichÃ©e. Vous pourrez ainsi imprimer cette page, depuis le penu <b>Fichier</b> > <b>Imprimer</b> de votre navigateur.
 </p>
 
 <!-- 9.3 Comment imprimer toutes les fiches ? -->
@@ -37,7 +37,7 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Pour imprimer tout le contenu de l'annuaire, cliquez sur <b>Exportation</b> dans la barre de menu, puis sur <b>Imprimer tout</b>. Une nouvelle page, en noir et blanc et à la présentation très sobre, sera affichée. Vous pourrez ainsi imprimer cette page, depuis le penu <b>Fichier</b> > <b>Imprimer</b> de votre navigateur. Attention: le chargement de la page peut être long, en fonction de l'importance du contenu de l'annuaire.
+	Pour imprimer tout le contenu de l'annuaire, cliquez sur <b>Exportation</b> dans la barre de menu, puis sur <b>Imprimer tout</b>. Une nouvelle page, en noir et blanc et Ã  la prÃ©sentation trÃ¨s sobre, sera affichÃ©e. Vous pourrez ainsi imprimer cette page, depuis le penu <b>Fichier</b> > <b>Imprimer</b> de votre navigateur. Attention: le chargement de la page peut Ãªtre long, en fonction de l'importance du contenu de l'annuaire.
 </p>
 
 <!-- 9.4 Vaut-il mieux imprimer toutes les fiches ou les exporter ? -->
@@ -46,11 +46,11 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Si vous souhaitez avoir rapidement et simplement une version papier de l'annuaire, l'impression est la meilleure solution. En quelques clics seulement, vous accédez à une page prête à l'impression, qui contient toutes les informations désirées.
+	Si vous souhaitez avoir rapidement et simplement une version papier de l'annuaire, l'impression est la meilleure solution. En quelques clics seulement, vous accÃ©dez Ã  une page prÃªte Ã  l'impression, qui contient toutes les informations dÃ©sirÃ©es.
 </p>
 
 <p class="aide_texte">
-	En revanche, si vous souhaitez <i>manipuler</i> les données avant de les imprimer, par exemple en les triant ou en sélectionnant certaines fiches à l'exclusion des autres, il vous faudra les exporter puis effectuer ces opérations dans un logiciel tiers. Pour plus de détails, <a href="#7.7">v. n°7.7</a>.
+	En revanche, si vous souhaitez <i>manipuler</i> les donnÃ©es avant de les imprimer, par exemple en les triant ou en sÃ©lectionnant certaines fiches Ã  l'exclusion des autres, il vous faudra les exporter puis effectuer ces opÃ©rations dans un logiciel tiers. Pour plus de dÃ©tails, <a href="#7.7">v. nÂ°7.7</a>.
 </p>
 
 <!-- 9.5 Pourquoi imprimer l'annuaire en PDF ? -->
@@ -59,69 +59,69 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	En informatique, les standards sont nombreux. A tel point qu'il y a très peu de chances que deux ordinateurs différents affichent le même fichier de la même manière. En temps normal, ce n'est pas vraiment un problème. Mais pour les fichiers qui sont destinés à être imprimés (par des professionnels de l'imprimerie), cela représente un grave problème. Le format PDF a été conçu en partie pour répondre à ce problème.
+	En informatique, les standards sont nombreux. A tel point qu'il y a trÃ¨s peu de chances que deux ordinateurs diffÃ©rents affichent le mÃªme fichier de la mÃªme maniÃ¨re. En temps normal, ce n'est pas vraiment un problÃ¨me. Mais pour les fichiers qui sont destinÃ©s Ã  Ãªtre imprimÃ©s (par des professionnels de l'imprimerie), cela reprÃ©sente un grave problÃ¨me. Le format PDF a Ã©tÃ© conÃ§u en partie pour rÃ©pondre Ã  ce problÃ¨me.
 </p>
 
 <p class="aide_texte">
-	Le principe du format PDF est le suivant: au lieu d'imprimer le fichier sur du papier, on l'imprime dans un autre fichier. Ce fichier est le fichier PDF. Il en résulte que les données d'un fichier PDF ne peuvent pas -en principe- être altérées. Qu'elles soient lues sur tel ou tel ordinateur, le résultat sera le même.
+	Le principe du format PDF est le suivant: au lieu d'imprimer le fichier sur du papier, on l'imprime dans un autre fichier. Ce fichier est le fichier PDF. Il en rÃ©sulte que les donnÃ©es d'un fichier PDF ne peuvent pas -en principe- Ãªtre altÃ©rÃ©es. Qu'elles soient lues sur tel ou tel ordinateur, le rÃ©sultat sera le mÃªme.
 </p>
 
 <p class="aide_texte">
-	Pour lire les fichiers PDF, il faut un logiciel spécifique. Il s'agit d'<a href="http://www.adobe.com/fr/products/acrobat/readstep2.html">Adobe Acrobat Reader</a>. Ce logiciel est disponible au téléchargement gratuitement, dans de très nombreuses langues, pour de très nombreuses plateformes (Windows, Mac, Linux, etc.).
+	Pour lire les fichiers PDF, il faut un logiciel spÃ©cifique. Il s'agit d'<a href="http://www.adobe.com/fr/products/acrobat/readstep2.html">Adobe Acrobat Reader</a>. Ce logiciel est disponible au tÃ©lÃ©chargement gratuitement, dans de trÃ¨s nombreuses langues, pour de trÃ¨s nombreuses plateformes (Windows, Mac, Linux, etc.).
 </p>
 
 <p class="aide_texte">
-	L'annuaire contient un mécanisme complexe qui permet de générer des fichiers PDF à la volée, c'est-à-dire au moment où l'utilisateur met le mécanisme en action. Il ne s'agit pas ici de télécharger un fichier PDF créé manuellement par les administrateurs de l'annuaire à une date antérieure, mais de créer votre propre fichier PDF avec des données à jour.
+	L'annuaire contient un mÃ©canisme complexe qui permet de gÃ©nÃ©rer des fichiers PDF Ã  la volÃ©e, c'est-Ã -dire au moment oÃ¹ l'utilisateur met le mÃ©canisme en action. Il ne s'agit pas ici de tÃ©lÃ©charger un fichier PDF crÃ©Ã© manuellement par les administrateurs de l'annuaire Ã  une date antÃ©rieure, mais de crÃ©er votre propre fichier PDF avec des donnÃ©es Ã  jour.
 </p>
 
 <p class="aide_texte">
 	<b>Dans quels cas imprimer un fichier PDF ?</b>
 	<ul>
-		<li />Si vous désirez imprimer l'annuaire sur papier.
-		<li />Si vous désirez conserver une version "présentable" de l'annuaire sur votre ordinateur, qui pourra être consultée hors ligne dès que vous en aurez besoin.
+		<li />Si vous dÃ©sirez imprimer l'annuaire sur papier.
+		<li />Si vous dÃ©sirez conserver une version "prÃ©sentable" de l'annuaire sur votre ordinateur, qui pourra Ãªtre consultÃ©e hors ligne dÃ¨s que vous en aurez besoin.
 	</ul>
 </p>
 
 <p class="aide_texte">
 	<b>Dans quels cas ne pas imprimer un fichier PDF ?</b>
 	<ul>
-		<li />Si vous désirez modifier les données, leur agencement, ou la présentation graphique, avant l'impression sur papier. Dans ce cas, v. <a href="#8.8">v. n°8.8</a>.
-		<li />Si vous désirez manipuler les données sur votre ordinateur. v. <a href="#8.1">v. n°8.1</a> et suivants.
+		<li />Si vous dÃ©sirez modifier les donnÃ©es, leur agencement, ou la prÃ©sentation graphique, avant l'impression sur papier. Dans ce cas, v. <a href="#8.8">v. nÂ°8.8</a>.
+		<li />Si vous dÃ©sirez manipuler les donnÃ©es sur votre ordinateur. v. <a href="#8.1">v. nÂ°8.1</a> et suivants.
 	</ul>
 </p>
 
 <p class="aide_texte">
-	L'annuaire présente 3 modalités différentes d'impression PDF. Vous pouvez ainsi imprimer:
+	L'annuaire prÃ©sente 3 modalitÃ©s diffÃ©rentes d'impression PDF. Vous pouvez ainsi imprimer:
 	<ol>
 		<li />Tout le contenu de l'annuaire.
-		<li />Seulement les fiches qui correspondent aux résultats de votre dernière recherche.
-		<li />Seulement la fiche que vous êtes en train de visualiser.
+		<li />Seulement les fiches qui correspondent aux rÃ©sultats de votre derniÃ¨re recherche.
+		<li />Seulement la fiche que vous Ãªtes en train de visualiser.
 	</ol>
 </p>
 
 <p class="aide_texte">
-	1) Pour exporter tout le contenu de l'annuaire, allez dans le menu <b>Exportation</b> et cliquez sur <b>Générer un PDF à la volée</b>. Le fichier PDF généré de cette manière est le plus complet. Il contient les pages suivantes:
+	1) Pour exporter tout le contenu de l'annuaire, allez dans le menu <b>Exportation</b> et cliquez sur <b>GÃ©nÃ©rer un PDF Ã  la volÃ©e</b>. Le fichier PDF gÃ©nÃ©rÃ© de cette maniÃ¨re est le plus complet. Il contient les pages suivantes:
 	<ul>
-		<li />La page de garde. Elle contient deux variables dynamiques: le nombre de fiches imprimées et la date d'impression.
-		<li />Chaque fiche sera imprimée sur une page différente. Chaque page présente un en-tête avec un logo et un pied de page présentant la numérotation des pages.
-		<li />L'annexe 1 qui contient la liste des fiches, triées par promotion.
-		<li />L'annexe 2 qui contient la liste des fiches, triées par nom (ordre alphabétique croissant, de A à Z).
-		<li />La page de clôture qui présente les mentions de droits d'auteur.
+		<li />La page de garde. Elle contient deux variables dynamiques: le nombre de fiches imprimÃ©es et la date d'impression.
+		<li />Chaque fiche sera imprimÃ©e sur une page diffÃ©rente. Chaque page prÃ©sente un en-tÃªte avec un logo et un pied de page prÃ©sentant la numÃ©rotation des pages.
+		<li />L'annexe 1 qui contient la liste des fiches, triÃ©es par promotion.
+		<li />L'annexe 2 qui contient la liste des fiches, triÃ©es par nom (ordre alphabÃ©tique croissant, de A Ã  Z).
+		<li />La page de clÃ´ture qui prÃ©sente les mentions de droits d'auteur.
 	</ul>
 </p>
 
 <p class="aide_texte">
-	2) Pour exporter les résultats de la recherche, vous devez d'abord effectuer une recherche (v. <a href="#7.1">v. n°7.1</a> et suivants). Une fois la recherche effectuée, allez dans le menu <b>Exportation</b> et cliquez sur <b>Générer un PDF avec les résultats de la recherche</b>. Le fichier PDF ainsi généré contiendra tous les résultats de la recherche, chaque fiche étant disposée sur une page. Le fichier PDF ne contiendra ni la page de garde, ni les annexes, ni la page de clôture.
+	2) Pour exporter les rÃ©sultats de la recherche, vous devez d'abord effectuer une recherche (v. <a href="#7.1">v. nÂ°7.1</a> et suivants). Une fois la recherche effectuÃ©e, allez dans le menu <b>Exportation</b> et cliquez sur <b>GÃ©nÃ©rer un PDF avec les rÃ©sultats de la recherche</b>. Le fichier PDF ainsi gÃ©nÃ©rÃ© contiendra tous les rÃ©sultats de la recherche, chaque fiche Ã©tant disposÃ©e sur une page. Le fichier PDF ne contiendra ni la page de garde, ni les annexes, ni la page de clÃ´ture.
 </p>
 
 <p class="aide_texte">
-	3) Pour exporter la fiche en cours de visualisation, vous devez d'abord afficher une fiche (v. <a href="#5.5">v. n°5.5</a>). Une fois la fiche affichée, allez dans le menu <b>Exportation</b> et cliquez sur <b>Générer un PDF de la fiche</b>. Le fichier PDF ainsi généré contiendra la fiche en cours de visualisation. Le fichier PDF ne contiendra ni la page de garde, ni les annexes, ni la page de clôture.
+	3) Pour exporter la fiche en cours de visualisation, vous devez d'abord afficher une fiche (v. <a href="#5.5">v. nÂ°5.5</a>). Une fois la fiche affichÃ©e, allez dans le menu <b>Exportation</b> et cliquez sur <b>GÃ©nÃ©rer un PDF de la fiche</b>. Le fichier PDF ainsi gÃ©nÃ©rÃ© contiendra la fiche en cours de visualisation. Le fichier PDF ne contiendra ni la page de garde, ni les annexes, ni la page de clÃ´ture.
 </p>
 
 <p class="aide_texte">
-	Le système est prévu pour que le fichier PDF généré soit directement affiché à l'écran. C'est en tout cas ce qui se produira si vous avez réalisé une installation valable d'<a href="http://www.adobe.com/fr/products/acrobat/readstep2.html">Adobe Acrobat Reader</a> et que vous utilisez un navigateur compatible (IE, Firefox, Safari, etc.). Vous pourrez alors, depuis votre navigateur, enregistrer le fichier PDF sur votre disque dur ou l'envoyer directement vers votre imprimante papier. Si vous ne disposez pas d'<a href="http://www.adobe.com/fr/products/acrobat/readstep2.html">Adobe Acrobat Reader</a>, votre navigateur vous demandera d'enregistrer le fichier PDF sur votre disque dur. Vous pouvez ainsi l'enregistrer n'importe où, sur un support amovible par exemple, pour le consulter sur un ordinateur qui dispose d'un logiciel de visualisation des fichiers PDF.
+	Le systÃ¨me est prÃ©vu pour que le fichier PDF gÃ©nÃ©rÃ© soit directement affichÃ© Ã  l'Ã©cran. C'est en tout cas ce qui se produira si vous avez rÃ©alisÃ© une installation valable d'<a href="http://www.adobe.com/fr/products/acrobat/readstep2.html">Adobe Acrobat Reader</a> et que vous utilisez un navigateur compatible (IE, Firefox, Safari, etc.). Vous pourrez alors, depuis votre navigateur, enregistrer le fichier PDF sur votre disque dur ou l'envoyer directement vers votre imprimante papier. Si vous ne disposez pas d'<a href="http://www.adobe.com/fr/products/acrobat/readstep2.html">Adobe Acrobat Reader</a>, votre navigateur vous demandera d'enregistrer le fichier PDF sur votre disque dur. Vous pouvez ainsi l'enregistrer n'importe oÃ¹, sur un support amovible par exemple, pour le consulter sur un ordinateur qui dispose d'un logiciel de visualisation des fichiers PDF.
 </p>
 
 <p class="aide_texte">
-	Le fichier PDF généré n'est officiellement compatible qu'avec la version PDF officielle, qui n'est pleinement gérée que par <a href="http://www.adobe.com/fr/products/acrobat/readstep2.html">Adobe Acrobat Reader</a>. Il se peut que le fichier PDF soit parfaitement visible dans un autre logiciel, mais il se peut aussi que ce ne soit pas le cas. Il est conseillé, dans tous les cas, d'utiliser <a href="http://www.adobe.com/fr/products/acrobat/readstep2.html">Adobe Acrobat Reader</a>.
+	Le fichier PDF gÃ©nÃ©rÃ© n'est officiellement compatible qu'avec la version PDF officielle, qui n'est pleinement gÃ©rÃ©e que par <a href="http://www.adobe.com/fr/products/acrobat/readstep2.html">Adobe Acrobat Reader</a>. Il se peut que le fichier PDF soit parfaitement visible dans un autre logiciel, mais il se peut aussi que ce ne soit pas le cas. Il est conseillÃ©, dans tous les cas, d'utiliser <a href="http://www.adobe.com/fr/products/acrobat/readstep2.html">Adobe Acrobat Reader</a>.
 </p>

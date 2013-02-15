@@ -3,26 +3,26 @@
                ANNUAIRE AIDE
 SECTION :
 
-Fichier inclus à partir de faq.php
+Fichier inclus Ã  partir de faq.php
 */
 ?>
 
-<!-- 12. Confidentialité des données -->
+<!-- 12. ConfidentialitÃ© des donnÃ©es -->
 <p class="aide_chapitre"><a name="12"></a>
-12. Confidentialité des données
+12. ConfidentialitÃ© des donnÃ©es
 </p>
 
-<!-- 12.1 Les données de ma fiche sont-elles confidentielles ? -->
+<!-- 12.1 Les donnÃ©es de ma fiche sont-elles confidentielles ? -->
 <p class="aide_section"><a name="12.1"></a>
-12.1 Les données de ma fiche sont-elles confidentielles ?
+12.1 Les donnÃ©es de ma fiche sont-elles confidentielles ?
 </p>
 
 <p class="aide_texte">
-	Non. Il s'agit d'un annuaire... dont le but est justement de publier ces données ! Mais les administrateurs peuvent avoir choisi de protéger l'annuaire par un mot de passe (<a href="#1.1">v. n°1.1</a>) connu des seules personnes habilitées à accéder aux données.
+	Non. Il s'agit d'un annuaire... dont le but est justement de publier ces donnÃ©es ! Mais les administrateurs peuvent avoir choisi de protÃ©ger l'annuaire par un mot de passe (<a href="#1.1">v. nÂ°1.1</a>) connu des seules personnes habilitÃ©es Ã  accÃ©der aux donnÃ©es.
 </p>
 
 <p class="aide_texte">
-	L'annuaire protégé par un mot de passe n'est pas en libre accès sur internet. N'importe qui ne peut pas voir le contenu des fiches. Ce contenu est donc relativement bien protégé.
+	L'annuaire protÃ©gÃ© par un mot de passe n'est pas en libre accÃ¨s sur internet. N'importe qui ne peut pas voir le contenu des fiches. Ce contenu est donc relativement bien protÃ©gÃ©.
 </p>
 
 <!-- 12.2 Que puis-je faire avec les fiches des autres ? -->
@@ -34,13 +34,13 @@ Fichier inclus à partir de faq.php
 	Techniquement et juridiquement, vous ne pouvez que les afficher, les exporter et les imprimer. Vous ne pouvez pas les modifier.
 </p>
 
-<!-- 12.3 La réponse secrète à ma question personnelle est-elle confidentielle ? -->
+<!-- 12.3 La rÃ©ponse secrÃ¨te Ã  ma question personnelle est-elle confidentielle ? -->
 <p class="aide_section"><a name="12.3"></a>
-12.3 La réponse secrète à ma question personnelle est-elle confidentielle ?
+12.3 La rÃ©ponse secrÃ¨te Ã  ma question personnelle est-elle confidentielle ?
 </p>
 
 <p class="aide_texte">
-	Oui. Elle protège votre fiche contre toute modification qui ne viendrait pas de vous. La réponse secrète est chiffrée dans la base de données, à l'aide d'un algorithme à sens unique. Il est donc pratiquement impossible de passer de la chaîne de texte chiffrée au texte en clair.
+	Oui. Elle protÃ¨ge votre fiche contre toute modification qui ne viendrait pas de vous. La rÃ©ponse secrÃ¨te est chiffrÃ©e dans la base de donnÃ©es, Ã  l'aide d'un algorithme Ã  sens unique. Il est donc pratiquement impossible de passer de la chaÃ®ne de texte chiffrÃ©e au texte en clair.
 </p>
 
 <!-- 12.4 Le mot de passe est-il confidentiel ? -->
@@ -49,18 +49,18 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Le mot de passe est confidentiel. Il est communiqué aux intéressés à titre personnel. Il ne doit pas être partage ou diffusé. Une personne qui communiquerait ce mot de passe à des tiers non autorisés engagerait sa responsabilité civile et pénale.
+	Le mot de passe est confidentiel. Il est communiquÃ© aux intÃ©ressÃ©s Ã  titre personnel. Il ne doit pas Ãªtre partage ou diffusÃ©. Une personne qui communiquerait ce mot de passe Ã  des tiers non autorisÃ©s engagerait sa responsabilitÃ© civile et pÃ©nale.
 </p>
 
-<!-- 12.5 Techniquement, comment sont protégées les données ? -->
+<!-- 12.5 Techniquement, comment sont protÃ©gÃ©es les donnÃ©es ? -->
 <p class="aide_section"><a name="12.5"></a>
-12.5 Techniquement, comment sont protégées les données ?
+12.5 Techniquement, comment sont protÃ©gÃ©es les donnÃ©es ?
 </p>
 
 <p class="aide_texte">
-	Les données non-sensibles sont stockées dans une base de données sur un serveur distant. L'accès au serveur est hautement protégé. L'accès aux données par piratage du serveur est pratiquement impossible. En tout cas, cela nécessiterait des moyens très importants et des compétences très avancées, ainsi que plusieurs jours, semaines, mois ou années de travail.
+	Les donnÃ©es non-sensibles sont stockÃ©es dans une base de donnÃ©es sur un serveur distant. L'accÃ¨s au serveur est hautement protÃ©gÃ©. L'accÃ¨s aux donnÃ©es par piratage du serveur est pratiquement impossible. En tout cas, cela nÃ©cessiterait des moyens trÃ¨s importants et des compÃ©tences trÃ¨s avancÃ©es, ainsi que plusieurs jours, semaines, mois ou annÃ©es de travail.
 </p>
 
 <p class="aide_texte">
-	Les données sensibles sont chiffrées à l'aide d'un algorithme à sens unique. C'est-à-dire que le texte en clair que vous entrez est chiffré, la chaîne chiffrée ainsi obtenue est comparée à la chaîne chiffrée stockée sur le serveur. Il n'est pas possible de déchiffrer la chaîne chiffrée.
+	Les donnÃ©es sensibles sont chiffrÃ©es Ã  l'aide d'un algorithme Ã  sens unique. C'est-Ã -dire que le texte en clair que vous entrez est chiffrÃ©, la chaÃ®ne chiffrÃ©e ainsi obtenue est comparÃ©e Ã  la chaÃ®ne chiffrÃ©e stockÃ©e sur le serveur. Il n'est pas possible de dÃ©chiffrer la chaÃ®ne chiffrÃ©e.
 </p>

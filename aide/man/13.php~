@@ -3,7 +3,7 @@
                ANNUAIRE AIDE
 SECTION :
 
-Fichier inclus Ã  partir de faq.php
+Fichier inclus à partir de faq.php
 */
 ?>
 
@@ -18,8 +18,8 @@ Fichier inclus Ã  partir de faq.php
 13.2 Comment installer l'annuaire ?
 </p>
 <p class="aide_section"><a name="13.3"></a>
-13.3 Comment paramÃ©trer le fichier de configuration ?
+13.3 Comment paramétrer le fichier de configuration ?
 </p>
 <p class="aide_section"><a name="13.4"></a>
-13.4 Comment crÃ©er la base MySQL ?
+13.4 Comment créer la base MySQL ?
 </p>

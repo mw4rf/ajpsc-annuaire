@@ -3,7 +3,7 @@
                ANNUAIRE AIDE
 SECTION : 8.0 Exportation
 
-Fichier inclus à partir de faq.php
+Fichier inclus Ã  partir de faq.php
 */
 ?>
 
@@ -16,30 +16,30 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	On désigne sous le nom d'<i>exportation</i> le fait pour un utilisateur d'enregistrer dans un fichier sur son disque dur le contenu de l'annuaire, sous un format exploitable par lui.
+	On dÃ©signe sous le nom d'<i>exportation</i> le fait pour un utilisateur d'enregistrer dans un fichier sur son disque dur le contenu de l'annuaire, sous un format exploitable par lui.
 </p>
 
 <p class="aide_texte">
 	Il est possible d'exporter:
 	<ol>
-		<li />Toutes les fiches de l'annuaire. (<a href="#8.2">v. n°8.2</a>)
-		<li />Les résultats d'une recherche. (<a href="#8.3">v. n°8.3</a>)
+		<li />Toutes les fiches de l'annuaire. (<a href="#8.2">v. nÂ°8.2</a>)
+		<li />Les rÃ©sultats d'une recherche. (<a href="#8.3">v. nÂ°8.3</a>)
 	</ol>
 </p>
 
 <p class="aide_texte">
 	Deux types d'exportations sont possibles:
 	<ol>
-		<li /><b>Exportation rapide</b>: inclut le nom de famille, le prénom, la promotion et l'adresse e-mail.
-		<li /><b>Exporter tout</b>: inclut toutes les données (les 4 champs de l'exportation rapide, le lieu et la date de naissance et les 7 champs question-réponse)
+		<li /><b>Exportation rapide</b>: inclut le nom de famille, le prÃ©nom, la promotion et l'adresse e-mail.
+		<li /><b>Exporter tout</b>: inclut toutes les donnÃ©es (les 4 champs de l'exportation rapide, le lieu et la date de naissance et les 7 champs question-rÃ©ponse)
 	</ol>
 </p>
 
 <p class="aide_texte">
 	<b>Important</b>:
 	<ul>
-	<li />La question personnelle et la réponse secrète associées à chaque fiche ne sont <i>pas</i> exportées.
-	<li />Les administrateurs ont pu restreindre l'exportation aux seuls champs prévus dans le cadre de l'exportation rapide. Dans ce cas, "Exporter tout" donnera les mêmes résultats que "Exportation rapide".
+	<li />La question personnelle et la rÃ©ponse secrÃ¨te associÃ©es Ã  chaque fiche ne sont <i>pas</i> exportÃ©es.
+	<li />Les administrateurs ont pu restreindre l'exportation aux seuls champs prÃ©vus dans le cadre de l'exportation rapide. Dans ce cas, "Exporter tout" donnera les mÃªmes rÃ©sultats que "Exportation rapide".
 	</ul>
 </p>
 
@@ -48,32 +48,32 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Pour exporter tout le contenu de l'annuaire, cliquez sur <b>Exportation</b> dans la barre de menu, puis sur <b>Exporter tout</b> ou <b>Exportation rapide</b>. Pour les différences entre ces deux modes d'exportation, <a href="#8.1">v. n°8.1</a>.
+	Pour exporter tout le contenu de l'annuaire, cliquez sur <b>Exportation</b> dans la barre de menu, puis sur <b>Exporter tout</b> ou <b>Exportation rapide</b>. Pour les diffÃ©rences entre ces deux modes d'exportation, <a href="#8.1">v. nÂ°8.1</a>.
 </p>
 
 <p class="aide_texte">
-	Vous pouvez exporter les données dans 3 formats différents:
+	Vous pouvez exporter les donnÃ©es dans 3 formats diffÃ©rents:
 	<ol>
-		<li />Format CSV (<a href="#8.4">v. n°8.4</a>)
-		<li />Fichier XLS (<a href="#8.5">v. n°8.5</a>)
-		<li />Format XML (<a href="#8.6">v. n°8.6</a>)
+		<li />Format CSV (<a href="#8.4">v. nÂ°8.4</a>)
+		<li />Fichier XLS (<a href="#8.5">v. nÂ°8.5</a>)
+		<li />Format XML (<a href="#8.6">v. nÂ°8.6</a>)
 	</ol>
 </p>
 
 <p class="aide_section"><a name="8.3"></a>
-8.3 Comment exporter les résultats d'une recherche ?
+8.3 Comment exporter les rÃ©sultats d'une recherche ?
 </p>
 
 <p class="aide_texte">
-	Pour exporter les résultats d'une recherche, cliquez sur <b>Exportation</b> dans la barre de menu, puis sur <b>Exporter les résultats de la recherche</b> dans le sous-menu.
+	Pour exporter les rÃ©sultats d'une recherche, cliquez sur <b>Exportation</b> dans la barre de menu, puis sur <b>Exporter les rÃ©sultats de la recherche</b> dans le sous-menu.
 </p>
 
 <p class="aide_texte">
-	Vous pouvez exporter les données dans 3 formats différents:
+	Vous pouvez exporter les donnÃ©es dans 3 formats diffÃ©rents:
 	<ol>
-		<li />Format CSV (<a href="#8.4">v. n°8.4</a>)
-		<li />Fichier XLS (<a href="#8.5">v. n°8.5</a>)
-		<li />Format XML (<a href="#8.6">v. n°8.6</a>)
+		<li />Format CSV (<a href="#8.4">v. nÂ°8.4</a>)
+		<li />Fichier XLS (<a href="#8.5">v. nÂ°8.5</a>)
+		<li />Format XML (<a href="#8.6">v. nÂ°8.6</a>)
 	</ol>
 </p>
 
@@ -82,7 +82,7 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Le fichier CSV est un fichier de valeurs tabulaires <i>séparées par des virgules</i> (CSV pour <i>Coma Separated Values</i>). Il s'agit d'un format standard pour l'exportation du contenu des bases de données. Vous pouvez effectuer toutes sortes de manipulations sur ces données (<a href="#8.7">v. n°8.7</a>).
+	Le fichier CSV est un fichier de valeurs tabulaires <i>sÃ©parÃ©es par des virgules</i> (CSV pour <i>Coma Separated Values</i>). Il s'agit d'un format standard pour l'exportation du contenu des bases de donnÃ©es. Vous pouvez effectuer toutes sortes de manipulations sur ces donnÃ©es (<a href="#8.7">v. nÂ°8.7</a>).
 </p>
 
 <p class="aide_section"><a name="8.5"></a>
@@ -90,11 +90,11 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Le fichier XLS n'est pas un véritable fichier Excel. En effet, les spécifications du format Excel ne sont pas publiques (tout du moins pour les versions antérieures à Office 2007, non-basées sur OpenXML), et il est très difficile de générer un fichier répondant exactement à ces spécifications.
+	Le fichier XLS n'est pas un vÃ©ritable fichier Excel. En effet, les spÃ©cifications du format Excel ne sont pas publiques (tout du moins pour les versions antÃ©rieures Ã  Office 2007, non-basÃ©es sur OpenXML), et il est trÃ¨s difficile de gÃ©nÃ©rer un fichier rÃ©pondant exactement Ã  ces spÃ©cifications.
 </p>
 
 <p class="aide_texte">
-	Le fichier créé par l'exportation XLS est en réalité un fichier CSV déguisé (type MIME et extension) en fichier Excel. Il s'ouvrira par défaut dans Microsoft Excel, mais il n'est pas différent du fichier CSV (<a href="#8.4">v. n°8.4</a>).
+	Le fichier crÃ©Ã© par l'exportation XLS est en rÃ©alitÃ© un fichier CSV dÃ©guisÃ© (type MIME et extension) en fichier Excel. Il s'ouvrira par dÃ©faut dans Microsoft Excel, mais il n'est pas diffÃ©rent du fichier CSV (<a href="#8.4">v. nÂ°8.4</a>).
 </p>
 
 <p class="aide_section"><a name="8.6"></a>
@@ -102,7 +102,7 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Le fichier XML est réservé aux personnes désirant réaliser un logiciel de traitement des données. Même s'il peut parfois être utilisé directement dans une application existante, il est conseillé d'utiliser le format CSV pour cela.
+	Le fichier XML est rÃ©servÃ© aux personnes dÃ©sirant rÃ©aliser un logiciel de traitement des donnÃ©es. MÃªme s'il peut parfois Ãªtre utilisÃ© directement dans une application existante, il est conseillÃ© d'utiliser le format CSV pour cela.
 </p>
 
 <p class="aide_texte">
@@ -133,100 +133,100 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_section"><a name="8.7"></a>
-8.7 Techniquement, que puis-je faire avec les données exportées ?
+8.7 Techniquement, que puis-je faire avec les donnÃ©es exportÃ©es ?
 </p>
 
 <p class="aide_texte">
-	Tout l'intérêt d'exporter les données de l'annuaire est de pouvoir par la suite les réutiliser dans un autre logiciel. Vous pouvez notamment les utiliser dans les logiciels suivants:
+	Tout l'intÃ©rÃªt d'exporter les donnÃ©es de l'annuaire est de pouvoir par la suite les rÃ©utiliser dans un autre logiciel. Vous pouvez notamment les utiliser dans les logiciels suivants:
 	<ul>
-		<li /><i>Microsoft Excel</i> ou tout autre <i>tableur</i>: sous forme de tableau, une colonne représente un champ, une ligne représente un enregistrement.
-		<li /><i>Filemaker</i> ou tout autre logiciel de BDD: sous forme de fiches, par le biais du système d'importation CSV du logiciel.
+		<li /><i>Microsoft Excel</i> ou tout autre <i>tableur</i>: sous forme de tableau, une colonne reprÃ©sente un champ, une ligne reprÃ©sente un enregistrement.
+		<li /><i>Filemaker</i> ou tout autre logiciel de BDD: sous forme de fiches, par le biais du systÃ¨me d'importation CSV du logiciel.
 		<li />Logiciels de gestion des contacts: par le biais de l'importation CSV.
-		<li /><i>Microsoft Word</i>: pour réaliser un modèle de fusion et publipostage, à partir d'une source de données CSV, Excel (ouvrez le fichier dans Excel et re-enregistrez le au format Excel) ou Filemaker. Pour plus de précisions, <a href="#8.8">v. n°8.8</a>.
+		<li /><i>Microsoft Word</i>: pour rÃ©aliser un modÃ¨le de fusion et publipostage, Ã  partir d'une source de donnÃ©es CSV, Excel (ouvrez le fichier dans Excel et re-enregistrez le au format Excel) ou Filemaker. Pour plus de prÃ©cisions, <a href="#8.8">v. nÂ°8.8</a>.
 	</ul>
 </p>
 
-<!-- 8.8 Comment créer un modèle de fusion dans MS Word -->
+<!-- 8.8 Comment crÃ©er un modÃ¨le de fusion dans MS Word -->
 <p class="aide_section"><a name="8.8"></a>
-8.8 Comment créer un modèle de fusion dans MS Word ?
+8.8 Comment crÃ©er un modÃ¨le de fusion dans MS Word ?
 </p>
 
 <p class="aide_texte">
-	L'annuaire est en réalité une base de données. C'est-à-dire qu'elle contient des <i>champs</i> et que ces champs contiennent des <i>données</i>. Il est possible de créer un document dans MS Word qui contient une référence vers les champs, puis de demander à Word de remplacer ces références par le contenu des champs, c'est-à-dire par les données. Ce procédé est connu sous le nom de <i>création d'un modèle de fusion</i>.
+	L'annuaire est en rÃ©alitÃ© une base de donnÃ©es. C'est-Ã -dire qu'elle contient des <i>champs</i> et que ces champs contiennent des <i>donnÃ©es</i>. Il est possible de crÃ©er un document dans MS Word qui contient une rÃ©fÃ©rence vers les champs, puis de demander Ã  Word de remplacer ces rÃ©fÃ©rences par le contenu des champs, c'est-Ã -dire par les donnÃ©es. Ce procÃ©dÃ© est connu sous le nom de <i>crÃ©ation d'un modÃ¨le de fusion</i>.
 </p>
 
 <p class="aide_texte">
-	La création d'un modèle de fusion est assez complexe. L'opération se déroule en effet en plusieurs étapes:
+	La crÃ©ation d'un modÃ¨le de fusion est assez complexe. L'opÃ©ration se dÃ©roule en effet en plusieurs Ã©tapes:
 	<ol>
-		<li />Exportation des enregistrements de la base de données (format CSV).
-		<li />Création d'un document vierge de fusion dans Word
-		<li />Création et configuration de la source de données
-		<li />Création du modèle avec les champs de fusion
-		<li />Création du document final avec les données
+		<li />Exportation des enregistrements de la base de donnÃ©es (format CSV).
+		<li />CrÃ©ation d'un document vierge de fusion dans Word
+		<li />CrÃ©ation et configuration de la source de donnÃ©es
+		<li />CrÃ©ation du modÃ¨le avec les champs de fusion
+		<li />CrÃ©ation du document final avec les donnÃ©es
 	</ol>
 </p>
 
 <p class="aide_texte">
-	1) Exportation des enregistrements de la base de données (format CSV)
+	1) Exportation des enregistrements de la base de donnÃ©es (format CSV)
 </p>
 <p class="aide_texte">
-	Pour la procédure, v. <a href="#8.2">n°8.2</a> et <a href="#8.4">n°8.4</a>.
+	Pour la procÃ©dure, v. <a href="#8.2">nÂ°8.2</a> et <a href="#8.4">nÂ°8.4</a>.
 </p>
 
 <p class="aide_texte">
-	2) Création d'un document vierge de fusion dans Word
+	2) CrÃ©ation d'un document vierge de fusion dans Word
 </p>
 <p class="aide_texte">
-	Les étapes sont les suivantes:
+	Les Ã©tapes sont les suivantes:
 	<ol>
 		<li />Menu <b>Fichier > Nouveau document</b> (vierge)
-		<li />Menu <b>Outils</b>: cliquez sur <b>Gestionnaire de fusion de données</b>. vérifiez que cette option dans le menu est maintenant <i>cochée</i> (petit V à gauche du texte).
-		<li />Dans le panneau <i>Gestionnaire de fusion de données</i>, sous <i>Document principal</i>, cliquez sur <b>Créer</b> et choisissez <b>Catalogue</b> dans le menu déroulant.
-		<li />Dans le panneau <i>Gestionnaire de fusion de données</i>, sous <i>Source de données</i>, cliquez sur <b>Lire les données</b> et choisissez <b>Ouvrir la source de données</b> dans le menu déroulant.
-		<li />Dans la boîte de dialogue qui s'ouvre, sélectionnez le fichier CSV issu de l'exportation des données de l'annuaire (étape 1).
+		<li />Menu <b>Outils</b>: cliquez sur <b>Gestionnaire de fusion de donnÃ©es</b>. vÃ©rifiez que cette option dans le menu est maintenant <i>cochÃ©e</i> (petit V Ã  gauche du texte).
+		<li />Dans le panneau <i>Gestionnaire de fusion de donnÃ©es</i>, sous <i>Document principal</i>, cliquez sur <b>CrÃ©er</b> et choisissez <b>Catalogue</b> dans le menu dÃ©roulant.
+		<li />Dans le panneau <i>Gestionnaire de fusion de donnÃ©es</i>, sous <i>Source de donnÃ©es</i>, cliquez sur <b>Lire les donnÃ©es</b> et choisissez <b>Ouvrir la source de donnÃ©es</b> dans le menu dÃ©roulant.
+		<li />Dans la boÃ®te de dialogue qui s'ouvre, sÃ©lectionnez le fichier CSV issu de l'exportation des donnÃ©es de l'annuaire (Ã©tape 1).
 	</ol>
 </p>
 
 <p class="aide_texte">
-	3) Configuration de la source de données
+	3) Configuration de la source de donnÃ©es
 </p>
 <p class="aide_texte">
-	Les étapes sont les suivantes:
+	Les Ã©tapes sont les suivantes:
 	<ol>
 		<li />
 	</ol>
 </p>
 
 <p class="aide_texte">
-	4) Création du modèle avec les champs de fusion
+	4) CrÃ©ation du modÃ¨le avec les champs de fusion
 </p>
 <p class="aide_texte">
-	Les étapes sont les suivantes:
+	Les Ã©tapes sont les suivantes:
 	<ol>
-		<li />Ecrivez ce que vous avez à écrire dans le document ouvert. Imaginez pour cela qu'il s'agit d'un enregistrement par défaut, et que tous les autres enregistrements seront présentés de la même manière. De cette manière, <i>vous ne devez écrire que ce qui n'est pas susceptible de modification d'un enregistrement à l'autre</i>. Par exemple, écrivez: <i>Le prénom est , le nom de famille est , et l'adresse est .</i>
-		<li />Dans le panneau <i>Gestionnaire de fusion de données</i> (ouvert à l'étape 2), sous <i>Champ de fusion</i>, cliquez sur un élément et amenez-le par un glisser-déposer (drag&drop) dans votre document, à l'endroit où il devra se situer. Pour reprendre l'exemple précédent, glissez-déposez l'élément "prénom" dans l'espace vide laissé entre le premier <i>est</i> et la virgule, puis faites de même pour "nom" et "adresse", à leurs places respectives.
-		<li />Optionnel: ajoutez un saut de page à la fin de la page (Menu <b>Insertion > Saut > Saut de page</b>). Chaque enregistrement sera ainsi affiché sur une page.
+		<li />Ecrivez ce que vous avez Ã  Ã©crire dans le document ouvert. Imaginez pour cela qu'il s'agit d'un enregistrement par dÃ©faut, et que tous les autres enregistrements seront prÃ©sentÃ©s de la mÃªme maniÃ¨re. De cette maniÃ¨re, <i>vous ne devez Ã©crire que ce qui n'est pas susceptible de modification d'un enregistrement Ã  l'autre</i>. Par exemple, Ã©crivez: <i>Le prÃ©nom est , le nom de famille est , et l'adresse est .</i>
+		<li />Dans le panneau <i>Gestionnaire de fusion de donnÃ©es</i> (ouvert Ã  l'Ã©tape 2), sous <i>Champ de fusion</i>, cliquez sur un Ã©lÃ©ment et amenez-le par un glisser-dÃ©poser (drag&drop) dans votre document, Ã  l'endroit oÃ¹ il devra se situer. Pour reprendre l'exemple prÃ©cÃ©dent, glissez-dÃ©posez l'Ã©lÃ©ment "prÃ©nom" dans l'espace vide laissÃ© entre le premier <i>est</i> et la virgule, puis faites de mÃªme pour "nom" et "adresse", Ã  leurs places respectives.
+		<li />Optionnel: ajoutez un saut de page Ã  la fin de la page (Menu <b>Insertion > Saut > Saut de page</b>). Chaque enregistrement sera ainsi affichÃ© sur une page.
 	</ol>
 </p>
 
 <p class="aide_texte">
-	5) Création du document final avec les données
+	5) CrÃ©ation du document final avec les donnÃ©es
 </p>
 <p class="aide_texte">
-	Les étapes sont les suivantes:
+	Les Ã©tapes sont les suivantes:
 	<ol>
-		<li />Dans le panneau <i>Gestionnaire de fusion de données</i> (ouvert à l'étape 2), sous <i>Fusionner</i>, cliquez sur l'icône qui représente un document vierge (<i>Fusionner vers un nouveau document</i>).
-		<li />Un nouveau document s'ouvre dans une nouvelle fenêtre: vous n'avez plus qu'à modifier manuellement ce qui doit l'être et à enregistrer ou imprimer ce fichier.
+		<li />Dans le panneau <i>Gestionnaire de fusion de donnÃ©es</i> (ouvert Ã  l'Ã©tape 2), sous <i>Fusionner</i>, cliquez sur l'icÃ´ne qui reprÃ©sente un document vierge (<i>Fusionner vers un nouveau document</i>).
+		<li />Un nouveau document s'ouvre dans une nouvelle fenÃªtre: vous n'avez plus qu'Ã  modifier manuellement ce qui doit l'Ãªtre et Ã  enregistrer ou imprimer ce fichier.
 	</ol>
 </p>
 
-<!-- 8.9 Quels sont mes droits et mes obligations vis-à-vis des données exportées ? -->
+<!-- 8.9 Quels sont mes droits et mes obligations vis-Ã -vis des donnÃ©es exportÃ©es ? -->
 <p class="aide_section"><a name="8.9"></a>
-8.9 Quels sont mes droits et mes obligations vis-à-vis des données exportées ?
+8.9 Quels sont mes droits et mes obligations vis-Ã -vis des donnÃ©es exportÃ©es ?
 </p>
 
 <p class="aide_texte">
-	Réservé
+	RÃ©servÃ©
 </p>
 
 <!-- 8.10 Qu'est ce que l'exportation "PDF" ? -->
@@ -235,11 +235,11 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	L'exportation PDF génère un fichier au format PDF prêt à être imprimé. Si vous souhaitez imprimer le contenu de l'annuaire et que vous n'avez pas besoin de modifier les données avant cela, l'utilisation du format PDF représente de très loin la meilleure solution.
+	L'exportation PDF gÃ©nÃ¨re un fichier au format PDF prÃªt Ã  Ãªtre imprimÃ©. Si vous souhaitez imprimer le contenu de l'annuaire et que vous n'avez pas besoin de modifier les donnÃ©es avant cela, l'utilisation du format PDF reprÃ©sente de trÃ¨s loin la meilleure solution.
 </p>
 
 <p class="aide_texte">
-	En réalité, il est impropre de parler d'exportation PDF, même si la fonction est accessible depuis le menu <i>Exportation</i> de l'annuaire. Pour être correct, il faut parler d'impression PDF. C'est pour cette raison que les développements sur le format PDF sont réalisées dans le chapitre suivant qui concerne l'impression. Pour de plus amples informations, v. <a href="#9.5">n°9.5</a>
+	En rÃ©alitÃ©, il est impropre de parler d'exportation PDF, mÃªme si la fonction est accessible depuis le menu <i>Exportation</i> de l'annuaire. Pour Ãªtre correct, il faut parler d'impression PDF. C'est pour cette raison que les dÃ©veloppements sur le format PDF sont rÃ©alisÃ©es dans le chapitre suivant qui concerne l'impression. Pour de plus amples informations, v. <a href="#9.5">nÂ°9.5</a>
 </p>
 
 

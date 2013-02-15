@@ -3,7 +3,7 @@
                ANNUAIRE AIDE
 SECTION :
 
-Fichier inclus à partir de faq.php
+Fichier inclus Ã  partir de faq.php
 */
 ?>
 
@@ -18,7 +18,7 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Vous ne pouvez supprimer que votre propre fiche, c'est-à-dire la fiche à votre nom, celle que vous avez créée et dont vous avez défini la question personnelle et la réponse secrète (<a href="#2.7">v. n° 2.7</a>).
+	Vous ne pouvez supprimer que votre propre fiche, c'est-Ã -dire la fiche Ã  votre nom, celle que vous avez crÃ©Ã©e et dont vous avez dÃ©fini la question personnelle et la rÃ©ponse secrÃ¨te (<a href="#2.7">v. nÂ° 2.7</a>).
 </p>
 
 <!-- 4.2 Pourquoi ne puis-je pas modifier toutes les fiches ? -->
@@ -27,7 +27,7 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Pour des raisons de sécurité des données, chaque utilisateur ne peut supprimer que sa propre fiche. Pour plus d'informations, <a href="#2.7">v. n° 2.7</a>.
+	Pour des raisons de sÃ©curitÃ© des donnÃ©es, chaque utilisateur ne peut supprimer que sa propre fiche. Pour plus d'informations, <a href="#2.7">v. nÂ° 2.7</a>.
 </p>
 
 <!-- 4.3 Comment puis-je supprimer une fiche ? -->
@@ -36,21 +36,21 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Pour supprimer votre fiche, il vous faudra procéder ainsi:
+	Pour supprimer votre fiche, il vous faudra procÃ©der ainsi:
 	<ol>
-		<li />Vous connecter à l'annuaire. (<a href="#1.2">v. n° 1.2</a>)
-		<li />Afficher la liste des fiches. (<a href="#5.2">v. n° 5.2 </a>)
-		<li />Choisir votre fiche dans la liste et l'afficher. (<a href="#5.5">v. n° 5.5</a>)
+		<li />Vous connecter Ã  l'annuaire. (<a href="#1.2">v. nÂ° 1.2</a>)
+		<li />Afficher la liste des fiches. (<a href="#5.2">v. nÂ° 5.2 </a>)
+		<li />Choisir votre fiche dans la liste et l'afficher. (<a href="#5.5">v. nÂ° 5.5</a>)
 		<li />Dans le menu <b>Fiches</b>, choisir <b>Supprimer la fiche</b>.
 		<li />Cliquez sur le lien vous demandant de confirmer la suppression.
-		<li />Indiquer la réponse secrète à votre question personnelle. (<a href="#2.7">v. n° 2.7</a>)
+		<li />Indiquer la rÃ©ponse secrÃ¨te Ã  votre question personnelle. (<a href="#2.7">v. nÂ° 2.7</a>)
 		<li />Cliquer sur le bouton "Supprimer".
 	</ol>
 </p>
 
-<!-- 4.4 La suppression est-elle définitive ? -->
+<!-- 4.4 La suppression est-elle dÃ©finitive ? -->
 <p class="aide_section"><a name="4.4"></a>
-4.4 La suppression est-elle définitive ?
+4.4 La suppression est-elle dÃ©finitive ?
 </p>
 
 <p class="aide_texte">
@@ -58,14 +58,14 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Les administrateurs de l'annuaire effectuent toutefois des sauvegardes périodiques des données. Ils pourront peut-être vous aider s'ils disposent d'une sauvegarde dans laquelle votre fiche, désormais supprimée, est présente. Mais cela dépend de leur diligence à l'heure de réaliser les sauvegardes (plus récente sera la dernière sauvegarde, plus vous aurez de chance de récupérer votre fiche) et de leur bon vouloir à l'heure de restaurer ces sauvegardes. Ne supprimez donc pas votre fiche à la légère.
+	Les administrateurs de l'annuaire effectuent toutefois des sauvegardes pÃ©riodiques des donnÃ©es. Ils pourront peut-Ãªtre vous aider s'ils disposent d'une sauvegarde dans laquelle votre fiche, dÃ©sormais supprimÃ©e, est prÃ©sente. Mais cela dÃ©pend de leur diligence Ã  l'heure de rÃ©aliser les sauvegardes (plus rÃ©cente sera la derniÃ¨re sauvegarde, plus vous aurez de chance de rÃ©cupÃ©rer votre fiche) et de leur bon vouloir Ã  l'heure de restaurer ces sauvegardes. Ne supprimez donc pas votre fiche Ã  la lÃ©gÃ¨re.
 </p>
 
-<!-- 4.5 Que faire si j'ai oublié la réponse secrète à ma question personnelle ? -->
+<!-- 4.5 Que faire si j'ai oubliÃ© la rÃ©ponse secrÃ¨te Ã  ma question personnelle ? -->
 <p class="aide_section"><a name="4.5"></a>
-4.5 Que faire si j'ai oublié la réponse secrète à ma question personnelle ?
+4.5 Que faire si j'ai oubliÃ© la rÃ©ponse secrÃ¨te Ã  ma question personnelle ?
 </p>
 
 <p class="aide_texte">
-	V. la <a href="#3.4">section 3.4</a> à ce propos.
+	V. la <a href="#3.4">section 3.4</a> Ã  ce propos.
 </p>

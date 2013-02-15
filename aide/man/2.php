@@ -3,7 +3,7 @@
                ANNUAIRE AIDE
 SECTION 2 : Ajouter une fiche
 
-Fichier inclus à partir de faq.php
+Fichier inclus Ã  partir de faq.php
 */
 ?>
 
@@ -18,15 +18,15 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Un annuaire est, par définition, une liste ordonnée. Cet annuaire est une liste de personnes. Chaque personne est représentée, dans l'annuaire, par une fiche à son nom. Chaque personne possède donc une unique fiche et, inversement, une fiche n'est associée qu'à une personne déterminée.
+	Un annuaire est, par dÃ©finition, une liste ordonnÃ©e. Cet annuaire est une liste de personnes. Chaque personne est reprÃ©sentÃ©e, dans l'annuaire, par une fiche Ã  son nom. Chaque personne possÃ¨de donc une unique fiche et, inversement, une fiche n'est associÃ©e qu'Ã  une personne dÃ©terminÃ©e.
 </p>
 
 <p class="aide_texte">
-	Une fiche contient ainsi certaines données relatives à une personne: son nom et son prénom, sa date de naissance, son adresse postale, son adresse e-mail, etc. Une fiche contient, outre ces informations personnelles, les réponses fournies par la personne lors de la création de la fiche aux questions prédéfinies posées par l'institution qui met en oeuvre l'annuaire.
+	Une fiche contient ainsi certaines donnÃ©es relatives Ã  une personne: son nom et son prÃ©nom, sa date de naissance, son adresse postale, son adresse e-mail, etc. Une fiche contient, outre ces informations personnelles, les rÃ©ponses fournies par la personne lors de la crÃ©ation de la fiche aux questions prÃ©dÃ©finies posÃ©es par l'institution qui met en oeuvre l'annuaire.
 </p>
 
 <p class="aide_texte">
-	On entend ainsi "inscription à l'annuaire" le fait pour une personne de créer une fiche à son nom. L'inscription à l'annuaire ou la création d'une fiche fait l'objet de cette section. L'auteur d'une fiche peut par ailleurs la modifier (<a href="#3">v. n° 3</a>) et la supprimer (<a href="#4">v. n° 4</a>).
+	On entend ainsi "inscription Ã  l'annuaire" le fait pour une personne de crÃ©er une fiche Ã  son nom. L'inscription Ã  l'annuaire ou la crÃ©ation d'une fiche fait l'objet de cette section. L'auteur d'une fiche peut par ailleurs la modifier (<a href="#3">v. nÂ° 3</a>) et la supprimer (<a href="#4">v. nÂ° 4</a>).
 </p>
 
 <!-- 2.2 Comment ajouter une fiche ? -->
@@ -35,27 +35,27 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	L'ajout d'une fiche se déroule en 5 étapes:
+	L'ajout d'une fiche se dÃ©roule en 5 Ã©tapes:
 	<ol>
-		<li />Se connecter à l'annuaire. (<a href="#1.2">v. n° 1.2 </a>)
+		<li />Se connecter Ã  l'annuaire. (<a href="#1.2">v. nÂ° 1.2 </a>)
 		<li />Cliquer sur "Ajouter une fiche" dans le menu principal de l'annuaire.
-		<li />Remplir tous les champs obligatoire du formulaire d'ajout. (<a href="#2.3">v. n°s 2.3, 2.4 et 2.6</a>)
-		<li />Définir une question personnelle et une réponse secrète. (<a href="#2.7">v. n° 2.7</a>)
+		<li />Remplir tous les champs obligatoire du formulaire d'ajout. (<a href="#2.3">v. nÂ°s 2.3, 2.4 et 2.6</a>)
+		<li />DÃ©finir une question personnelle et une rÃ©ponse secrÃ¨te. (<a href="#2.7">v. nÂ° 2.7</a>)
 		<li />Valider en cliquant sur le bouton "Enregistrer" en bas de la page.
 	</ol>
 </p>
 
-<!-- 2.3 Que dois-je écrire dans les champs ? -->
+<!-- 2.3 Que dois-je Ã©crire dans les champs ? -->
 <p class="aide_section"><a name="2.3"></a>
-2.3 Que dois-je écrire dans les champs ?
+2.3 Que dois-je Ã©crire dans les champs ?
 </p>
 
 <p class="aide_texte">
-	La page d'ajout d'une nouvelle fiche contient des champs de texte dans lesquels vous pouvez écrire. Ces champs sont répartis en 3 parties:
+	La page d'ajout d'une nouvelle fiche contient des champs de texte dans lesquels vous pouvez Ã©crire. Ces champs sont rÃ©partis en 3 parties:
 	<ol>
-		<li />Les informations vous identifiant (nom, prénom, date de naissance, adresse, etc.)
-		<li />Les réponses aux questions posées par les administrateurs de l'annuaire. Il s'agit ici d'en savoir un peu plus sur vous. Vous êtes bien entendu libre d'écrire dans ces champs ce que vous voulez.
-		<li />La question personnelle et la réponse secrète. (<a href="#2.7">v. n° 2.7 </a>)
+		<li />Les informations vous identifiant (nom, prÃ©nom, date de naissance, adresse, etc.)
+		<li />Les rÃ©ponses aux questions posÃ©es par les administrateurs de l'annuaire. Il s'agit ici d'en savoir un peu plus sur vous. Vous Ãªtes bien entendu libre d'Ã©crire dans ces champs ce que vous voulez.
+		<li />La question personnelle et la rÃ©ponse secrÃ¨te. (<a href="#2.7">v. nÂ° 2.7 </a>)
 	</ol>
 </p>
 
@@ -65,33 +65,33 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Les limites techniques du système utilisé pour stocker les données impose un formatage précis des dates. Il faut entrer l'année sur 4 chiffres, un tiret (-), puis le mois sur 2 chiffres, un autre tiret (-) et, finalement, le jour sur 2 chiffres.
+	Les limites techniques du systÃ¨me utilisÃ© pour stocker les donnÃ©es impose un formatage prÃ©cis des dates. Il faut entrer l'annÃ©e sur 4 chiffres, un tiret (-), puis le mois sur 2 chiffres, un autre tiret (-) et, finalement, le jour sur 2 chiffres.
 </p>
 
 <p class="aide_texte">
-	Il s'agit du format <i>AAAA-MM-JJ</i>, où AAAA représente l'année sur 4 chiffres, MM le mois sur 2 chiffres et JJ le jour sur 2 chiffres.
+	Il s'agit du format <i>AAAA-MM-JJ</i>, oÃ¹ AAAA reprÃ©sente l'annÃ©e sur 4 chiffres, MM le mois sur 2 chiffres et JJ le jour sur 2 chiffres.
 </p>
 
 <p class="aide_texte">
 	Exemples:
 	<ul>
-		<li />Le <i>1er janvier 1900</i> s'écrira <i>1900-01-01</i>
-		<li />Le <i>28 février 2007</i> s'écrira <i>2007-02-28</i>
-		<li />Le <i>5 décembre 1980</i> s'écrira <i>1980-12-05</i>
+		<li />Le <i>1er janvier 1900</i> s'Ã©crira <i>1900-01-01</i>
+		<li />Le <i>28 fÃ©vrier 2007</i> s'Ã©crira <i>2007-02-28</i>
+		<li />Le <i>5 dÃ©cembre 1980</i> s'Ã©crira <i>1980-12-05</i>
 	</ul>
 </p>
 
-<!-- 2.5 Laisser l'adresse e-mail en clair présente-t-il un risque ? -->
+<!-- 2.5 Laisser l'adresse e-mail en clair prÃ©sente-t-il un risque ? -->
 <p class="aide_section"><a name="2.5"></a>
-2.5 Laisser l'adresse e-mail en clair présente-il un risque ?
+2.5 Laisser l'adresse e-mail en clair prÃ©sente-il un risque ?
 </p>
 
 <p class="aide_texte">
-	Non. Les données de l'annuaire ne sont accessibles qu'aux personnes physiques munies du mot de passe. Elles ne sont <i>pas</i> accessibles aux robots qui parcourent les pages web à la rechercher d'adresses e-mail à inclure dans des listes de spam.
+	Non. Les donnÃ©es de l'annuaire ne sont accessibles qu'aux personnes physiques munies du mot de passe. Elles ne sont <i>pas</i> accessibles aux robots qui parcourent les pages web Ã  la rechercher d'adresses e-mail Ã  inclure dans des listes de spam.
 </p>
 
 <p class="aide_texte">
-	Il y aurait toutefois un risque (très minime) si les administrateurs de l'annuaire choisissaient de ne pas utiliser la protection des données par mot de passe.
+	Il y aurait toutefois un risque (trÃ¨s minime) si les administrateurs de l'annuaire choisissaient de ne pas utiliser la protection des donnÃ©es par mot de passe.
 </p>
 
 <!-- 2.6 Pourquoi certains champs se colorent-ils en route quand j'enregistre la fiche ?-->
@@ -100,39 +100,39 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Certains champs, dits "obligatoires", doivent obligatoirement contenir une information. Si vous laissez un tel champ vite, il se colorera en rouge pour vous signaler l'oubli. Dans tous les cas, une fiche ne sera pas enregistrée ou modifiée tant que tous les champs obligatoires n'ont pas été renseignés.
+	Certains champs, dits "obligatoires", doivent obligatoirement contenir une information. Si vous laissez un tel champ vite, il se colorera en rouge pour vous signaler l'oubli. Dans tous les cas, une fiche ne sera pas enregistrÃ©e ou modifiÃ©e tant que tous les champs obligatoires n'ont pas Ã©tÃ© renseignÃ©s.
 </p>
 
 <p class="aide_texte">
-	Les champs obligatoires sont identifiés dans les formulaires par un astérisque (*) rouge.
+	Les champs obligatoires sont identifiÃ©s dans les formulaires par un astÃ©risque (*) rouge.
 </p>
 
-<!-- 2.7 Que sont la question personnelle et la réponse secrète ? -->
+<!-- 2.7 Que sont la question personnelle et la rÃ©ponse secrÃ¨te ? -->
 <p class="aide_section"><a name="2.7"></a>
-2.7 Que sont la question personnelle et la réponse secrète ?
+2.7 Que sont la question personnelle et la rÃ©ponse secrÃ¨te ?
 </p>
 
 <p class="aide_texte">
-	Lors de la création de votre fiche, il vous sera demandé de définir une question personnelle et une réponse secrète à cette question personnelle. Il s'agit d'un système de protection des données qui vise à assurez que vous soyez le ou la seul(e) à pouvoir modifier ou supprimer les informations vous concernant.
+	Lors de la crÃ©ation de votre fiche, il vous sera demandÃ© de dÃ©finir une question personnelle et une rÃ©ponse secrÃ¨te Ã  cette question personnelle. Il s'agit d'un systÃ¨me de protection des donnÃ©es qui vise Ã  assurez que vous soyez le ou la seul(e) Ã  pouvoir modifier ou supprimer les informations vous concernant.
 </p>
 
 <p class="aide_texte">
-	En effet, le système d'identification basé sur un mot de passe unique et commun à tous les utilisateurs (<a href="#1.1">v. n° 1.1</a>) présente un inconvénient: une fois connecté, un utilisateur a tous les pouvoirs pour modifier ou supprimer une fiche et, puisque rien ne le distingue d'un autre utilisateur, rien ne garantit qu'il ne modifie ou ne supprimer pas les fiches d'autres personnes. Pour répondre à ce problème, une seconde protection a été mise en place: il s'agit de la question personnelle et de la réponse secrète.
+	En effet, le systÃ¨me d'identification basÃ© sur un mot de passe unique et commun Ã  tous les utilisateurs (<a href="#1.1">v. nÂ° 1.1</a>) prÃ©sente un inconvÃ©nient: une fois connectÃ©, un utilisateur a tous les pouvoirs pour modifier ou supprimer une fiche et, puisque rien ne le distingue d'un autre utilisateur, rien ne garantit qu'il ne modifie ou ne supprimer pas les fiches d'autres personnes. Pour rÃ©pondre Ã  ce problÃ¨me, une seconde protection a Ã©tÃ© mise en place: il s'agit de la question personnelle et de la rÃ©ponse secrÃ¨te.
 </p>
 
 <p class="aide_texte">
-	Lorsque vous créer votre fiche, il vous est demandé de définir une question personnelle. Il est conseillé de choisir une question dont vous êtes sur(e) de vous rappeler la réponse et dont la réponse ne peut pas être facilement obtenue par des tiers. Il vous est ensuite demandé de définir la réponse à cette question.
+	Lorsque vous crÃ©er votre fiche, il vous est demandÃ© de dÃ©finir une question personnelle. Il est conseillÃ© de choisir une question dont vous Ãªtes sur(e) de vous rappeler la rÃ©ponse et dont la rÃ©ponse ne peut pas Ãªtre facilement obtenue par des tiers. Il vous est ensuite demandÃ© de dÃ©finir la rÃ©ponse Ã  cette question.
 </p>
 
 <p class="aide_texte">
-	Lors de la modification ou de la suppression de votre fiche, la question personnelle vous sera posée et vous devrez fournir la réponse secrète pour pouvoir procéder.
+	Lors de la modification ou de la suppression de votre fiche, la question personnelle vous sera posÃ©e et vous devrez fournir la rÃ©ponse secrÃ¨te pour pouvoir procÃ©der.
 </p>
 
 <p class="aide_texte">
 	<b>IMPORTANT</b>
 	<ul>
-	<li /><b>La question et la réponse personnelle ne peuvent plus être modifiées une fois la fiche enregistrée.</b> Soyez donc très attentif dans leur choix.
-	<li /><b>La réponse secrète est chiffrée dans la base de données avec un algorithme à sens unique</b>. Il est donc impossible de retrouver cette réponse si vous veniez à l'oublier. Les administrateurs de l'annuaire pourront supprimer votre fiche pour vous permettre d'en créer une nouvelle, mais ils ne pourront pas vous aider à récupérer votre réponse secrète.
-	<li /><b>La réponse est insensible à la casse</b>. C'est-à-dire qu'il est indifférent que vous écriviez votre réponse en minuscules ou en majuscules. Par exemple, "Pierre" est égal à "pierre" ou à "PIERRE".
+	<li /><b>La question et la rÃ©ponse personnelle ne peuvent plus Ãªtre modifiÃ©es une fois la fiche enregistrÃ©e.</b> Soyez donc trÃ¨s attentif dans leur choix.
+	<li /><b>La rÃ©ponse secrÃ¨te est chiffrÃ©e dans la base de donnÃ©es avec un algorithme Ã  sens unique</b>. Il est donc impossible de retrouver cette rÃ©ponse si vous veniez Ã  l'oublier. Les administrateurs de l'annuaire pourront supprimer votre fiche pour vous permettre d'en crÃ©er une nouvelle, mais ils ne pourront pas vous aider Ã  rÃ©cupÃ©rer votre rÃ©ponse secrÃ¨te.
+	<li /><b>La rÃ©ponse est insensible Ã  la casse</b>. C'est-Ã -dire qu'il est indiffÃ©rent que vous Ã©criviez votre rÃ©ponse en minuscules ou en majuscules. Par exemple, "Pierre" est Ã©gal Ã  "pierre" ou Ã  "PIERRE".
 	</ul>
 </p>

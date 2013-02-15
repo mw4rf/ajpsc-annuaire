@@ -3,7 +3,7 @@
                ANNUAIRE AIDE
 SECTION : Rechercher des fiches
 
-Fichier inclus à partir de faq.php
+Fichier inclus Ã  partir de faq.php
 */
 ?>
 
@@ -18,26 +18,26 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	La recherche, comme son nom l'indique, vous permet de rechercher (et de trouver !) parmi toutes les fiches de l'annuaire celles qui répondent à une condition précise.
+	La recherche, comme son nom l'indique, vous permet de rechercher (et de trouver !) parmi toutes les fiches de l'annuaire celles qui rÃ©pondent Ã  une condition prÃ©cise.
 </p>
 
 <p class="aide_texte">
-	Il s'agit par exemple de dire à la base de donnée "<i>affiche toutes les fiches des étudiants de la promotion 2006</i>" ou "<i>affiche toutes les fiches qui contiennent l'expression </i> droit international privé".
+	Il s'agit par exemple de dire Ã  la base de donnÃ©e "<i>affiche toutes les fiches des Ã©tudiants de la promotion 2006</i>" ou "<i>affiche toutes les fiches qui contiennent l'expression </i> droit international privÃ©".
 </p>
 
-<!-- 7.2 Quels sont les différents types de recherches ? -->
+<!-- 7.2 Quels sont les diffÃ©rents types de recherches ? -->
 <p class="aide_section"><a name="7.2"></a>
-7.2 Quels sont les différents types de recherches ?
+7.2 Quels sont les diffÃ©rents types de recherches ?
 </p>
 
 <p class="aide_texte">
 	Il existe actuellement 5 types de recherche:
 	<ol>
-		<li />La recherche automatique (<i>conseillée</i>) (<a href="#7.3">v. n°7.3</a>)
-		<li />La recherche diffuse (<a href="#7.4">v. n°7.4</a>)
-		<li />La recherche focalisée (<a href="#7.5">v. n°7.5</a>)
-		<li />La recherche basée sur les expressions régulières (<a href="#7.10">v. n°7.10</a>)
-		<li />La recherche sémantique (<a href="#7.11">v. n°7.11</a>)
+		<li />La recherche automatique (<i>conseillÃ©e</i>) (<a href="#7.3">v. nÂ°7.3</a>)
+		<li />La recherche diffuse (<a href="#7.4">v. nÂ°7.4</a>)
+		<li />La recherche focalisÃ©e (<a href="#7.5">v. nÂ°7.5</a>)
+		<li />La recherche basÃ©e sur les expressions rÃ©guliÃ¨res (<a href="#7.10">v. nÂ°7.10</a>)
+		<li />La recherche sÃ©mantique (<a href="#7.11">v. nÂ°7.11</a>)
 	</ol>
 </p>
 
@@ -47,71 +47,71 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	La recherche automatique vous permet de recherche le ou les mot(s)-clé(s) spécifié(s) dans le champ de recherche dans toute la base de données. C'est le type de recherche conseillé par défaut. Si vous entrez plusieurs mots-clés, la recherche sera cumulative: elle retournera les fiches qui contiennent au moins l'un des mots-clés saisis.
+	La recherche automatique vous permet de recherche le ou les mot(s)-clÃ©(s) spÃ©cifiÃ©(s) dans le champ de recherche dans toute la base de donnÃ©es. C'est le type de recherche conseillÃ© par dÃ©faut. Si vous entrez plusieurs mots-clÃ©s, la recherche sera cumulative: elle retournera les fiches qui contiennent au moins l'un des mots-clÃ©s saisis.
 </p>
 
 <p class="aide_texte">
 	<u>Exemples</u>:
 	<ul>
 		<li />Si vous tapez <i>2006</i>, la recherche ne portera que sur les champs promotion et date de naissance.
-		<li />Si vous tapez <i>martin</i>, la recherche portera sur tous les champs de texte (nom, prénom, e-mail ainsi que tous les champs de "contenu").
-		<li />Si vous tapez <i>martin 2006</i>, <i>martin</i> sera recherché dans tous les champs de texte, et <i>2006</i> dans le champ promotion et dans le champ date. Seront affichées dans les résultats les fiches qui contiennent <i>martin</i>, les fiches qui contiennent <i>2006</i>, et celles qui contiennent à la fois <i>martin</i> et <i>2006</i>.
+		<li />Si vous tapez <i>martin</i>, la recherche portera sur tous les champs de texte (nom, prÃ©nom, e-mail ainsi que tous les champs de "contenu").
+		<li />Si vous tapez <i>martin 2006</i>, <i>martin</i> sera recherchÃ© dans tous les champs de texte, et <i>2006</i> dans le champ promotion et dans le champ date. Seront affichÃ©es dans les rÃ©sultats les fiches qui contiennent <i>martin</i>, les fiches qui contiennent <i>2006</i>, et celles qui contiennent Ã  la fois <i>martin</i> et <i>2006</i>.
 	</ul>
 </p>
 
 <p class="aide_texte">
-	<u>Exclusion des mots génériques</u>
+	<u>Exclusion des mots gÃ©nÃ©riques</u>
 	<br />
-	Certains mots génériques sont automatiquement exclus de la recherche automatique. Il s'agit de certains mots propres à une langue qui, parce qu'ils sont nécessaire à l'organisation grammaticale de la phrase, sont utilisés très souvent et perdent de ce fait toute pertinence dans une recherche. Il s'agit par exemple, en français, des mots "le", "la", "les", "un", "une", "de", "des", etc.
+	Certains mots gÃ©nÃ©riques sont automatiquement exclus de la recherche automatique. Il s'agit de certains mots propres Ã  une langue qui, parce qu'ils sont nÃ©cessaire Ã  l'organisation grammaticale de la phrase, sont utilisÃ©s trÃ¨s souvent et perdent de ce fait toute pertinence dans une recherche. Il s'agit par exemple, en franÃ§ais, des mots "le", "la", "les", "un", "une", "de", "des", etc.
 </p>
 
 <p class="aide_texte">
 	<u>Prise en charge des mots incomplets</u>
 	<br />
-	La recherche intelligente prend en considération des chaînes de caractères et non des mots. Par exemple, si vous cherchez "mer", qui est un mot en soi, les résultats seront les fiches contenant "<u>mer</u>", "<u>mer</u>veille", "<u>mer</u>cantile", "<u>mer</u>cerie", "abî<u>mer</u>", "ai<u>mer</u>", "a<u>mer</u>rir", etc.
+	La recherche intelligente prend en considÃ©ration des chaÃ®nes de caractÃ¨res et non des mots. Par exemple, si vous cherchez "mer", qui est un mot en soi, les rÃ©sultats seront les fiches contenant "<u>mer</u>", "<u>mer</u>veille", "<u>mer</u>cantile", "<u>mer</u>cerie", "abÃ®<u>mer</u>", "ai<u>mer</u>", "a<u>mer</u>rir", etc.
 	<br />
-	Il est fréquent, dans les moteurs de recherche, d'utiliser des <i>wildcards</i> ou, en français, des <i>jokers</i>. Ainsi, l'étoile (*) représente une séquence de plusieurs lettres indéterminées alors que le point d'interrogation (?) représente une seule lettre indéterminée. Ces jokers n'existent pas dans le moteur de recherche de l'annuaire. Le comportement recherché par le point d'interrogation peut être obtenu avec les expressions régulières (<a href="#7.10">v. n°7.10</a>: <i>regex=x(.?)y</i>) et celui obtenu avec l'étoile est déjà le comportement par défaut. Ainsi, rechercher <i>mer</i> avec la recherche intelligente revient à rechercher <i>*mer*</i> dans les moteurs de recherche basés sur les jokers.
+	Il est frÃ©quent, dans les moteurs de recherche, d'utiliser des <i>wildcards</i> ou, en franÃ§ais, des <i>jokers</i>. Ainsi, l'Ã©toile (*) reprÃ©sente une sÃ©quence de plusieurs lettres indÃ©terminÃ©es alors que le point d'interrogation (?) reprÃ©sente une seule lettre indÃ©terminÃ©e. Ces jokers n'existent pas dans le moteur de recherche de l'annuaire. Le comportement recherchÃ© par le point d'interrogation peut Ãªtre obtenu avec les expressions rÃ©guliÃ¨res (<a href="#7.10">v. nÂ°7.10</a>: <i>regex=x(.?)y</i>) et celui obtenu avec l'Ã©toile est dÃ©jÃ  le comportement par dÃ©faut. Ainsi, rechercher <i>mer</i> avec la recherche intelligente revient Ã  rechercher <i>*mer*</i> dans les moteurs de recherche basÃ©s sur les jokers.
 </p>
 
 <p class="aide_texte">
-	Pour ne recherche que le mot "mer" à l'exclusion des mots qui <i>contiennent</i> la chaîne "mer", il faut entourer le mot de parenthèses: <b>(</b> et <b>)</b>. Par exemple: <i>(mer)</i>. Cela revient à effectuer une recherche sémantique (<i>full text search</i>) qui considère que chaque chaîne est un mot à part entière (<a href="#7.11">v. n°7.11</a>). Il est également possible d'obtenir le même résultat grâce aux expressions régulières (<a href="#7.10">v. n°7.10</a>).
+	Pour ne recherche que le mot "mer" Ã  l'exclusion des mots qui <i>contiennent</i> la chaÃ®ne "mer", il faut entourer le mot de parenthÃ¨ses: <b>(</b> et <b>)</b>. Par exemple: <i>(mer)</i>. Cela revient Ã  effectuer une recherche sÃ©mantique (<i>full text search</i>) qui considÃ¨re que chaque chaÃ®ne est un mot Ã  part entiÃ¨re (<a href="#7.11">v. nÂ°7.11</a>). Il est Ã©galement possible d'obtenir le mÃªme rÃ©sultat grÃ¢ce aux expressions rÃ©guliÃ¨res (<a href="#7.10">v. nÂ°7.10</a>).
 </p>
 
 <p class="aide_texte">
-	La prise en charge des mots incomplets ne concerne que la recherches <i>littérales</i>, à l'exclusions des recherches <i>numériques</i>. Ainsi, pour rechercher la promotion 2006, il faudra entrer <i>2006</i> et non <i>06</i>. L'annuaire n'interprète pas <i>06</i> comme l'année 2006, mais comme l'an 6 après J.-C...
+	La prise en charge des mots incomplets ne concerne que la recherches <i>littÃ©rales</i>, Ã  l'exclusions des recherches <i>numÃ©riques</i>. Ainsi, pour rechercher la promotion 2006, il faudra entrer <i>2006</i> et non <i>06</i>. L'annuaire n'interprÃ¨te pas <i>06</i> comme l'annÃ©e 2006, mais comme l'an 6 aprÃ¨s J.-C...
 </p>
 
 <p class="aide_texte">
-	<u>Opérateur d'agrégation (<b>&&</b>)</u>
+	<u>OpÃ©rateur d'agrÃ©gation (<b>&&</b>)</u>
 	<br />
-	Parfois la méthode de recherche alternative décrite ci-dessus ne suffit pas. C'est notamment le cas lorsqu'on ne veut rechercher que les fiches qui contiennent tous les termes de la recherche, à l'exclusion de celles qui ne contiennent que certains d'entre eux. C'est à dire, pour reprendre l'exemple précédent, qu'on veut les fiches qui contiennent à la fois <i>martin</i> et <i>2006</i>, mais pas celles qui ne contiennent que <i>martin</i> ou que <i>2006</i>.
+	Parfois la mÃ©thode de recherche alternative dÃ©crite ci-dessus ne suffit pas. C'est notamment le cas lorsqu'on ne veut rechercher que les fiches qui contiennent tous les termes de la recherche, Ã  l'exclusion de celles qui ne contiennent que certains d'entre eux. C'est Ã  dire, pour reprendre l'exemple prÃ©cÃ©dent, qu'on veut les fiches qui contiennent Ã  la fois <i>martin</i> et <i>2006</i>, mais pas celles qui ne contiennent que <i>martin</i> ou que <i>2006</i>.
 </p>
 
 <p class="aide_texte">
-	Dans ce cas, il faut utiliser l'opérateur d'agrégation <b>&&</b> entre deux mots, <i><u>sans espace entre ces mots</u></i>. Par exemple, si vous tapez <i>martin&&2006</i>, la recherche ne renverra comme résultat que les fiches qui contiennent à la fois <i>martin</i> et <i>2006</i>.
+	Dans ce cas, il faut utiliser l'opÃ©rateur d'agrÃ©gation <b>&&</b> entre deux mots, <i><u>sans espace entre ces mots</u></i>. Par exemple, si vous tapez <i>martin&&2006</i>, la recherche ne renverra comme rÃ©sultat que les fiches qui contiennent Ã  la fois <i>martin</i> et <i>2006</i>.
 </p>
 
 <p class="aide_texte">
-	Il est possible de combiner les espaces et l'opérateur d'agrégation <b>&&</b> pour effectuer une recherche plus complexe. Par exemple:
+	Il est possible de combiner les espaces et l'opÃ©rateur d'agrÃ©gation <b>&&</b> pour effectuer une recherche plus complexe. Par exemple:
 	<ul>
-		<li />Si vous tapez <i>martin dupont 2006</i> (cas de cumul simple), les fiches retournées seront celles qui contiennent <i>martin</i>, celles qui contiennent <i>dupont</i>, celles qui contiennent <i>2006</i>, celles qui contiennent <i>martin</i> et <i>dupont</i>, celles qui contiennent <i>martin</i> et <i>2006</i> et celles qui contiennent <i>dupont</i> et <i>2006</i>.
-		<li />Si vous tapez <i>martin&&dupont&&2006</i> (cas d'agrégation simple), les fiches retournées seront celles qui contiennent à la fois <i>martin</i>, <i>dupont</i> et <i>2006</i>.
-		<li />Si vous tapez <i>martin&&dupont 2006</i> (cas mixte), les fiches retournées seront celles qui contiennent à la fois <i>martin</i> et <i>dupont</i> mais pas <i>2006</i>, celles qui contiennent <i>2006</i> mais pas <i>martin</i> ni <i>dupont</i>, et celles qui contiennent à la fois <i>martin</i>, <i>dupont</i> et <i>2006</i>. Les fiches qui ne contiennent que <i>martin</i> ou que <i>dupont</i> et qui ne contiennent pas <i>2006</i> ne seront pas affichées.
+		<li />Si vous tapez <i>martin dupont 2006</i> (cas de cumul simple), les fiches retournÃ©es seront celles qui contiennent <i>martin</i>, celles qui contiennent <i>dupont</i>, celles qui contiennent <i>2006</i>, celles qui contiennent <i>martin</i> et <i>dupont</i>, celles qui contiennent <i>martin</i> et <i>2006</i> et celles qui contiennent <i>dupont</i> et <i>2006</i>.
+		<li />Si vous tapez <i>martin&&dupont&&2006</i> (cas d'agrÃ©gation simple), les fiches retournÃ©es seront celles qui contiennent Ã  la fois <i>martin</i>, <i>dupont</i> et <i>2006</i>.
+		<li />Si vous tapez <i>martin&&dupont 2006</i> (cas mixte), les fiches retournÃ©es seront celles qui contiennent Ã  la fois <i>martin</i> et <i>dupont</i> mais pas <i>2006</i>, celles qui contiennent <i>2006</i> mais pas <i>martin</i> ni <i>dupont</i>, et celles qui contiennent Ã  la fois <i>martin</i>, <i>dupont</i> et <i>2006</i>. Les fiches qui ne contiennent que <i>martin</i> ou que <i>dupont</i> et qui ne contiennent pas <i>2006</i> ne seront pas affichÃ©es.
 	</ul>
 </p>
 
 <p class="aide_texte">
-	<u>Opérateur de comparaison numérique (<b>&lt;</b> ou <b>&gt;</b>)</u>
+	<u>OpÃ©rateur de comparaison numÃ©rique (<b>&lt;</b> ou <b>&gt;</b>)</u>
 	<br />
-	L'opérateur de comparaison numérique vous permet de rechercher une plage de <b>promotions</b>. Cet opérateur n'a d'effet que sur le champ <b>promotion</b>. Il s'utilise ainsi: <i>2000&lt;2006</i> ou <i>2006&gt;2000</i>. Les résultats retournés seront toutes les fiches des étudiants des promotions <i>2000, 2001, 2002, 2003, 2004, 2005 et 2006</i>.
+	L'opÃ©rateur de comparaison numÃ©rique vous permet de rechercher une plage de <b>promotions</b>. Cet opÃ©rateur n'a d'effet que sur le champ <b>promotion</b>. Il s'utilise ainsi: <i>2000&lt;2006</i> ou <i>2006&gt;2000</i>. Les rÃ©sultats retournÃ©s seront toutes les fiches des Ã©tudiants des promotions <i>2000, 2001, 2002, 2003, 2004, 2005 et 2006</i>.
 </p>
 
 <p class="aide_texte">
-	L'opérateur de comparaison est dans tous les cas <i>inclusif</i>, c'est-à-dire que les arguments sont inclus dans la recherche (ici, 2000 et 2006). Pour rechercher toutes les fiches qui correspondent aux promotions comprises entre 2000 et 2006, mais pas celles des promotions 2000 et 2006, il faudrait écrire: <i>2001&lt;2005</i> ou <i>2005&gt;2001</i>.
+	L'opÃ©rateur de comparaison est dans tous les cas <i>inclusif</i>, c'est-Ã -dire que les arguments sont inclus dans la recherche (ici, 2000 et 2006). Pour rechercher toutes les fiches qui correspondent aux promotions comprises entre 2000 et 2006, mais pas celles des promotions 2000 et 2006, il faudrait Ã©crire: <i>2001&lt;2005</i> ou <i>2005&gt;2001</i>.
 </p>
 
 <p class="aide_texte">
-	Notez que si vous voulez opérer une recherche par plage <i>dans tous les champs</i>, et non seulement dans le champ <i>promotion</i>, vous pouvez obtenir le même résultat en formulant une expression régulière (<a href="#7.10">v. n°7.10</a>). Dans l'exemple précédent, la plage des dates comprises entre 2000 et 2006 sera recherchée dans tous les champs grâce à la requête suivante: <i>regex=(200[0-6])</i>.
+	Notez que si vous voulez opÃ©rer une recherche par plage <i>dans tous les champs</i>, et non seulement dans le champ <i>promotion</i>, vous pouvez obtenir le mÃªme rÃ©sultat en formulant une expression rÃ©guliÃ¨re (<a href="#7.10">v. nÂ°7.10</a>). Dans l'exemple prÃ©cÃ©dent, la plage des dates comprises entre 2000 et 2006 sera recherchÃ©e dans tous les champs grÃ¢ce Ã  la requÃªte suivante: <i>regex=(200[0-6])</i>.
 </p>
 
 <p class="aide_texte">
@@ -119,7 +119,7 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Pour effectuer une recherche automatique, entrez un ou plusieurs mot(s)-clé(s) dans le champ de recherche situé en haut à droite de la page, puis appuyez sur la touche Entrée ou Retour de votre clavier.
+	Pour effectuer une recherche automatique, entrez un ou plusieurs mot(s)-clÃ©(s) dans le champ de recherche situÃ© en haut Ã  droite de la page, puis appuyez sur la touche EntrÃ©e ou Retour de votre clavier.
 </p>
 
 <!-- 7.4 Qu'est ce que la recherche diffuse et comment effectuer une recherche diffuse ? -->
@@ -128,77 +128,77 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	La recherche diffuse vous permet de chercher une chaîne de texte complète et ordonnée (une phrase) dans tous les champs de la base de données.
+	La recherche diffuse vous permet de chercher une chaÃ®ne de texte complÃ¨te et ordonnÃ©e (une phrase) dans tous les champs de la base de donnÃ©es.
 </p>
 
 <p class="aide_texte">
-		Pour effectuer une recherche diffuse, entrez un ou plusieurs mot(s)-clé(s) dans le champ de recherche situé en haut à droite de la page, cliquez sur le symbole ± (plus/moins) à droite de ce champ de recherche, puis sélectionnez <b>Tous</b> dans le menu déroulant. Finalement, appuyez sur la touche Entrée ou Retour de votre clavier.
+		Pour effectuer une recherche diffuse, entrez un ou plusieurs mot(s)-clÃ©(s) dans le champ de recherche situÃ© en haut Ã  droite de la page, cliquez sur le symbole Â± (plus/moins) Ã  droite de ce champ de recherche, puis sÃ©lectionnez <b>Tous</b> dans le menu dÃ©roulant. Finalement, appuyez sur la touche EntrÃ©e ou Retour de votre clavier.
 </p>
 
-<!-- 7.5 Qu'est ce que la recherche focalisée et comment effectuer une recherche focalisée ? -->
+<!-- 7.5 Qu'est ce que la recherche focalisÃ©e et comment effectuer une recherche focalisÃ©e ? -->
 <p class="aide_section"><a name="7.5"></a>
-7.5 Qu'est ce que la recherche focalisée et comment effectuer une recherche focalisée ?
+7.5 Qu'est ce que la recherche focalisÃ©e et comment effectuer une recherche focalisÃ©e ?
 </p>
 
 <p class="aide_texte">
-	La recherche focalisée vous permet de chercher un mot, un nombre ou une date dans un champ précis de la base de données.
+	La recherche focalisÃ©e vous permet de chercher un mot, un nombre ou une date dans un champ prÃ©cis de la base de donnÃ©es.
 </p>
 
 <p class="aide_texte">
-		Pour effectuer une recherche diffuse, entrez un ou plusieurs mot(s)-clé(s) dans le champ de recherche situé en haut à droite de la page, cliquez sur le symbole ± (plus/moins) à droite de ce champ de recherche, puis sélectionnez le critère de votre choix parmi ceux proposés (nom, prénom, promotion, date de naissance, e-mail) dans le menu déroulant. Finalement, appuyez sur la touche Entrée ou Retour de votre clavier.
+		Pour effectuer une recherche diffuse, entrez un ou plusieurs mot(s)-clÃ©(s) dans le champ de recherche situÃ© en haut Ã  droite de la page, cliquez sur le symbole Â± (plus/moins) Ã  droite de ce champ de recherche, puis sÃ©lectionnez le critÃ¨re de votre choix parmi ceux proposÃ©s (nom, prÃ©nom, promotion, date de naissance, e-mail) dans le menu dÃ©roulant. Finalement, appuyez sur la touche EntrÃ©e ou Retour de votre clavier.
 </p>
 
 <p class="aide_texte">
-	Attention ! Les formats de données ne sont pas contrôlés: si vous entrez par exemple du texte dans le champ de recherche et que vous lancez la recherche sur le champ "Promotion", qui ne peut contenir que des nombres entiers (les années), la recherche ne pourra aboutir.
+	Attention ! Les formats de donnÃ©es ne sont pas contrÃ´lÃ©s: si vous entrez par exemple du texte dans le champ de recherche et que vous lancez la recherche sur le champ "Promotion", qui ne peut contenir que des nombres entiers (les annÃ©es), la recherche ne pourra aboutir.
 </p>
 
-<!-- 7.6 Comment sont affichés les résultats de recherche ? -->
+<!-- 7.6 Comment sont affichÃ©s les rÃ©sultats de recherche ? -->
 <p class="aide_section"><a name="7.6"></a>
-7.6 Comment sont affichés les résultats de recherche ?
+7.6 Comment sont affichÃ©s les rÃ©sultats de recherche ?
 </p>
 
 <p class="aide_texte">
-	Les résultats de recherche sont affichés dans une liste semblable à la liste des fiches (<a href="#5">v. n°5</a> à ce propos).
+	Les rÃ©sultats de recherche sont affichÃ©s dans une liste semblable Ã  la liste des fiches (<a href="#5">v. nÂ°5</a> Ã  ce propos).
 </p>
 
-<!-- 7.7 Que faire avec ces résultats de recherche ? -->
+<!-- 7.7 Que faire avec ces rÃ©sultats de recherche ? -->
 <p class="aide_section"><a name="7.7"></a>
-7.7 Que faire avec ces résultats de recherche ?
+7.7 Que faire avec ces rÃ©sultats de recherche ?
 </p>
 
 <p class="aide_texte">
-	Vous pouvez bien entendu afficher les détails de toutes les fiches retournées par la recherche. Vous pouvez également exporter (<a href="#7.8">v. n°7.8</a>) et imprimer (<a href="#7.9">v. n°7.9</a>) ces fiches. En revanche, vous ne pouvez pas appliquer de critère de tri sur les résultats de recherche.
+	Vous pouvez bien entendu afficher les dÃ©tails de toutes les fiches retournÃ©es par la recherche. Vous pouvez Ã©galement exporter (<a href="#7.8">v. nÂ°7.8</a>) et imprimer (<a href="#7.9">v. nÂ°7.9</a>) ces fiches. En revanche, vous ne pouvez pas appliquer de critÃ¨re de tri sur les rÃ©sultats de recherche.
 </p>
 
-<!-- 7.8 Comment exporter les résultats d'une recherche ? -->
+<!-- 7.8 Comment exporter les rÃ©sultats d'une recherche ? -->
 <p class="aide_section"><a name="7.8"></a>
-7.8 Comment exporter les résultats d'une recherche ?
+7.8 Comment exporter les rÃ©sultats d'une recherche ?
 </p>
 
 <p class="aide_texte">
-	Pour exporter les résultats d'une recherche, cliquez choisissez <b>Exporter les résultats de la recherche</b> dans le menu <b>Exportation</b>. Pour plus d'information sur l'exportation, reportez-vous à la section <a href="#8">n°8</a>.
+	Pour exporter les rÃ©sultats d'une recherche, cliquez choisissez <b>Exporter les rÃ©sultats de la recherche</b> dans le menu <b>Exportation</b>. Pour plus d'information sur l'exportation, reportez-vous Ã  la section <a href="#8">nÂ°8</a>.
 </p>
 
-<!-- 7.9 Comment imprimer les résultats d'une recherche ? -->
+<!-- 7.9 Comment imprimer les rÃ©sultats d'une recherche ? -->
 <p class="aide_section"><a name="7.9"></a>
-7.9 Comment imprimer les résultats d'une recherche ?
+7.9 Comment imprimer les rÃ©sultats d'une recherche ?
 </p>
 
 <p class="aide_texte">
-	Pour exporter les résultats d'une recherche, cliquez choisissez <b>Imprimer les résultats de la recherche</b> dans le menu <b>Exportation</b>. Pour plus d'information sur l'impression, reportez-vous à la section <a href="#9">n°9</a>. Vous pouvez aussi imprimer les résultats de recherche dans un fichier PDF (<a href="#8.10">v. n°8.10</a>)
+	Pour exporter les rÃ©sultats d'une recherche, cliquez choisissez <b>Imprimer les rÃ©sultats de la recherche</b> dans le menu <b>Exportation</b>. Pour plus d'information sur l'impression, reportez-vous Ã  la section <a href="#9">nÂ°9</a>. Vous pouvez aussi imprimer les rÃ©sultats de recherche dans un fichier PDF (<a href="#8.10">v. nÂ°8.10</a>)
 </p>
 
-<!-- 7.10 Comment utiliser les expressions régulières dans une recherche ? -->
+<!-- 7.10 Comment utiliser les expressions rÃ©guliÃ¨res dans une recherche ? -->
 <p class="aide_section"><a name="7.10"></a>
-7.10 Comment utiliser les expressions régulières dans une recherche ?
+7.10 Comment utiliser les expressions rÃ©guliÃ¨res dans une recherche ?
 </p>
 
 <p class="aide_texte">
-	Le système de recherche de l'annuaire vous permet d'utiliser les expressions régulières (aussi appelées <i>regex</i> pour <i>Regular Expressions</i>). Il s'agit d'un mode de recherche ultraprécis et très puissant dans la formulation des requêtes.
+	Le systÃ¨me de recherche de l'annuaire vous permet d'utiliser les expressions rÃ©guliÃ¨res (aussi appelÃ©es <i>regex</i> pour <i>Regular Expressions</i>). Il s'agit d'un mode de recherche ultraprÃ©cis et trÃ¨s puissant dans la formulation des requÃªtes.
 </p>
 
 <p class="aide_texte">
-	Pour rechercher dans la base de données à l'aide d'une expression régulière, vous devez entrer le mot clé <b>regex</b> suivi du symbole <b>=</b> et de l'expression régulière.
+	Pour rechercher dans la base de donnÃ©es Ã  l'aide d'une expression rÃ©guliÃ¨re, vous devez entrer le mot clÃ© <b>regex</b> suivi du symbole <b>=</b> et de l'expression rÃ©guliÃ¨re.
 </p>
 
 <p class="aide_texte">
@@ -206,90 +206,90 @@ Fichier inclus à partir de faq.php
 	<br />
 	<i>regex=(2000|2006)</i>
 	<br />
-	Cette expression recherchera dans la base de données les nombres 2000 et 2006 et renverra toutes les fiches qui contiennent l'un ou l'autre de ces nombres, ou les deux à la fois.
+	Cette expression recherchera dans la base de donnÃ©es les nombres 2000 et 2006 et renverra toutes les fiches qui contiennent l'un ou l'autre de ces nombres, ou les deux Ã  la fois.
 	<br />
 	<br />
 	<i>regex=(200[0-6])</i>
 	<br />
-	Cette expression recherchera dans la base de données toutes les fiches qui contiennent au moins un nombre compris entre 2000 et 2006.
+	Cette expression recherchera dans la base de donnÃ©es toutes les fiches qui contiennent au moins un nombre compris entre 2000 et 2006.
 	<br />
 	<br />
 	<i>regex=mer([a-z]+)</i>
 	<br />
-	Cette expression recherchera tous les mots qui commencent par <i>mer</i> et finissent par un nombre indéterminé mais non nul de lettres entre A et Z. L'opérateur + étant exclusif (1 ou plus), le mot <i>mer</i> lui-même ne sera pas recherché. Pour rechercher également le mot <i>mer</i> il faut utiliser l'opérateur * (0 ou plus) à la place de l'opérateur +. Pour rechercher <i>n'importe quel caractère</i> (c'est-à-dire également des chiffres et des symboles), il faudrait remplacer <i>[a-z]</i> par un point (.).
+	Cette expression recherchera tous les mots qui commencent par <i>mer</i> et finissent par un nombre indÃ©terminÃ© mais non nul de lettres entre A et Z. L'opÃ©rateur + Ã©tant exclusif (1 ou plus), le mot <i>mer</i> lui-mÃªme ne sera pas recherchÃ©. Pour rechercher Ã©galement le mot <i>mer</i> il faut utiliser l'opÃ©rateur * (0 ou plus) Ã  la place de l'opÃ©rateur +. Pour rechercher <i>n'importe quel caractÃ¨re</i> (c'est-Ã -dire Ã©galement des chiffres et des symboles), il faudrait remplacer <i>[a-z]</i> par un point (.).
 	<br />
 	<br />
 	<i>regex=(.+)mer(.+)</i>
 	<br />
-	Cette expression recherchera la suite de lettres "mer" à l'intérieur d'un autre mot. Les mots trouvés ne pourront ni commencer ni finir par "mer". Pour inclure les mots qui commencent ou qui finissent par "mer", il faudrait remplacer l'opérateur + par l'opérateur *. Cette expression est celle par défaut utilisée par la recherche automatique sur tous les motifs de recherche (<a href="#7.3">v. n°7.3</a>).
+	Cette expression recherchera la suite de lettres "mer" Ã  l'intÃ©rieur d'un autre mot. Les mots trouvÃ©s ne pourront ni commencer ni finir par "mer". Pour inclure les mots qui commencent ou qui finissent par "mer", il faudrait remplacer l'opÃ©rateur + par l'opÃ©rateur *. Cette expression est celle par dÃ©faut utilisÃ©e par la recherche automatique sur tous les motifs de recherche (<a href="#7.3">v. nÂ°7.3</a>).
 	<br />
 	<br />
-	<i>regex=mer([a-z]{1,1})redi</i> ou (moins précis) <i>regex=mer(.?)redi</i>
+	<i>regex=mer([a-z]{1,1})redi</i> ou (moins prÃ©cis) <i>regex=mer(.?)redi</i>
 	<br />
-	Cette expression peut être utilisée pour remplacer le <i>wildcard</i> point d'interrogation (?), indisponible dans la recherche automatique (<a href="#7.3">v. n°7.3</a>), qui représente 1 lettre indéterminée dans un mot. Ici, la lettre sera probablement un <i>c</i>, qui formera le mot <i>mercredi</i>.
+	Cette expression peut Ãªtre utilisÃ©e pour remplacer le <i>wildcard</i> point d'interrogation (?), indisponible dans la recherche automatique (<a href="#7.3">v. nÂ°7.3</a>), qui reprÃ©sente 1 lettre indÃ©terminÃ©e dans un mot. Ici, la lettre sera probablement un <i>c</i>, qui formera le mot <i>mercredi</i>.
 	<br />
 	<br />
 	<i>regex=(^[a-z]*)mer(^[a-z]*)</i>
 	<br />
-	Cette expression recherche "mer" lorsqu'il s'agit d'un mot indépendant, qui n'est pas contenu dans un autre mot.
+	Cette expression recherche "mer" lorsqu'il s'agit d'un mot indÃ©pendant, qui n'est pas contenu dans un autre mot.
 </p>
 
 <p class="aide_texte">
-	<u>Portée</u>
+	<u>PortÃ©e</u>
 	<br />
-	Les expressions régulières peuvent être utilisées dans les recherches focalisées (<a href="#7.5">v. n°7.5</a>), dans les recherches diffuses (<a href="#7.4">v. n°7.4</a>) et dans les recherches automatiques (<a href="#7.3">v. n°7.3</a>). C'est la raison pour laquelle si vous tapez dans le champ de recherche <i>regex=(2000|2006)</i>, la recherche ne se limitera pas au champ <i>promotion</i>. Si un utilisateur a indiqué qu'il est de la promotion 1990, par exemple, mais qu'il a écrit n'importe où ailleurs dans sa fiche qu'il a effectué telle ou telle activité en 2000, sa fiche sera retournée en résultat de la recherche. La recherche intelligente avec des expressions régulières parcourt tous les champs. Si vous désirez ne rechercher que les promotions 2000 ou 2006, vous devriez plutôt effectuer une recherche focalisée ou écrire une requête normale: <i>2000 2006</i>.
+	Les expressions rÃ©guliÃ¨res peuvent Ãªtre utilisÃ©es dans les recherches focalisÃ©es (<a href="#7.5">v. nÂ°7.5</a>), dans les recherches diffuses (<a href="#7.4">v. nÂ°7.4</a>) et dans les recherches automatiques (<a href="#7.3">v. nÂ°7.3</a>). C'est la raison pour laquelle si vous tapez dans le champ de recherche <i>regex=(2000|2006)</i>, la recherche ne se limitera pas au champ <i>promotion</i>. Si un utilisateur a indiquÃ© qu'il est de la promotion 1990, par exemple, mais qu'il a Ã©crit n'importe oÃ¹ ailleurs dans sa fiche qu'il a effectuÃ© telle ou telle activitÃ© en 2000, sa fiche sera retournÃ©e en rÃ©sultat de la recherche. La recherche intelligente avec des expressions rÃ©guliÃ¨res parcourt tous les champs. Si vous dÃ©sirez ne rechercher que les promotions 2000 ou 2006, vous devriez plutÃ´t effectuer une recherche focalisÃ©e ou Ã©crire une requÃªte normale: <i>2000 2006</i>.
 </p>
 
 <p class="aide_texte">
-	Les recherches basées sur les expressions régulières ne prennent pas en compte les autres opérateurs de recherche, tels que l'opérateur d'agrégation <b>&&</b>. Veillez donc à ne pas les utiliser car cela reviendrait à former une requête de recherche déficiente et aucun résultat correct ne serait retourné. C'est pour cette raison que vous ne devez jamais mettre d'espace dans une expression régulière: l'espace est interprété comme un opérateur logique <i>ou</i>.
+	Les recherches basÃ©es sur les expressions rÃ©guliÃ¨res ne prennent pas en compte les autres opÃ©rateurs de recherche, tels que l'opÃ©rateur d'agrÃ©gation <b>&&</b>. Veillez donc Ã  ne pas les utiliser car cela reviendrait Ã  former une requÃªte de recherche dÃ©ficiente et aucun rÃ©sultat correct ne serait retournÃ©. C'est pour cette raison que vous ne devez jamais mettre d'espace dans une expression rÃ©guliÃ¨re: l'espace est interprÃ©tÃ© comme un opÃ©rateur logique <i>ou</i>.
 </p>
 
 <p class="aide_texte">
 	<u>Syntaxe</u>
 	<br />
-	La syntaxe des expressions régulières est basée sur l'implémentation d'Henry Spencer, qui est retenue par MySQL.
+	La syntaxe des expressions rÃ©guliÃ¨res est basÃ©e sur l'implÃ©mentation d'Henry Spencer, qui est retenue par MySQL.
 	<br />
 	<ul style="list-style-type : none;">
-		<li /><b>^</b>&nbsp;&nbsp;&nbsp;Correspond à l'opérateur d'ouverture d'une expression.
-		<li /><b>$</b>&nbsp;&nbsp;&nbsp;Correspond à l'opérateur de fermeture d'une expression.
-		<li /><b>.</b>&nbsp;&nbsp;&nbsp;Représente n'importe quel caractère.
+		<li /><b>^</b>&nbsp;&nbsp;&nbsp;Correspond Ã  l'opÃ©rateur d'ouverture d'une expression.
+		<li /><b>$</b>&nbsp;&nbsp;&nbsp;Correspond Ã  l'opÃ©rateur de fermeture d'une expression.
+		<li /><b>.</b>&nbsp;&nbsp;&nbsp;ReprÃ©sente n'importe quel caractÃ¨re.
 
 		<li />&nbsp;
 
-		<li /><b>x*</b> ou <b>x{0,}</b>&nbsp;&nbsp;&nbsp;Correspond à 0 ou plus caractères <i>x</i>.
-		<li /><b>x+</b> ou <b>x{1,}</b>&nbsp;&nbsp;&nbsp;Correspond à 1 ou plus caractères <i>x</i>.
-		<li /><b>x?</b> ou <b>x{0,1}</b>&nbsp;&nbsp;&nbsp;Correspond à 0 où au caractère <i>x</i>.
-		<li /><b>(x)*</b>&nbsp;&nbsp;&nbsp;Correspond à une séquence de 0 ou plus éléments <i>x</i>.
-		<li /><b>(x)+</b>&nbsp;&nbsp;&nbsp;Correspond à une séquence de 1 ou plus éléments <i>x</i>.
-		<li /><b>(x)?</b>&nbsp;&nbsp;&nbsp;Correspond à 0 ou à la séquence d'éléments <i>x</i>.
+		<li /><b>x*</b> ou <b>x{0,}</b>&nbsp;&nbsp;&nbsp;Correspond Ã  0 ou plus caractÃ¨res <i>x</i>.
+		<li /><b>x+</b> ou <b>x{1,}</b>&nbsp;&nbsp;&nbsp;Correspond Ã  1 ou plus caractÃ¨res <i>x</i>.
+		<li /><b>x?</b> ou <b>x{0,1}</b>&nbsp;&nbsp;&nbsp;Correspond Ã  0 oÃ¹ au caractÃ¨re <i>x</i>.
+		<li /><b>(x)*</b>&nbsp;&nbsp;&nbsp;Correspond Ã  une sÃ©quence de 0 ou plus Ã©lÃ©ments <i>x</i>.
+		<li /><b>(x)+</b>&nbsp;&nbsp;&nbsp;Correspond Ã  une sÃ©quence de 1 ou plus Ã©lÃ©ments <i>x</i>.
+		<li /><b>(x)?</b>&nbsp;&nbsp;&nbsp;Correspond Ã  0 ou Ã  la sÃ©quence d'Ã©lÃ©ments <i>x</i>.
 
 		<li />&nbsp;
 
-		<li /><b>abc|xyx</b>&nbsp;&nbsp;&nbsp;Correspond à la séquence <i>abc</i> <b>ou</b> à la séquence <i>xyz</i>.
+		<li /><b>abc|xyx</b>&nbsp;&nbsp;&nbsp;Correspond Ã  la sÃ©quence <i>abc</i> <b>ou</b> Ã  la sÃ©quence <i>xyz</i>.
 
 		<li />&nbsp;
 
-		<li /><b>[a-d]</b>&nbsp;&nbsp;&nbsp;Renvoie toutes les valeurs entre <i>a</i> et <i>d</i>, c'est-à-dire <i>a b c d</i>.
-		<li /><b>[1-4]</b>&nbsp;&nbsp;&nbsp;Renvoie toutes les valeurs entre <i>1</i> et <i>4</i>, c'est-à-dire <i>1 2 3 4</i>.
+		<li /><b>[a-d]</b>&nbsp;&nbsp;&nbsp;Renvoie toutes les valeurs entre <i>a</i> et <i>d</i>, c'est-Ã -dire <i>a b c d</i>.
+		<li /><b>[1-4]</b>&nbsp;&nbsp;&nbsp;Renvoie toutes les valeurs entre <i>1</i> et <i>4</i>, c'est-Ã -dire <i>1 2 3 4</i>.
 		<li /><b>[^a-d]</b>&nbsp;&nbsp;&nbsp;Renvoie toutes les valeurs qui ne sont pas comprises entre <i>a</i> et <i>d</i>.
 		<li /><b>[^1-4]</b>&nbsp;&nbsp;&nbsp;Renvoie toutes les valeurs qui ne sont pas comprises entre <i>1</i> et <i>4</i>.
 
 		<li />&nbsp;
 
-		<li /><b>[:character_class:]</b>&nbsp;&nbsp;&nbsp;Remplace la liste des caractère appartement à la classé spécifiée. Les classes possibles sont les suivantes:
+		<li /><b>[:character_class:]</b>&nbsp;&nbsp;&nbsp;Remplace la liste des caractÃ¨re appartement Ã  la classÃ© spÃ©cifiÃ©e. Les classes possibles sont les suivantes:
 		<ul style="list-style-type : none;">
-			<li /><i>alnum</i>&nbsp;&nbsp;&nbsp;Caractères alpha-numériques
-			<li /><i>alpha</i>&nbsp;&nbsp;&nbsp;Caractères alphabétiques
-			<li /><i>blank</i>&nbsp;&nbsp;&nbsp;Caractères espace
-			<li /><i>cntrl</i>&nbsp;&nbsp;&nbsp;Caractères de contrôle
+			<li /><i>alnum</i>&nbsp;&nbsp;&nbsp;CaractÃ¨res alpha-numÃ©riques
+			<li /><i>alpha</i>&nbsp;&nbsp;&nbsp;CaractÃ¨res alphabÃ©tiques
+			<li /><i>blank</i>&nbsp;&nbsp;&nbsp;CaractÃ¨res espace
+			<li /><i>cntrl</i>&nbsp;&nbsp;&nbsp;CaractÃ¨res de contrÃ´le
 			<li /><i>digit</i>&nbsp;&nbsp;&nbsp;Chiffres
-			<li /><i>graph</i>&nbsp;&nbsp;&nbsp;Caractères graphiques
+			<li /><i>graph</i>&nbsp;&nbsp;&nbsp;CaractÃ¨res graphiques
 			<li /><i>lower</i>&nbsp;&nbsp;&nbsp;Minuscules
-			<li /><i>print</i>&nbsp;&nbsp;&nbsp;Caractères graphiques ou espaces
+			<li /><i>print</i>&nbsp;&nbsp;&nbsp;CaractÃ¨res graphiques ou espaces
 			<li /><i>punct</i>&nbsp;&nbsp;&nbsp;Ponctuation
 			<li /><i>space</i>&nbsp;&nbsp;&nbsp;Espace, tabulation, nouvelle ligne et retour chariot
 			<li /><i>upper</i>&nbsp;&nbsp;&nbsp;Majuscules
-			<li /><i>xdigit</i>&nbsp;&nbsp;&nbsp;Chiffres hexadécimaux
+			<li /><i>xdigit</i>&nbsp;&nbsp;&nbsp;Chiffres hexadÃ©cimaux
 		</ul>
 
 
@@ -301,45 +301,45 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	<b>NB</b>: Dans le cas d'une recherche par formulation d'une expression régulière, les résultats ne sont pas triés par pertinence. La pertinence de chaque résultat n'est même pas calculée. La raison est la suivante: les expressions régulières permettent de formuler des requêtes conditionnelles. Par hypothèse, seules les fiches qui satisfont la condition posée dans la requête sont retournées en résultat. Par conséquent, tous les résultats ont la même pertinence puisqu'ils satisfont tous la même condition de la même manière.
+	<b>NB</b>: Dans le cas d'une recherche par formulation d'une expression rÃ©guliÃ¨re, les rÃ©sultats ne sont pas triÃ©s par pertinence. La pertinence de chaque rÃ©sultat n'est mÃªme pas calculÃ©e. La raison est la suivante: les expressions rÃ©guliÃ¨res permettent de formuler des requÃªtes conditionnelles. Par hypothÃ¨se, seules les fiches qui satisfont la condition posÃ©e dans la requÃªte sont retournÃ©es en rÃ©sultat. Par consÃ©quent, tous les rÃ©sultats ont la mÃªme pertinence puisqu'ils satisfont tous la mÃªme condition de la mÃªme maniÃ¨re.
 </p>
 
-<!-- 7.11 Comment effectuer une recherche sémantique ? -->
+<!-- 7.11 Comment effectuer une recherche sÃ©mantique ? -->
 <p class="aide_section"><a name="7.11"></a>
-7.11 Comment effectuer une recherche sémantique ?
+7.11 Comment effectuer une recherche sÃ©mantique ?
 </p>
 
 <p class="aide_texte">
-	Vous pouvez effectuer une recherche sémantique en entourant le terme recherché de parenthèses, de cette manière: <b><i>(cherchez-moi)</i></b>.
+	Vous pouvez effectuer une recherche sÃ©mantique en entourant le terme recherchÃ© de parenthÃ¨ses, de cette maniÃ¨re: <b><i>(cherchez-moi)</i></b>.
 </p>
 
 <p class="aide_texte">
-	Cette méthode de recherche ne concerne que les champs correspondant aux 7 questions. Les champs contenant les données personnelles (nom, prénom, date de naissance, promotion, etc.) ne sont pas concernés.
+	Cette mÃ©thode de recherche ne concerne que les champs correspondant aux 7 questions. Les champs contenant les donnÃ©es personnelles (nom, prÃ©nom, date de naissance, promotion, etc.) ne sont pas concernÃ©s.
 </p>
 
 <p class="aide_texte">
-	La recherche sémantique est basée sur un <i>index</i> qui contient des mots-clés. Sont exclus les mots génériques, qui sont très souvent employés. Par exemple, dans la phrase (Je vais me baigner à la mer), seuls seront indexés les mots "vais", "baigner" et "mer". La base de données n'a pas de liste prédéfinie de mots génériques. La liste est construite en fonction du contenu actuel de la base de données. Ainsi, par exemple, dans le cas du présent annuaire, il est probable que les mots "anglais" et "français" ne soient pas indexés car la plupart des personnes auront entré des deux langues en tant que langues parlées, lues ou écrites.
+	La recherche sÃ©mantique est basÃ©e sur un <i>index</i> qui contient des mots-clÃ©s. Sont exclus les mots gÃ©nÃ©riques, qui sont trÃ¨s souvent employÃ©s. Par exemple, dans la phrase (Je vais me baigner Ã  la mer), seuls seront indexÃ©s les mots "vais", "baigner" et "mer". La base de donnÃ©es n'a pas de liste prÃ©dÃ©finie de mots gÃ©nÃ©riques. La liste est construite en fonction du contenu actuel de la base de donnÃ©es. Ainsi, par exemple, dans le cas du prÃ©sent annuaire, il est probable que les mots "anglais" et "franÃ§ais" ne soient pas indexÃ©s car la plupart des personnes auront entrÃ© des deux langues en tant que langues parlÃ©es, lues ou Ã©crites.
 </p>
 
 <p class="aide_texte">
-	Les résultats sont triés par ordre décroissant de pertinence. Ainsi, si vous recherchez le mot "mer" et que plusieurs fiches sont retournées, celle qui contiendra le plus grand nombre d'occurrences de ce mot sera en haut de la liste.
+	Les rÃ©sultats sont triÃ©s par ordre dÃ©croissant de pertinence. Ainsi, si vous recherchez le mot "mer" et que plusieurs fiches sont retournÃ©es, celle qui contiendra le plus grand nombre d'occurrences de ce mot sera en haut de la liste.
 </p>
 
 <p class="aide_texte">
-	Le principal intérêt de la recherche sémantique est de prendre en compte des phrases complètes, composées de plusieurs mots. Dans l'exemple précédent, (Je vais me baigner à la mer), les mots recherchés sont "vais", "baigner" et "mer": s'ils sont tous les trois présents dans la même fiche, cette fiche aura un score de pertinence élevé. Si une autre fiche contient deux de ces mots, mais pas le troisième, sa pertinence sera beaucoup plus faible.
+	Le principal intÃ©rÃªt de la recherche sÃ©mantique est de prendre en compte des phrases complÃ¨tes, composÃ©es de plusieurs mots. Dans l'exemple prÃ©cÃ©dent, (Je vais me baigner Ã  la mer), les mots recherchÃ©s sont "vais", "baigner" et "mer": s'ils sont tous les trois prÃ©sents dans la mÃªme fiche, cette fiche aura un score de pertinence Ã©levÃ©. Si une autre fiche contient deux de ces mots, mais pas le troisiÃ¨me, sa pertinence sera beaucoup plus faible.
 </p>
 
 <p class="aide_texte">
-	Les recherches sémantiques ne prennent pas en compte les autres opérateurs de recherche, tels que l'opérateur d'agrégation <b>&&</b>. Veillez donc à ne pas les utiliser car cela reviendrait à former une requête de recherche déficiente et aucun résultat correct ne serait retourné.
+	Les recherches sÃ©mantiques ne prennent pas en compte les autres opÃ©rateurs de recherche, tels que l'opÃ©rateur d'agrÃ©gation <b>&&</b>. Veillez donc Ã  ne pas les utiliser car cela reviendrait Ã  former une requÃªte de recherche dÃ©ficiente et aucun rÃ©sultat correct ne serait retournÃ©.
 </p>
 
-<!-- 7.12 Comment fonctionne la "pertinence" des résultats de recherche ? -->
+<!-- 7.12 Comment fonctionne la "pertinence" des rÃ©sultats de recherche ? -->
 <p class="aide_section"><a name="7.12"></a>
-7.12 Comment fonctionne la "pertinence" des résultats de recherche ?
+7.12 Comment fonctionne la "pertinence" des rÃ©sultats de recherche ?
 </p>
 
 <p class="aide_texte">
-	Tous les résultats affichés après une recherche répondent à la requête de recherche formulée. Mais certains y répondent <i>mieux</i> que d'autres. La pertinence vous sert à repérer en un coup d'oeil les meilleurs résultats.
+	Tous les rÃ©sultats affichÃ©s aprÃ¨s une recherche rÃ©pondent Ã  la requÃªte de recherche formulÃ©e. Mais certains y rÃ©pondent <i>mieux</i> que d'autres. La pertinence vous sert Ã  repÃ©rer en un coup d'oeil les meilleurs rÃ©sultats.
 </p>
 
 <p class="aide_texte">
@@ -349,7 +349,7 @@ Fichier inclus à partir de faq.php
 			<u>Fiche 1</u>
 			<ul>
 				<li /><b>Nom</b>: Dupont
-				<li /><b>Prénom</b>: Pierre
+				<li /><b>PrÃ©nom</b>: Pierre
 				<li /><b>Promotion</b>: 2000
 			</ul>
 		</li>
@@ -357,7 +357,7 @@ Fichier inclus à partir de faq.php
 			<u>Fiche 2</u>
 			<ul>
 				<li /><b>Nom</b>: Dupont
-				<li /><b>Prénom</b>: Martin
+				<li /><b>PrÃ©nom</b>: Martin
 				<li /><b>Promotion</b>: 2000
 			</ul>
 		</li>
@@ -365,7 +365,7 @@ Fichier inclus à partir de faq.php
 			<u>Fiche 3</u>
 			<ul>
 				<li /><b>Nom</b>: Dupont
-				<li /><b>Prénom</b>: Robert
+				<li /><b>PrÃ©nom</b>: Robert
 				<li /><b>Promotion</b>: 2005
 			</ul>
 		</li>
@@ -373,26 +373,26 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Imaginons maintenant les requêtes suivantes, et voyons si certains résultats sont plus pertinents que d'autres.
+	Imaginons maintenant les requÃªtes suivantes, et voyons si certains rÃ©sultats sont plus pertinents que d'autres.
 	<ul style="list-style-type : none;">
 		<li>
 			<u>Recherche</u>: <i>2000</i>
 			<ul>
 				<li><b>Fiche 1</b>
 					<ul>
-						<li />Terme de recherche cité: <b>1</b> fois
+						<li />Terme de recherche citÃ©: <b>1</b> fois
 						<li />Pertinence: 1/1 soit 100%
 					</ul>
 				</li>
 				<li><b>Fiche 2</b>
 					<ul>
-						<li />Terme de recherche cité: <b>1</b> fois
+						<li />Terme de recherche citÃ©: <b>1</b> fois
 						<li />Pertinence: 1/1 soit 100%
 					</ul>
 				</li>
 				<li><b>Fiche 3</b>
 					<ul>
-						<li />Terme de recherche cité: <b>0</b> fois
+						<li />Terme de recherche citÃ©: <b>0</b> fois
 						<li />Pertinence: 0/1 soit 0%
 					</ul>
 				</li>
@@ -405,22 +405,22 @@ Fichier inclus à partir de faq.php
 			<ul>
 				<li><b>Fiche 1</b>
 					<ul>
-						<li />Terme de recherche 1 cité: <b>1</b> fois
-						<li />Terme de recherche 2 cité: <b>1</b> fois
+						<li />Terme de recherche 1 citÃ©: <b>1</b> fois
+						<li />Terme de recherche 2 citÃ©: <b>1</b> fois
 						<li />Pertinence: 2/2 soit 100%
 					</ul>
 				</li>
 				<li><b>Fiche 2</b>
 					<ul>
-						<li />Terme de recherche 1 cité: <b>1</b> fois
-						<li />Terme de recherche 2 cité: <b>1</b> fois
+						<li />Terme de recherche 1 citÃ©: <b>1</b> fois
+						<li />Terme de recherche 2 citÃ©: <b>1</b> fois
 						<li />Pertinence: 2/2 soit 100%
 					</ul>
 				</li>
 				<li><b>Fiche 3</b>
 					<ul>
-						<li />Terme de recherche 1 cité: <b>0</b> fois
-						<li />Terme de recherche 2 cité: <b>1</b> fois
+						<li />Terme de recherche 1 citÃ©: <b>0</b> fois
+						<li />Terme de recherche 2 citÃ©: <b>1</b> fois
 						<li />Pertinence: 1/2 soit 50%
 					</ul>
 				</li>
@@ -433,25 +433,25 @@ Fichier inclus à partir de faq.php
 			<ul>
 				<li><b>Fiche 1</b>
 					<ul>
-						<li />Terme de recherche 1 cité: <b>1</b> fois
-						<li />Terme de recherche 2 cité: <b>1</b> fois
-						<li />Terme de recherche 3 cité: <b>1</b> fois
+						<li />Terme de recherche 1 citÃ©: <b>1</b> fois
+						<li />Terme de recherche 2 citÃ©: <b>1</b> fois
+						<li />Terme de recherche 3 citÃ©: <b>1</b> fois
 						<li />Pertinence: 3/3 soit 100%
 					</ul>
 				</li>
 				<li><b>Fiche 2</b>
 					<ul>
-						<li />Terme de recherche 1 cité: <b>1</b> fois
-						<li />Terme de recherche 2 cité: <b>1</b> fois
-						<li />Terme de recherche 3 cité: <b>0</b> fois
+						<li />Terme de recherche 1 citÃ©: <b>1</b> fois
+						<li />Terme de recherche 2 citÃ©: <b>1</b> fois
+						<li />Terme de recherche 3 citÃ©: <b>0</b> fois
 						<li />Pertinence: 2/3 soit 66%
 					</ul>
 				</li>
 				<li><b>Fiche 3</b>
 					<ul>
-						<li />Terme de recherche 1 cité: <b>0</b> fois
-						<li />Terme de recherche 2 cité: <b>1</b> fois
-						<li />Terme de recherche 3 cité: <b>0</b> fois
+						<li />Terme de recherche 1 citÃ©: <b>0</b> fois
+						<li />Terme de recherche 2 citÃ©: <b>1</b> fois
+						<li />Terme de recherche 3 citÃ©: <b>0</b> fois
 						<li />Pertinence: 1/3 soit 33%
 					</ul>
 				</li>
@@ -461,19 +461,19 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Il est clair dans les exemples ci-dessus que tous les résultats de recherche n'ont pas la même pertinence. Les requêtes formulées ci-dessus sont des requêtes par défaut, qui utilisent le mot clé <i>OU</i>. Par exemple, la troisième recherche pourrait être formulée en français: <i>affichez les fiches qui contiennent <u>2000</u> ou <u>Dupont</u> ou <u>Pierre</u></i>. Cela revient à dire: <i>affichez les fiches dans lesquelles apparaît <u>2000</u> et toutes celles dans lesquelles apparaît <u>Dupont</u> et toutes celles dans lesquelles apparaît <u>Pierre</u></i>.
+	Il est clair dans les exemples ci-dessus que tous les rÃ©sultats de recherche n'ont pas la mÃªme pertinence. Les requÃªtes formulÃ©es ci-dessus sont des requÃªtes par dÃ©faut, qui utilisent le mot clÃ© <i>OU</i>. Par exemple, la troisiÃ¨me recherche pourrait Ãªtre formulÃ©e en franÃ§ais: <i>affichez les fiches qui contiennent <u>2000</u> ou <u>Dupont</u> ou <u>Pierre</u></i>. Cela revient Ã  dire: <i>affichez les fiches dans lesquelles apparaÃ®t <u>2000</u> et toutes celles dans lesquelles apparaÃ®t <u>Dupont</u> et toutes celles dans lesquelles apparaÃ®t <u>Pierre</u></i>.
 </p>
 
 <p class="aide_texte">
-Si une des fiches affichées en résultat contient à la fois <u>2000</u> et <u>Dupont</u>, par exemple, elle n'aura <i>a priori</i> pas plus de valeur qu'une fiche qui ne contient qu'un seul de ces termes. La pertinence intervient ici pour donner plus de valeur à la première fiche. La pertinence est donc déterminée -en partie- par le nombre de termes de recherche présents dans chaque résultat.
+Si une des fiches affichÃ©es en rÃ©sultat contient Ã  la fois <u>2000</u> et <u>Dupont</u>, par exemple, elle n'aura <i>a priori</i> pas plus de valeur qu'une fiche qui ne contient qu'un seul de ces termes. La pertinence intervient ici pour donner plus de valeur Ã  la premiÃ¨re fiche. La pertinence est donc dÃ©terminÃ©e -en partie- par le nombre de termes de recherche prÃ©sents dans chaque rÃ©sultat.
 </p>
 
 <p class="aide_texte">
-	De même, si une des fiches contient plusieurs fois <u>2000</u>, elle n'aura <i>a priori</i> pas plus de valeur qu'une fiche qui ne contient qu'une seule fois <u>2000</u>. Là encore, le mécanisme de pertinence intervient comme correcteur pour donner une plus grande valeur à cette première fiche. La pertinence est donc déterminée non seulement par le nombre de terme recherchés présents dans chaque résultat, mais aussi par le nombre d'occurrences de chaque terme recherché.
+	De mÃªme, si une des fiches contient plusieurs fois <u>2000</u>, elle n'aura <i>a priori</i> pas plus de valeur qu'une fiche qui ne contient qu'une seule fois <u>2000</u>. LÃ  encore, le mÃ©canisme de pertinence intervient comme correcteur pour donner une plus grande valeur Ã  cette premiÃ¨re fiche. La pertinence est donc dÃ©terminÃ©e non seulement par le nombre de terme recherchÃ©s prÃ©sents dans chaque rÃ©sultat, mais aussi par le nombre d'occurrences de chaque terme recherchÃ©.
 </p>
 
 <p class="aide_texte">
-	<u>Exemple</u>. Pour reprendre l'exemple précédent un peu modifié, imaginons que nous ayons les fiches suivantes:
+	<u>Exemple</u>. Pour reprendre l'exemple prÃ©cÃ©dent un peu modifiÃ©, imaginons que nous ayons les fiches suivantes:
 	<ul style="list-style-type : none;">
 		<li>
 			<u>Fiche 1</u>
@@ -515,15 +515,15 @@ Si une des fiches affichées en résultat contient à la fois <u>2000</u> et <u>Dup
 </p>
 
 <p class="aide_texte">
-	Imaginons maintenant la requête suivante, et voyons si certains résultats sont plus pertinents que d'autres.
+	Imaginons maintenant la requÃªte suivante, et voyons si certains rÃ©sultats sont plus pertinents que d'autres.
 	<ul style="list-style-type : none;">
 		<li>
 			<u>Recherche</u>: <i>2000 Dupont</i>
 			<ul>
 				<li><b>Fiche 1</b>
 					<ul>
-						<li />Terme de recherche 1 cité: <b>2</b> fois
-						<li />Terme de recherche 2 cité: <b>2</b> fois
+						<li />Terme de recherche 1 citÃ©: <b>2</b> fois
+						<li />Terme de recherche 2 citÃ©: <b>2</b> fois
 						<li />Pertinence: 4/4 soit 100%
 					</ul>
 				</li>
@@ -531,8 +531,8 @@ Si une des fiches affichées en résultat contient à la fois <u>2000</u> et <u>Dup
 
 				<li><b>Fiche 2</b>
 					<ul>
-						<li />Terme de recherche 1 cité: <b>2</b> fois
-						<li />Terme de recherche 2 cité: <b>1</b> fois
+						<li />Terme de recherche 1 citÃ©: <b>2</b> fois
+						<li />Terme de recherche 2 citÃ©: <b>1</b> fois
 						<li />Pertinence: 3/4 soit 75%
 					</ul>
 				</li>
@@ -540,8 +540,8 @@ Si une des fiches affichées en résultat contient à la fois <u>2000</u> et <u>Dup
 
 				<li><b>Fiche 3</b>
 					<ul>
-						<li />Terme de recherche 1 cité: <b>1</b> fois
-						<li />Terme de recherche 2 cité: <b>1</b> fois
+						<li />Terme de recherche 1 citÃ©: <b>1</b> fois
+						<li />Terme de recherche 2 citÃ©: <b>1</b> fois
 						<li />Pertinence: 2/4 soit 50%
 					</ul>
 				</li>
@@ -549,8 +549,8 @@ Si une des fiches affichées en résultat contient à la fois <u>2000</u> et <u>Dup
 
 				<li><b>Fiche 4</b>
 					<ul>
-						<li />Terme de recherche 1 cité: <b>1</b> fois
-						<li />Terme de recherche 2 cité: <b>0</b> fois
+						<li />Terme de recherche 1 citÃ©: <b>1</b> fois
+						<li />Terme de recherche 2 citÃ©: <b>0</b> fois
 						<li />Pertinence: 1/4 soit 25%
 					</ul>
 				</li>
@@ -560,27 +560,27 @@ Si une des fiches affichées en résultat contient à la fois <u>2000</u> et <u>Dup
 </p>
 
 <p class="aide_texte">
-<u>La pertinence est un mécanisme correcteur qui permet de mettre en valeur les fiches en fonction du nombre de termes recherchés qu'elles contiennent et du nombre d'occurrences de chacun de ces termes.</u>
+<u>La pertinence est un mÃ©canisme correcteur qui permet de mettre en valeur les fiches en fonction du nombre de termes recherchÃ©s qu'elles contiennent et du nombre d'occurrences de chacun de ces termes.</u>
 </p>
 
 <p class="aide_texte">
-L'opérateur d'agrégation <b>&&</b> (<a href="#7.3">v. n°7.3</a>) fonctionne en réalité comme une exclusion de tous les résultats qui n'ont pas un score de pertinence de 100%. Par exemple, <i>2000&&Dupont</i> ne renverra que les fiches qui contiennent à la fois <i>2000</i> et <i>Dupont</i>. C'est-à-dire les fiches qui, abstraction faite du nombre d'occurrences des termes de recherche à l'intérieur de chaque fiche, ont un score de pertinence de 100%. La seule différence entre la pertinence et l'exclusion par l'opérateur d'agrégation est la prise en compte du nombre d'occurrences du terme recherché.
+L'opÃ©rateur d'agrÃ©gation <b>&&</b> (<a href="#7.3">v. nÂ°7.3</a>) fonctionne en rÃ©alitÃ© comme une exclusion de tous les rÃ©sultats qui n'ont pas un score de pertinence de 100%. Par exemple, <i>2000&&Dupont</i> ne renverra que les fiches qui contiennent Ã  la fois <i>2000</i> et <i>Dupont</i>. C'est-Ã -dire les fiches qui, abstraction faite du nombre d'occurrences des termes de recherche Ã  l'intÃ©rieur de chaque fiche, ont un score de pertinence de 100%. La seule diffÃ©rence entre la pertinence et l'exclusion par l'opÃ©rateur d'agrÃ©gation est la prise en compte du nombre d'occurrences du terme recherchÃ©.
 </p>
 
 <p class="aide_texte">
-La pertinence prend parfois en compte des paramètres extérieurs à la requête. Elle ignore ainsi les restrictions de portée fixées à certains champs, pour certains types de recherches. La pertinence est calculée en principe pour les requêtes complexes composées, comme dans les exemples ci-dessus. Mais elle n'est calculée qu'après que la recherche ait été effectuée. Or, certains termes de recherche ne seront recherchés que dans certains champs. Dans le premier exemple donné ci-dessus, <i>2000</i> n'est recherché que dans les champs numériques, c'est-à-dire <i>Promotion</i> et <i>Date de naissance</i>. Si une fiche contient le terme <i>2000</i> dans un autre champ, sa pertinence sera <i>plus élevée</i> que la pertinence des fiches qui ne contiennent <i>2000</i> que dans le champ <i>Promotion</i> ou dans le champ <i>Date de naissance</i>. En revanche, un fiche ne contenant <i>2000</i> ni dans le champ <i>Promotion</i> ni dans le champ <i>Date de naissance</i> aura obligatoirement une pertinence de 0. De même, la motif de recherche <i>2000&lt;2006</i> renvoie toutes les fiches correspondant aux promotions comprises entre 2000 et 2006 (bornes incluses). Par hypothèse, seules les fiches répondant à ce seul et unique critère sont affichées: elles devraient donc toutes avoir, en principe, la même pertinence, la pertinence maximale de 100%. Cependant, dans ce cas, la pertinence est calculée en fonction de paramètres extérieurs à la requête: elle ne se limite pas au champ <i>Promotion</i> qui est le seul pris en compte par la recherche. La pertinence sera donc calculée en fonction du nombre d'occurrences de chacune des dates présentes dans l'intervalle spécifié.
+La pertinence prend parfois en compte des paramÃ¨tres extÃ©rieurs Ã  la requÃªte. Elle ignore ainsi les restrictions de portÃ©e fixÃ©es Ã  certains champs, pour certains types de recherches. La pertinence est calculÃ©e en principe pour les requÃªtes complexes composÃ©es, comme dans les exemples ci-dessus. Mais elle n'est calculÃ©e qu'aprÃ¨s que la recherche ait Ã©tÃ© effectuÃ©e. Or, certains termes de recherche ne seront recherchÃ©s que dans certains champs. Dans le premier exemple donnÃ© ci-dessus, <i>2000</i> n'est recherchÃ© que dans les champs numÃ©riques, c'est-Ã -dire <i>Promotion</i> et <i>Date de naissance</i>. Si une fiche contient le terme <i>2000</i> dans un autre champ, sa pertinence sera <i>plus Ã©levÃ©e</i> que la pertinence des fiches qui ne contiennent <i>2000</i> que dans le champ <i>Promotion</i> ou dans le champ <i>Date de naissance</i>. En revanche, un fiche ne contenant <i>2000</i> ni dans le champ <i>Promotion</i> ni dans le champ <i>Date de naissance</i> aura obligatoirement une pertinence de 0. De mÃªme, la motif de recherche <i>2000&lt;2006</i> renvoie toutes les fiches correspondant aux promotions comprises entre 2000 et 2006 (bornes incluses). Par hypothÃ¨se, seules les fiches rÃ©pondant Ã  ce seul et unique critÃ¨re sont affichÃ©es: elles devraient donc toutes avoir, en principe, la mÃªme pertinence, la pertinence maximale de 100%. Cependant, dans ce cas, la pertinence est calculÃ©e en fonction de paramÃ¨tres extÃ©rieurs Ã  la requÃªte: elle ne se limite pas au champ <i>Promotion</i> qui est le seul pris en compte par la recherche. La pertinence sera donc calculÃ©e en fonction du nombre d'occurrences de chacune des dates prÃ©sentes dans l'intervalle spÃ©cifiÃ©.
 </p>
 
 <p class="aide_texte">
-Il en résulte que l'affichage de la pertinence prend en compte les données réellement présentes dans la fiche, peu important qu'elles aient été ignorées par la recherche. La pertinence parcourt tous les champs de la fiche, comme lorsqu'il s'agit d'effectuer une recherche diffuse (<a href="#7.4">v. n°7.4</a>) avec un seul terme. Ainsi, une recherche diffuse (qui parcourt tous les champs) avec pour terme de recherche <i>2000</i> affichera plus de résultats qu'une recherche automatique (qui ne parcourt que les champs <i>Promotion</i> et <i>Date de naissance</i>) avec le même terme de recherche. Les résultats retournés auront un indice de pertinence différent selon que l'on effectue l'une ou l'autre des recherches. L'indice de pertinence d'un résultat <i>n'</i>est <i>pas</i> absolu ; il dépend en réalité de l'indice de pertinence accordé aux autres résultats.
+Il en rÃ©sulte que l'affichage de la pertinence prend en compte les donnÃ©es rÃ©ellement prÃ©sentes dans la fiche, peu important qu'elles aient Ã©tÃ© ignorÃ©es par la recherche. La pertinence parcourt tous les champs de la fiche, comme lorsqu'il s'agit d'effectuer une recherche diffuse (<a href="#7.4">v. nÂ°7.4</a>) avec un seul terme. Ainsi, une recherche diffuse (qui parcourt tous les champs) avec pour terme de recherche <i>2000</i> affichera plus de rÃ©sultats qu'une recherche automatique (qui ne parcourt que les champs <i>Promotion</i> et <i>Date de naissance</i>) avec le mÃªme terme de recherche. Les rÃ©sultats retournÃ©s auront un indice de pertinence diffÃ©rent selon que l'on effectue l'une ou l'autre des recherches. L'indice de pertinence d'un rÃ©sultat <i>n'</i>est <i>pas</i> absolu ; il dÃ©pend en rÃ©alitÃ© de l'indice de pertinence accordÃ© aux autres rÃ©sultats.
 </p>
 
 <p class="aide_texte">
-Pour résumer, la pertinence est donc déterminée en fonction de 3 facteurs principaux:
+Pour rÃ©sumer, la pertinence est donc dÃ©terminÃ©e en fonction de 3 facteurs principaux:
 <ul>
-	<li />Le nombre de termes de recherches présents dans les champs de la fiche retournée en résultat ;
-	<li />Le nombre d'occurrences de chacun de ces termes de recherche dans la fiche retournée en résultat ;
-	<li />La pertinence des autres fiches retournées en résultat.
+	<li />Le nombre de termes de recherches prÃ©sents dans les champs de la fiche retournÃ©e en rÃ©sultat ;
+	<li />Le nombre d'occurrences de chacun de ces termes de recherche dans la fiche retournÃ©e en rÃ©sultat ;
+	<li />La pertinence des autres fiches retournÃ©es en rÃ©sultat.
 </ul>
 </p>
 
@@ -589,11 +589,11 @@ Pour résumer, la pertinence est donc déterminée en fonction de 3 facteurs princi
 </p>
 
 <p class="aide_texte">
-Le système de recherche "full text" ou sémantique (<a href="#7.11">v. n°7.11</a>) calcule aussi la pertinence des résultats. Cependant, le calcul est effectué directement au moment du passage de la requête et par MySQL, alors que dans les recherches "normales" le calcul est effectué après obtention des résultats. La recherche sémantique calcule donc la pertinence des résultats, mais elle ne le fait pas selon la même formule que la recherche "normale". En revanche, la formule utilisée prend en compte, grosso modo, les mêmes paramètres (occurrences et position des termes de recherche). La pertinence calculée par MySQL, dans le cas d'une recherche sémantique, est "normalisée" pour pouvoir être affichée de la même manière que la pertinence calculée par une recherche normale (c'est-à-dire exprimée en pourcentage, avec un indice 100 sur la valeur la plus pertinente). En pratique, on peut observer une pertinence moins homogène (un écart-type beaucoup plus important, une moyenne globalement plus basse) avec la recherche sémantique qu'avec la recherche normale: avec la recherche sémantique, il y aura de plus grosses différences de pertinence entre les résultats les plus pertinents et les résultats les moins pertinents.
+Le systÃ¨me de recherche "full text" ou sÃ©mantique (<a href="#7.11">v. nÂ°7.11</a>) calcule aussi la pertinence des rÃ©sultats. Cependant, le calcul est effectuÃ© directement au moment du passage de la requÃªte et par MySQL, alors que dans les recherches "normales" le calcul est effectuÃ© aprÃ¨s obtention des rÃ©sultats. La recherche sÃ©mantique calcule donc la pertinence des rÃ©sultats, mais elle ne le fait pas selon la mÃªme formule que la recherche "normale". En revanche, la formule utilisÃ©e prend en compte, grosso modo, les mÃªmes paramÃ¨tres (occurrences et position des termes de recherche). La pertinence calculÃ©e par MySQL, dans le cas d'une recherche sÃ©mantique, est "normalisÃ©e" pour pouvoir Ãªtre affichÃ©e de la mÃªme maniÃ¨re que la pertinence calculÃ©e par une recherche normale (c'est-Ã -dire exprimÃ©e en pourcentage, avec un indice 100 sur la valeur la plus pertinente). En pratique, on peut observer une pertinence moins homogÃ¨ne (un Ã©cart-type beaucoup plus important, une moyenne globalement plus basse) avec la recherche sÃ©mantique qu'avec la recherche normale: avec la recherche sÃ©mantique, il y aura de plus grosses diffÃ©rences de pertinence entre les rÃ©sultats les plus pertinents et les rÃ©sultats les moins pertinents.
 </p>
 
 <p class="aide_texte">
-Le système de pertinence ne fonctionne pas avec les expressions régulières (<a href="#7.10">v. n°7.10</a>).
+Le systÃ¨me de pertinence ne fonctionne pas avec les expressions rÃ©guliÃ¨res (<a href="#7.10">v. nÂ°7.10</a>).
 </p>
 
 

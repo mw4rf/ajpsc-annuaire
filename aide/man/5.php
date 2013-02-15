@@ -3,7 +3,7 @@
                ANNUAIRE AIDE
 SECTION : Voir les fiches
 
-Fichier inclus à partir de faq.php
+Fichier inclus Ã  partir de faq.php
 */
 ?>
 
@@ -18,7 +18,7 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	V. la <a href="#2.1">section 2.1</a> à ce propos.
+	V. la <a href="#2.1">section 2.1</a> Ã  ce propos.
 </p>
 
 <!-- 5.2 Comment voir la liste des fiches ? -->
@@ -31,11 +31,11 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	La première option vous permet de voir toutes les fiches, dans l'ordre par défaut (triées par nom de famille, de A à Z). La seconde option vous permet également de voir toutes les fiches, mais en choisissant un critère de tri différent. Pour plus de précisions sur les fonctions de tri, <a href="#6">v. n° 6</a>.
+	La premiÃ¨re option vous permet de voir toutes les fiches, dans l'ordre par dÃ©faut (triÃ©es par nom de famille, de A Ã  Z). La seconde option vous permet Ã©galement de voir toutes les fiches, mais en choisissant un critÃ¨re de tri diffÃ©rent. Pour plus de prÃ©cisions sur les fonctions de tri, <a href="#6">v. nÂ° 6</a>.
 </p>
 
 <p class="aide_texte">
-	Pour plus d'informations sur la présentation et le fonctionnement de la liste des fiches, reportez-vous à la <a href="#5.3">v. n° 5.3</a>.
+	Pour plus d'informations sur la prÃ©sentation et le fonctionnement de la liste des fiches, reportez-vous Ã  la <a href="#5.3">v. nÂ° 5.3</a>.
 </p>
 
 <!-- 5.3 Qu'est-ce que la liste des fiches ? -->
@@ -44,21 +44,21 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	La liste des fiches vous permet de voir toutes les fiches enregistrées dans la base de données, c'est-à-dire toutes les personnes enregistrées dans l'annuaire (<a href="#2.1">v. n° 2.1</a> pour plus de précisions).
+	La liste des fiches vous permet de voir toutes les fiches enregistrÃ©es dans la base de donnÃ©es, c'est-Ã -dire toutes les personnes enregistrÃ©es dans l'annuaire (<a href="#2.1">v. nÂ° 2.1</a> pour plus de prÃ©cisions).
 </p>
 
 <p class="aide_texte">
-	Les données sont affichées de manière "tabulaire", c'est-à-dire que chaque ligne correspond à une fiche et chaque colonne à une information. Voici les colonnes affichées et, donc, les informations disponibles:
+	Les donnÃ©es sont affichÃ©es de maniÃ¨re "tabulaire", c'est-Ã -dire que chaque ligne correspond Ã  une fiche et chaque colonne Ã  une information. Voici les colonnes affichÃ©es et, donc, les informations disponibles:
 	<ul>
 		<li />Nom: le(s) nom(s) de famille du titulaire de la fiche.
-		<li />Prénom: le(s) prénom(s) du titulaire de la fiche.
-		<li />Promotion: la promotion à laquelle appartient le titulaire de la fiche (c'est-à-dire <i>l'année au terme de laquelle il recevra son diplôme</i>).
-		<li />Adresse e-mail: l'adresse de courrier électronique du titulaire de la fiche.
+		<li />PrÃ©nom: le(s) prÃ©nom(s) du titulaire de la fiche.
+		<li />Promotion: la promotion Ã  laquelle appartient le titulaire de la fiche (c'est-Ã -dire <i>l'annÃ©e au terme de laquelle il recevra son diplÃ´me</i>).
+		<li />Adresse e-mail: l'adresse de courrier Ã©lectronique du titulaire de la fiche.
 	</ul>
 </p>
 
 <p class="aide_texte">
-	La liste des fiches est répartie sur plusieurs pages, en fonction du nombre de fiches enregistrées dans l'annuaire (<a href="#5.4">v. n° 5.4</a>). Les fiches peuvent être triées selon plusieurs critères (<a href="#6">v. n° 6</a>). Lorsque le curseur de la souris se situe sur une ligne, cette ligne apparaît en surbrillance: il suffit alors de cliquer pour voir les détails de la fiche correspondante (<a href="#5.5">v. n° 5.5</a>).
+	La liste des fiches est rÃ©partie sur plusieurs pages, en fonction du nombre de fiches enregistrÃ©es dans l'annuaire (<a href="#5.4">v. nÂ° 5.4</a>). Les fiches peuvent Ãªtre triÃ©es selon plusieurs critÃ¨res (<a href="#6">v. nÂ° 6</a>). Lorsque le curseur de la souris se situe sur une ligne, cette ligne apparaÃ®t en surbrillance: il suffit alors de cliquer pour voir les dÃ©tails de la fiche correspondante (<a href="#5.5">v. nÂ° 5.5</a>).
 </p>
 
 <!-- 5.4 Qu'est ce que la pagination et comment cela fonctionne-t-il ? -->
@@ -67,41 +67,41 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	L'annuaire peut contenir un nombre important de fiches. Toutes les afficher sur la même page pourrait nuire aux performances du logiciel et à l'expérience de l'utilisateur: la page serait lourde et très longue à charger, et la navigation dans cette page serait très lente.
+	L'annuaire peut contenir un nombre important de fiches. Toutes les afficher sur la mÃªme page pourrait nuire aux performances du logiciel et Ã  l'expÃ©rience de l'utilisateur: la page serait lourde et trÃ¨s longue Ã  charger, et la navigation dans cette page serait trÃ¨s lente.
 </p>
 
 <p class="aide_texte">
-	C'est pourquoi les fiches sont réparties sur plusieurs pages. Le nombre de fiches par page est défini par les administrateurs de l'annuaire. Par exemple, si l'annuaire contient 500 fiches et que les administrateurs ont spécifié qu'il fallait afficher 50 fiches par page, il y aura 10 pages.
+	C'est pourquoi les fiches sont rÃ©parties sur plusieurs pages. Le nombre de fiches par page est dÃ©fini par les administrateurs de l'annuaire. Par exemple, si l'annuaire contient 500 fiches et que les administrateurs ont spÃ©cifiÃ© qu'il fallait afficher 50 fiches par page, il y aura 10 pages.
 </p>
 
 <p class="aide_texte">
-	Le passage d'une page à l'autre n'affecte ni le tri des fiches (<a href="#6">v. n°6</a>) ni les résultats d'une recherche (<a href="#7.6">v. n°7.6</a>).
+	Le passage d'une page Ã  l'autre n'affecte ni le tri des fiches (<a href="#6">v. nÂ°6</a>) ni les rÃ©sultats d'une recherche (<a href="#7.6">v. nÂ°7.6</a>).
 </p>
 
 <p class="aide_texte">
-	Le système de pagination est affiché en haut de la liste des fiches et en dessous du menu principal de l'annuaire. Il se compose de 3 blocs (de gauche à droite):
+	Le systÃ¨me de pagination est affichÃ© en haut de la liste des fiches et en dessous du menu principal de l'annuaire. Il se compose de 3 blocs (de gauche Ã  droite):
 	<ol>
 		<li />Le nombre total de fiches de l'annuaire et le nombre total de pages: <i>Il y a X fiches sur Y pages</i>.
-		<li />La page actuellement affichée (ou page "courante") (X) et le nombre total de pages (Y): <i>Page X/Y</i>. Vous pouvez cliquer sur le numéro de la page courante (X) pour dérouler un menu qui vous permettra d'afficher n'importe quelle autre page.
+		<li />La page actuellement affichÃ©e (ou page "courante") (X) et le nombre total de pages (Y): <i>Page X/Y</i>. Vous pouvez cliquer sur le numÃ©ro de la page courante (X) pour dÃ©rouler un menu qui vous permettra d'afficher n'importe quelle autre page.
 		<li />Le menu de navigation parmi les fiches:
 		<ul>
-			<li /><b>&lt;&lt;</b> vous permet de vous rendre à la <i>première</i> page.
-			<li /><b>&lt; précédent</b>: vous permet de vous rendre à la page qui précède la page actuellement affichée.
-			<li /><b>suivant &gt;</b>: vous permet de vous rendre à la page qui suit la page actuellement affichée.
-			<li /><b>&gt;&gt;</b> vous permet de vous rendre à la <i>dernière</i> page.
+			<li /><b>&lt;&lt;</b> vous permet de vous rendre Ã  la <i>premiÃ¨re</i> page.
+			<li /><b>&lt; prÃ©cÃ©dent</b>: vous permet de vous rendre Ã  la page qui prÃ©cÃ¨de la page actuellement affichÃ©e.
+			<li /><b>suivant &gt;</b>: vous permet de vous rendre Ã  la page qui suit la page actuellement affichÃ©e.
+			<li /><b>&gt;&gt;</b> vous permet de vous rendre Ã  la <i>derniÃ¨re</i> page.
 		</ul>
 	</ol>
 </p>
 
-<!-- 5.5 Comment voir les détails d'une fiche ? -->
+<!-- 5.5 Comment voir les dÃ©tails d'une fiche ? -->
 <p class="aide_section"><a name="5.5"></a>
-5.5 Comment voir les détails d'une fiche ?
+5.5 Comment voir les dÃ©tails d'une fiche ?
 </p>
 
 <p class="aide_texte">
-	La liste des fiches ne permet de voir, pour chaque fiche, qu'une partie des informations disponibles (<a href="#5.3">v. n°5.3</a>). Pour accéder aux autres informations, vous devez afficher la fiche complète.
+	La liste des fiches ne permet de voir, pour chaque fiche, qu'une partie des informations disponibles (<a href="#5.3">v. nÂ°5.3</a>). Pour accÃ©der aux autres informations, vous devez afficher la fiche complÃ¨te.
 </p>
 
 <p class="aide_texte">
-	Pour afficher les détails d'une fiche, positionnez d'abord le curseur de votre souris sur la ligne qui correspond à cette fiche. Cette ligne apparaîtra alors en surbrillance. Cliquez ensuite n'importe où sur cette ligne pour faire apparaître la fiche complète.
+	Pour afficher les dÃ©tails d'une fiche, positionnez d'abord le curseur de votre souris sur la ligne qui correspond Ã  cette fiche. Cette ligne apparaÃ®tra alors en surbrillance. Cliquez ensuite n'importe oÃ¹ sur cette ligne pour faire apparaÃ®tre la fiche complÃ¨te.
 </p>

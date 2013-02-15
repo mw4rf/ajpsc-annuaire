@@ -1,15 +1,15 @@
 <?php
 /*
                ANNUAIRE AIDE
-SECTION 1 : Connexion et déconnexion
+SECTION 1 : Connexion et dÃ©connexion
 
-Fichier inclus à partir de faq.php
+Fichier inclus Ã  partir de faq.php
 */
 ?>
 
-<!-- 1. Connexion et déconnexion -->
+<!-- 1. Connexion et dÃ©connexion -->
 <p class="aide_chapitre"><a name="1"></a>
-	1. Connexion et déconnexion
+	1. Connexion et dÃ©connexion
 </p>
 
 <!-- 1.1 Choix du mode d'identification -->
@@ -18,23 +18,39 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	L'annuaire comprend des informations personnelles que les gens n'ont pas forcément envie de voir divulguées sur Internet. Il fallait donc instaurer un moyen de protection des données.
+	L'annuaire comprend des informations personnelles que les gens 
+n'ont pas forcÃ©ment envie de voir divulguÃ©es sur Internet. Il fallait 
+donc instaurer un moyen de protection des donnÃ©es.
 </p>
 
 <p class="aide_texte">
-	Les moyens de protection ne sont pas vraiment variés: ils passent tous par la mise en place d'un système de un mot de passe. Partant de là, deux possibilités se présentaient:
+	Les moyens de protection ne sont pas vraiment variÃ©s: ils 
+passent tous par la mise en place d'un systÃ¨me de un mot de passe. 
+Partant de lÃ , deux possibilitÃ©s se prÃ©sentaient:
 </p>
 
 <p class="aide_texte">
-	1) Chaque utilisateur s'inscrit et définit un identifiant de connexion et un mot de passe qui lui est propre. C'est ce système qui est mis en oeuvre un peu partout sur internet, de YouTube à Hotmail en passant par l'abonnement au journal Le Monde en ligne.
+	1) Chaque utilisateur s'inscrit et dÃ©finit un identifiant de 
+connexion et un mot de passe qui lui est propre. C'est ce systÃ¨me qui 
+est mis en oeuvre un peu partout sur internet, de YouTube Ã  Hotmail en 
+passant par l'abonnement au journal Le Monde en ligne.
 </p>
 
 <p class="aide_texte">
-	2) Définir un mot de passe unique qui ouvre l'accès à l'annuaire. Il suffit de connaître ce mot de passe pour avoir accès aux données. C'est un "Sésame, ouvre-toi" qui ouvre la porte, sans contrôler combien de personnes passent par cette porte désormais ouverte.
+	2) DÃ©finir un mot de passe unique qui ouvre l'accÃ¨s Ã  
+l'annuaire. Il suffit de connaÃ®tre ce mot de passe pour avoir accÃ¨s aux 
+donnÃ©es. C'est un "SÃ©same, ouvre-toi" qui ouvre la porte, sans contrÃ´ler 
+combien de personnes passent par cette porte dÃ©sormais ouverte.
 </p>
 
 <p class="aide_texte">
-	Nous avons dû sacrifier la première solution sur l'autel de la simplicité. En effet, cette solution aurait nécessité d'une part que les gens en passent par une procédure d'inscription et, d'autre part, qu'ils retiennent leur mot de passe personnel. Il est clair qu'un mot de passe défini pour accéder à un site que l'on consulte deux fois dans l'année, cela s'oublie vite ! Par exclusion, c'est donc la seconde solution qui a été choisie.
+	Nous avons dÃ» sacrifier la premiÃ¨re solution sur l'autel de la 
+simplicitÃ©. En effet, cette solution aurait nÃ©cessitÃ© d'une part que les 
+gens en passent par une procÃ©dure d'inscription et, d'autre part, qu'ils 
+retiennent leur mot de passe personnel. Il est clair qu'un mot de passe 
+dÃ©fini pour accÃ©der Ã  un site que l'on consulte deux fois dans l'annÃ©e, 
+cela s'oublie vite ! Par exclusion, c'est donc la seconde solution qui a 
+Ã©tÃ© choisie.
 </p>
 
 <!-- 1.2 Comment se connecter ? -->
@@ -43,44 +59,80 @@ Fichier inclus à partir de faq.php
 </p>
 
 <p class="aide_texte">
-	Pour vous connecter, il vous faut le mot de passe de connexion. Ce mot de passe n'est disponible, dans le cadre de l'AJPSC, qu'aux seuls étudiants et anciens étudiants de la double-maîtrise en droit français et en droit espagnol.
+	Pour vous connecter, il vous faut le mot de passe de connexion. 
+Ce mot de passe n'est disponible, dans le cadre de l'AJPSC, qu'aux seuls 
+Ã©tudiants et anciens Ã©tudiants de la double-maÃ®trise en droit franÃ§ais 
+et en droit espagnol.
 </p>
 
 <p class="aide_texte">
-	Le mot de passe s'obtient depuis l'espace privé des forums AJPSC: <a href="http://www.ajpsc.com/forum/">http://www.ajpsc.com/forum/</a>. Pour avoir accès à l'espace privé, vous devez être enregistré aux forums en tant qu'étudiant ou ancien étudiant et connecté. Pour plus de précisions à ce sujet, reportez-vous à l'<a href="">aide en ligne</a> des forums AJPSC ou <a href="">contactez</a> un administrateur des forums.
+	Le mot de passe s'obtient depuis l'espace privÃ© des forums 
+AJPSC: <a 
+href="http://www.ajpsc.com/forum/">http://www.ajpsc.com/forum/</a>. Pour 
+avoir accÃ¨s Ã  l'espace privÃ©, vous devez Ãªtre enregistrÃ© aux forums en 
+tant qu'Ã©tudiant ou ancien Ã©tudiant et connectÃ©. Pour plus de prÃ©cisions 
+Ã  ce sujet, reportez-vous Ã  l'<a href="">aide en ligne</a> des forums 
+AJPSC ou <a href="">contactez</a> un administrateur des forums.
 </p>
 
-<!-- 1.3 Pourquoi et comment se déconnecter ? -->
+<!-- 1.3 Pourquoi et comment se dÃ©connecter ? -->
 <p class="aide_section"><a name="1.3"></a>
-1.3 Pourquoi et comment se déconnecter ?
+1.3 Pourquoi et comment se dÃ©connecter ?
 </p>
 
 <p class="aide_texte">
-	Lorsque vous êtes connecté à l'annuaire, vous avez accès à toutes les informations qu'il contient. Sans être totalement secrètes, ces informations ne doivent cependant pas être facilement divulguées. Il est donc conseillé de se déconnecter pour qu'à la prochaine visite de l'annuaire, le mot de passe vous soit à nouveau demandé. Ainsi, si quelqu'un venait à utiliser votre PC physiquement ou à distance (avec un virus, par exemple), il ne pourrait pas avoir accès aux informations de l'annuaire.
+	Lorsque vous Ãªtes connectÃ© Ã  l'annuaire, vous avez accÃ¨s Ã  
+toutes les informations qu'il contient. Sans Ãªtre totalement secrÃ¨tes, 
+ces informations ne doivent cependant pas Ãªtre facilement divulguÃ©es. Il 
+est donc conseillÃ© de se dÃ©connecter pour qu'Ã  la prochaine visite de 
+l'annuaire, le mot de passe vous soit Ã  nouveau demandÃ©. Ainsi, si 
+quelqu'un venait Ã  utiliser votre PC physiquement ou Ã  distance (avec un 
+virus, par exemple), il ne pourrait pas avoir accÃ¨s aux informations de 
+l'annuaire.
 </p>
 
 <p class="aide_texte">
-	Vous pouvez vous déconnecter de plusieurs manières:
+	Vous pouvez vous dÃ©connecter de plusieurs maniÃ¨res:
 	<ul>
-		<li />En cliquant sur le lien "Se déconnecter" dans le menu de navigation ;
-		<li />En fermant votre navigateur internet ("Fichier > Quitter") ;
-		<li />En éteignant votre ordinateur.
+		<li />En cliquant sur le lien "Se dÃ©connecter" dans le 
+menu de navigation ;
+		<li />En fermant votre navigateur internet ("Fichier > 
+Quitter") ;
+		<li />En Ã©teignant votre ordinateur.
 	</ul>
 </p>
 
-<!-- 1.4 Mieux vaut-il se déconnecter depuis l'annuaire ou en fermant le navigateur -->
+<!-- 1.4 Mieux vaut-il se dÃ©connecter depuis l'annuaire ou en fermant le 
+navigateur -->
 <p class="aide_section"><a name="1.4"></a>
-1.4 Mieux vaut-il se déconnecter depuis l'annuaire ou en fermant le navigateur ?
+1.4 Mieux vaut-il se dÃ©connecter depuis l'annuaire ou en fermant le 
+navigateur ?
 </p>
 
 <p class="aide_texte">
-	Lorsque vous vous connectez, c'est pour toute la durée de la "session". Une "session" est, dans le vocabulaire informatique, le laps de temps entre deux ouvertures d'un navigateur internet. Par exemple, si vous ouvrez votre navigateur, vous connectez à l'annuaire pendant 10 minutes, lisez vos e-mails pendant 10 minutes, puis redémarrez votre ordinateur 10 minutes plus tard, la session aura été de 30 minutes. Si au contraire vous ne fermez ("Fichier > Quitter") jamais votre navigateur internet et ne redémarrez jamais votre ordinateur, une session peut durer plusieurs jours.
+	Lorsque vous vous connectez, c'est pour toute la durÃ©e de la 
+"session". Une "session" est, dans le vocabulaire informatique, le laps 
+de temps entre deux ouvertures d'un navigateur internet. Par exemple, si 
+vous ouvrez votre navigateur, vous connectez Ã  l'annuaire pendant 10 
+minutes, lisez vos e-mails pendant 10 minutes, puis redÃ©marrez votre 
+ordinateur 10 minutes plus tard, la session aura Ã©tÃ© de 30 minutes. Si 
+au contraire vous ne fermez ("Fichier > Quitter") jamais votre 
+navigateur internet et ne redÃ©marrez jamais votre ordinateur, une 
+session peut durer plusieurs jours.
 </p>
 
 <p class="aide_texte">
-	Dans le premier cas, il est indifférent de vous déconnecter depuis l'annuaire ou en fermant votre navigateur. A l'inverse, dans le second cas, il est conseillé de vous déconnecter en passant par l'option "Se déconnecter" du menu principal de l'annuaire.
+	Dans le premier cas, il est indiffÃ©rent de vous dÃ©connecter 
+depuis l'annuaire ou en fermant votre navigateur. A l'inverse, dans le 
+second cas, il est conseillÃ© de vous dÃ©connecter en passant par l'option 
+"Se dÃ©connecter" du menu principal de l'annuaire.
 </p>
 
 <p class="aide_texte">
-	NB: sous Windows et Linux, le fait de fermer toutes les fenêtres d'un logiciel a pour effet de fermer ou "quitter" ce logiciel. Ce n'est pas le cas sous Mac OS X. Les utilisateurs de Mac devront par conséquent être attentifs à cette question et veiller à ne pas simplement fermer la fenêtre du navigateur mais à le "quitter" véritablement ("Pomme > Quitter" ou "Commande+Q").
+	NB: sous Windows et Linux, le fait de fermer toutes les fenÃªtres 
+d'un logiciel a pour effet de fermer ou "quitter" ce logiciel. Ce n'est 
+pas le cas sous Mac OS X. Les utilisateurs de Mac devront par consÃ©quent 
+Ãªtre attentifs Ã  cette question et veiller Ã  ne pas simplement fermer la 
+fenÃªtre du navigateur mais Ã  le "quitter" vÃ©ritablement ("Pomme > 
+Quitter" ou "Commande+Q").
 </p>
