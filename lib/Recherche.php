@@ -392,7 +392,7 @@ function afficher_resultats($ttype = null)
 
 	// Nombre de résultats
 	$ligne .= '<tr>';
-		$ligne .= '<td colspan="2"><b>';
+		$ligne .= '<td colspan="2"><b class="label">';
 		// Afficher le nombre ou afficher "Aucun" (si 0 résultat) ?
 		if ($this->num == 0) $ligne .= donner("rech_resultat_aucun").' ';
 		else $ligne .= $this->num.' ';
@@ -427,16 +427,14 @@ function afficher_resultats($ttype = null)
 		if(isset($this->tab[$i]["pertinence"]))
 		{
 		$nbsp = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-		$pertinence = "<td><div class=\"pertinence\" ";
+		$pertinence = "<td><div class=\"alert-info\" ";
 		$pertinence .= "style=\"width:".$this->tab[$i]["pertinence"]."px;\">";
 		$pertinence .= abbr3($nbsp, donner("pertinence").": ".$this->tab[$i]["pertinence"]."%");
 		$pertinence .="</div></td>";
 		}
 
 		$lignes[$i] = "<tr class=\"transparent\" style=\"cursor:pointer\"
-			onClick=\"javascript:js_direct('".$this->tab[$i]["fiche"]."');\"
-			onMouseOver=\"javascript:change_couleur(this, couleur_hover);\"
-			onMouseOut=\"javascript:restaure_couleur(this, couleur_origine);\">
+			onClick=\"javascript:js_direct('".$this->tab[$i]["fiche"]."');\">
 		    	<td>".abbr3($this->tab[$i]["nom"], donner("afficher_details"))."</td>
 		    	<td>".abbr3($this->tab[$i]["prenom"], donner("afficher_details"))."</td>
 		    	<td>".abbr3($this->tab[$i]["promotion"], donner("afficher_details"))."</td>
