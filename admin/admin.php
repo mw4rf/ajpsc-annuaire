@@ -108,6 +108,11 @@ include("admin/adminfct.php");
 				echo ": ".$_SERVER["HTTP_ACCEPT_LANGUAGE"];
 				?>
 			</li>
+
+            <!-- Php info -->
+            <li>
+                <a href="admin/phpinfo.php">PHP Info</a>
+            </li>
 		</ul>
 </li>
 
