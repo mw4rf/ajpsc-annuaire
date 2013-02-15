@@ -184,7 +184,7 @@ function liste_nom($data)
 			{
 				// Ceci est un étudiant
 				$this->SetFont('Times','',10);
-				$this->MultiCell(60, 5, $val);
+				$this->MultiCell(60, 5, from_utf8($val));
 			}
 			$this->ln(); // saut de ligne
 		}
@@ -223,7 +223,7 @@ function liste_promo($data)
 			{
 				// Ceci est un étudiant
 				$this->SetFont('Times','',10);
-				$this->MultiCell(60, 5, $val);
+				$this->MultiCell(60, 5, from_utf8($val));
 			}
 			$this->ln(); // saut de ligne
 		}
