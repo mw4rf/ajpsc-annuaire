@@ -9,10 +9,12 @@
         and $_GET["prov"]=="search")
     { ?>
     <div class="container" style="text-align: center;">
+        <p>
         <a class="btn btn-info" href="index.php?action=action_recherche&searchquery=1">
             <i class="icon-arrow-left icon-white"></i>
             <?php abbr("retour_recherche"); ?>
         </a>
+        </p>
     </div>
     <?php
     }

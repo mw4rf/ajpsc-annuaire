@@ -388,10 +388,10 @@ function afficher_resultats($ttype = null)
 	if(isset($this->type)) $ttype = $this->type;
 
 	// Déclaration du tableau
-	$ligne = '<table width="80%" align="center" cellpadding="4" cellspacing="0" border="0" class="orange">';
+	$ligne = '<div class="container"><table width="80%" align="center" cellpadding="4" cellspacing="0" border="0" class="table table-hover">';
 
 	// Nombre de résultats
-	$ligne .= '<tr class="orange">';
+	$ligne .= '<tr>';
 		$ligne .= '<td colspan="2"><b>';
 		// Afficher le nombre ou afficher "Aucun" (si 0 résultat) ?
 		if ($this->num == 0) $ligne .= donner("rech_resultat_aucun").' ';
@@ -406,13 +406,13 @@ function afficher_resultats($ttype = null)
 	$ligne .= "</tr>";
 
 	// En-tête du tableau
-	$ligne .= '<tr class="orange">';
-	  $ligne .= '<td style="border-top: 1px solid #FF8000;">'.donner("c1").'</td>';
-	  $ligne .= '<td style="border-top: 1px solid #FF8000;">'.donner("c2").'</td>';
-	  $ligne .= '<td style="border-top: 1px solid #FF8000;">'.donner("c3").'</td>';
-	  $ligne .= '<td style="border-top: 1px solid #FF8000;">'.donner("c7").'</td>';
+	$ligne .= '<tr>';
+	  $ligne .= '<th>'.donner("c1").'</th>';
+	  $ligne .= '<th>'.donner("c2").'</th>';
+	  $ligne .= '<th>'.donner("c3").'</th>';
+	  $ligne .= '<th>'.donner("c7").'</th>';
 	if($ttype == "DEFAULT" or $ttype == "FULLTEXT")
-	  $ligne .= '<td style="border-top: 1px solid #FF8000;">'.donner("pertinence").'</td>';
+	  $ligne .= '<th>'.donner("pertinence").'</th>';
 	$ligne .= '</tr>';
 	echo $ligne;
 
@@ -460,7 +460,7 @@ function afficher_resultats($ttype = null)
 		foreach($lignes as $key=>$val)
 			echo $val;
 
-	echo "</table>";
+	echo "</table></div>";
 }
 
 /*
