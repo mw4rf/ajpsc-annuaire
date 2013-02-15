@@ -353,6 +353,9 @@ function html_vers_texte($html)
     $html = str_replace("\r\n", "\n", $html);
     $html = str_replace("<br />\n", "\n", $html);
 
+    // Convertir les entités
+    $html = html_entity_decode($html);
+
     return $html;
 }
 
