@@ -26,7 +26,7 @@
                     </a>
                 </li>
                 <li role="presentation">
-                    <a role="menuitem" tabindex="-1" href="index.php?action=galerie&tri=pr-desc">
+                    <a role="menuitem" tabindex="-1" href="index.php?action=galerie&tri=n-asc">
                         <i class="icon-chevron-up"></i>
                         <?php abbr("menu7b"); ?>
                     </a>
