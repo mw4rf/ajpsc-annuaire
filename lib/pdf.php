@@ -104,7 +104,7 @@ function PageDeGarde()
 	{
 		$this->SetFontSize(14);
 		$this->ln(30);
-		$this->Cell(0, 7, "Imprimé le ".convertir_date(date("Y-m-d")) , 0, 2, "C");
+		$this->Cell(0, 7, "Imprimé le ".from_utf8(convertir_date(date("Y-m-d"))) , 0, 2, "C");
 		$this->Cell(0, 7, "L'annuaire contient actuellement ".$numf." fiches" , 0, 0, "C");
 	}
 
@@ -315,7 +315,7 @@ function ajouter_page($data)
 	// Bloc 3: date et lieu de naissance
 	$this->SetFont('Times','',14);
 	$this->MultiCell(0,7, donner_latin1("ne-vp")." ".$data["nationalite"]." ".
-						 donner_latin1("ne-le")." ".convertir_date($data["naissance"]));
+						 donner_latin1("ne-le")." ".from_utf8(convertir_date($data["naissance"])));
 
 	// Bloc 4: adresse postale
 	$this->SetFont('Times','',14);
