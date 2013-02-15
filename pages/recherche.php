@@ -1,25 +1,25 @@
 <?php
-// Inclure la classe nécessaire
+// Inclure la classe nÃ©cessaire
 include("lib/Recherche.php");
 
 
-// Cas 1: requête enregistrée: on affiche directement les résultats
+// Cas 1: requÃªte enregistrÃ©e: on affiche directement les rÃ©sultats
 if(isset($_GET["searchquery"])
 	and $_GET["searchquery"] == 1
 	and isset($_SESSION["searchquery-rq"])
 	and isset($_SESSION["searchquery-ch"]) )
 {
-	// Créer un objet Recherche
+	// CrÃ©er un objet Recherche
 	$rech = new Recherche($_SESSION["searchquery-rq"], $_SESSION["searchquery-ch"]);
 }
-// Cas 2: pas de requête enregistrée: on crée la nouvelle requête
+// Cas 2: pas de requÃªte enregistrÃ©e: on crÃ©e la nouvelle requÃªte
 else
 {
-	// Créer un objet Recherche
+	// CrÃ©er un objet Recherche
 	$rech = new Recherche($_POST["requete"], $_POST["champ"]);
 }
 
-// Afficher les résultats
+// Afficher les rÃ©sultats
 $rech->afficher_resultats();
 
 

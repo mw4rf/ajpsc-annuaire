@@ -1,7 +1,7 @@
 <?php
 /*
 Nom: dire
-But: Détecte la langue du client et affiche une phrase dans sa langue
+But: DÃ©tecte la langue du client et affiche une phrase dans sa langue
 Info: Guillaume Florimond, 16/12/2006
 */
 function dire($item)
@@ -11,8 +11,8 @@ function dire($item)
 
 /*
 Nom: message
-But: Détecte la langue du client et affiche le message, dans le div MESSAGE, dans sa langue
-Alors que la fonction dire() n'affique que le string localisé, cette fonction d'encapsule dans une div qui peut être formatée avec les CSS.
+But: DÃ©tecte la langue du client et affiche le message, dans le div MESSAGE, dans sa langue
+Alors que la fonction dire() n'affique que le string localisÃ©, cette fonction d'encapsule dans une div qui peut Ãªtre formatÃ©e avec les CSS.
 Info: Guillaume Florimond, 10/04/2007
 */
 function message($item)
@@ -22,42 +22,42 @@ function message($item)
 
 /*
 Nom: donner
-But: Détecte la langue du client et renvoie une phrase dans sa langue
+But: DÃ©tecte la langue du client et renvoie une phrase dans sa langue
 Info: Guillaume Florimond, 16/12/2006
 */
 function donner($item)
 {
-    // Vérifie si l'utilisateur a choisi manuellement une langue
+    // VÃ©rifie si l'utilisateur a choisi manuellement une langue
     if(isset($_SESSION["langue"]))
     {
         $lang = $_SESSION["langue"];
     }
-    // S'il n'a rien choisi, déterminer la langue par défaut de son navigateur
+    // S'il n'a rien choisi, dÃ©terminer la langue par dÃ©faut de son navigateur
     else
     {
-        // Vérifie si l'information a bien été transmise en header
+        // VÃ©rifie si l'information a bien Ã©tÃ© transmise en header
         if(isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
         {
-            /* Obtient les deux premiers caractères de la chaîne qui correspondent à la
-            langue par défaut du client (fr, en, etc...). Le reste de la chaîne contient
-            la liste des langues gérées par le client, ce qui n'est pas utile ici. */
+            /* Obtient les deux premiers caractÃ¨res de la chaÃ®ne qui correspondent Ã  la
+            langue par dÃ©faut du client (fr, en, etc...). Le reste de la chaÃ®ne contient
+            la liste des langues gÃ©rÃ©es par le client, ce qui n'est pas utile ici. */
             $lang = substr($_SERVER["HTTP_ACCEPT_LANGUAGE"], 0, 2);
         }
-        // S'il n'y a pas de choix et que le header n'a pas été transmis: par défaut
+        // S'il n'y a pas de choix et que le header n'a pas Ã©tÃ© transmis: par dÃ©faut
         else
         {
-            $lang = "fr"; // par défaut
+            $lang = "fr"; // par dÃ©faut
         }
     }
 
-    // Liste à modifier en fonction des langues disponibles:
-    // français (fr) - espagnol (es) - anglais (en)
+    // Liste Ã  modifier en fonction des langues disponibles:
+    // franÃ§ais (fr) - espagnol (es) - anglais (en)
     if($lang != "fr" and $lang != "es" and $lang != "en")
     {
         $lang = "fr";
     }
 
-    // Obtient la phrase demandée dans la langue demandée
+    // Obtient la phrase demandÃ©e dans la langue demandÃ©e
     global $phrase;
 
         // 1er cas: la phrase existe dans la langue choisie.
@@ -65,24 +65,24 @@ function donner($item)
         {
             $res = $phrase[$lang][$item];
         }
-        // 2ème cas: la phrase n'existe pas dans la langue choisie mais elle existe en FR
+        // 2Ã¨me cas: la phrase n'existe pas dans la langue choisie mais elle existe en FR
         elseif(isset($phrase["fr"][$item]))
         {
             $res = $phrase["fr"][$item];
         }
-        // 3ème cas: la phrase n'existe ni dans la langue choisie ni en français
+        // 3Ã¨me cas: la phrase n'existe ni dans la langue choisie ni en franÃ§ais
         else
         {
             $res = "";
         }
 
-    // AFFICHE le résultat
+    // AFFICHE le rÃ©sultat
     return $res;
 }
 
 /*
 Nom: obtenir_theme
-But: Renvoie le nom du thème utilisé à l'instant
+But: Renvoie le nom du thÃ¨me utilisÃ© Ã  l'instant
 Info: Guillaume Florimond, 01/01/2007
 */
 function obtenir_theme()
@@ -101,14 +101,14 @@ function obtenir_theme()
 
 /*
 Nom: definir_theme
-But: Définit un thème personnalisé pour l'utilisateur, qui dure le temps de la session
+But: DÃ©finit un thÃ¨me personnalisÃ© pour l'utilisateur, qui dure le temps de la session
 Info: Guillaume Florimond, 01/01/2007
 */
 function definir_theme($theme)
 {
-    /* Correction bug - 03/01/07: les changements de thème ne sont pas pris en compte après rafraichissement de la page */
+    /* Correction bug - 03/01/07: les changements de thÃ¨me ne sont pas pris en compte aprÃ¨s rafraichissement de la page */
 
-    /* Etrangement, chez Celeonet, écraser l'ancienne valeur de $_SESSION["theme"] par une nouvelle valeur ne suffit pas. Cela l'écrase sur le moment, mais au prochain appel de $_SESSION["theme"], c'est la valeur d'origine qui sera retournée ! Pour éviter cela, il faut utiliser la fonction unset() qui supprime réellement l'entrée dans le tableau $_SESSION, pour laisser la place à une nouvelle entrée. */
+    /* Etrangement, chez Celeonet, Ã©craser l'ancienne valeur de $_SESSION["theme"] par une nouvelle valeur ne suffit pas. Cela l'Ã©crase sur le moment, mais au prochain appel de $_SESSION["theme"], c'est la valeur d'origine qui sera retournÃ©e ! Pour Ã©viter cela, il faut utiliser la fonction unset() qui supprime rÃ©ellement l'entrÃ©e dans le tableau $_SESSION, pour laisser la place Ã  une nouvelle entrÃ©e. */
     unset($_SESSION['theme']);
     unset($_SESSION['theme_personnalise']);
 
@@ -127,12 +127,12 @@ function parcourir_dossier($chemin)
     {
         /* Indice pour remplir le tableau */
         $i = 0;
-        /* Ceci est la bonne manière pour parcourir un dossier. */
+        /* Ceci est la bonne maniÃ¨re pour parcourir un dossier. */
         while (false !== ($fichier = readdir($handle)))
         {
-            if ($fichier != "." // protège contre le répertoire supérieur
-                and $fichier != ".." // protège contre le répertoire racine
-                and $fichier{0} != ".") // protège contre les fichiers cachés unix (".file")
+            if ($fichier != "." // protÃ¨ge contre le rÃ©pertoire supÃ©rieur
+                and $fichier != ".." // protÃ¨ge contre le rÃ©pertoire racine
+                and $fichier{0} != ".") // protÃ¨ge contre les fichiers cachÃ©s unix (".file")
             {
                 $contenu[$i] = $fichier;
                 $i++;
@@ -147,7 +147,7 @@ function parcourir_dossier($chemin)
 /*
 Nom: changer_langue
 But: Change la langue courante et l'enregistre dans la SESSION, en fonction du choix de l'utilisateur
-Param: la langue en deux lettre: "fr" français, "es" espagnol, "en" anglais
+Param: la langue en deux lettre: "fr" franÃ§ais, "es" espagnol, "en" anglais
 Info: Guillaume Florimond, 01/01/2007
 */
 function changer_langue($langue)
@@ -163,7 +163,7 @@ function changer_langue($langue)
 
 /*
 Nom: abbr
-But: Affiche le résultat de abbr2 - Argument: la chaîne dans le tableau $phrases
+But: Affiche le rÃ©sultat de abbr2 - Argument: la chaÃ®ne dans le tableau $phrases
 Info: Guillaume Florimond, 25/12/2006
 */
 function abbr($c)
@@ -173,12 +173,12 @@ function abbr($c)
 
 /*
 Nom: abbr2
-But: Renvoie le code HTML qui contient le tooltip et le contenu à afficher.
+But: Renvoie le code HTML qui contient le tooltip et le contenu Ã  afficher.
 Info: Guillaume Florimond, 25/12/2006
-Dans le fichier de langue, créer deux entrées:
+Dans le fichier de langue, crÃ©er deux entrÃ©es:
 - $phrase["fr"]["x"]
 - $phrase["fr"]["@x"]
-L'argument $c doit être "x". La fonction renvoie alors "x" affiché sur la page et "@x" en tooltip.
+L'argument $c doit Ãªtre "x". La fonction renvoie alors "x" affichÃ© sur la page et "@x" en tooltip.
 */
 function abbr2($c)
 {
@@ -195,7 +195,7 @@ function abbr2($c)
 
 /*
 Nom: abbr3
-But: Renvoie le code HTML qui contient le tooltip et le contenu à afficher.
+But: Renvoie le code HTML qui contient le tooltip et le contenu Ã  afficher.
 Info: Guillaume Florimond, 25/12/2006
 */
 function abbr3($contenu, $abbr)
@@ -213,7 +213,7 @@ function abbr3($contenu, $abbr)
 
 /*
 Nom: promotion
-But: Renvoie la date de début et de fin des études en fonction de la promotion (dans une phrase)
+But: Renvoie la date de dÃ©but et de fin des Ã©tudes en fonction de la promotion (dans une phrase)
 Info: Guillaume Florimond, 25/12/2006
 */
 function promotion($promo)
@@ -234,9 +234,9 @@ function convertir_date($date)
     $dt = explode("-", $date);
     $j = $dt["2"]; // jour
     $m = $dt["1"]; // mois
-    $a = $dt["0"]; // année
+    $a = $dt["0"]; // annÃ©e
 
-    // Convertir les jours sur 1 chiffre si nécessaire, p. ex. 03 janvier => 3 janvier
+    // Convertir les jours sur 1 chiffre si nÃ©cessaire, p. ex. 03 janvier => 3 janvier
     switch($j)
     {
         case 01: $j = "1"; break;
@@ -251,14 +251,14 @@ function convertir_date($date)
         default;
     }
 
-    // Modificateur éventuel pour le 1 => 1er janvier...
+    // Modificateur Ã©ventuel pour le 1 => 1er janvier...
     if($j == 1) { $j = $j.donner("dt-1er"); }
 
     // Nommer les mois
     $m = donner($m);
 
     // Construire la date
-    $sep = donner("dt-sep"); // séparateur de date, p. ex. "de" => "1 de enero de 1900"
+    $sep = donner("dt-sep"); // sÃ©parateur de date, p. ex. "de" => "1 de enero de 1900"
     $res = $j." ".$sep." ".$m." ".$sep." ".$a;
 
     // Renvoyer
@@ -267,11 +267,11 @@ function convertir_date($date)
 
 /*
 Nom: formater_date
-But: Convertit une date au format français vers le format MySQL: 01/02/2006 => 2006-02-01
+But: Convertit une date au format franÃ§ais vers le format MySQL: 01/02/2006 => 2006-02-01
 Info: Guillaume Florimond, 10/04/2007
-Param: $date: la date à convertir
+Param: $date: la date Ã  convertir
     $vers_mysql: TRUE pour JJ/MM/AAAA => AAAA-MM-JJ ; FALSE pour AAAA-MM-JJ => JJ/MM/AAAA
-ATTENTION: quand la langue est l'anglais, les dates sont affichées au format américain, MM/DD/YYYY
+ATTENTION: quand la langue est l'anglais, les dates sont affichÃ©es au format amÃ©ricain, MM/DD/YYYY
 */
 function formater_date($date, $vers_mysql = true)
 {
@@ -292,7 +292,7 @@ function formater_date($date, $vers_mysql = true)
         }
     }
 
-    // 2ème cas: la langue est FRANCAIS ou ESPAGNOl, format EUROPEEN: DD/MM/AAAA
+    // 2Ã¨me cas: la langue est FRANCAIS ou ESPAGNOl, format EUROPEEN: DD/MM/AAAA
     else
     {
         // JJ/MM/AAAA => AAAA-MM-JJ
@@ -317,25 +317,17 @@ Nom: formater_nom
 But: Convertit le nom de famille: FULANO => Fulano
 Info: Guillaume Florimond, 17/12/2006
 */
-function formater_nom($nom)
+function formater_nom($nom, $charset="UTF-8")
 {
-    /** DEPRECATED
-    ** Les apelidos espagnols avec 2 noms sont mal convertis: FULANO MENGANO donne "Fulano mengano" au lieu de "Fulano Mengano".
-    // Tout en minuscules
-    $nom = strtolower($nom);
-    // Le premier caractère en majuscule
-    $nom = ucfirst($nom);
-    */
-
-    // CASE_TITLE mets des majuscules à la première lettre de chaque mot
-    // Avantage: les minuscules accentuées sont bien converties en majuscules accentuées.
-    $nom = mb_convert_case($nom, MB_CASE_TITLE, "ISO-8859-1");
+    // CASE_TITLE mets des majuscules Ã  la premiÃ¨re lettre de chaque mot
+    // Avantage: les minuscules accentuÃ©es sont bien converties en majuscules accentuÃ©es.
+    $nom = mb_convert_case($nom, MB_CASE_TITLE, $charset);
     return $nom;
 }
 
 /*
 Nom: texte_vers_html
-But: Convertir du texte brut en html *sécurisé* (p. ex. remplacer linebreak par <br />)
+But: Convertir du texte brut en html *sÃ©curisÃ©* (p. ex. remplacer linebreak par <br />)
 Info: Guillaume Florimond, 17/12/2006
 */
 function texte_vers_html($texte)
@@ -365,8 +357,31 @@ function html_vers_texte($html)
 }
 
 /*
+Nom: from_utf8
+But: convertit une chaÃ®ne de texte provenant de la BDD de l'UTF-8 vers l'ISO-LATIN-1, afin de l'insÃ©rer dans le fichier PDF gÃ©nÃ©rÃ© par FPDF (qui ne supporte pas l'UTF-8).
+Info: Guillaume Florimond, 15/02/2013
+*/
+function from_utf8($str)
+{
+    if(function_exists('iconv'))
+        return iconv('UTF-8', 'iso-8859-1', $str);
+    else
+        return utf8_decode($str);
+}
+
+/*
+Nom: donner_latin1
+But: Convertit le texte en ISO-8859-1 avant de le renvoyer.
+Info: Guillaume Florimond, 15/02/2013
+*/
+function donner_latin1($str)
+{
+    return from_utf8(donner($str));
+}
+
+/*
 Nom: connexion
-But: Connexion à la base de données
+But: Connexion Ã  la base de donnÃ©es
 Info: Guillaume Florimond, 9/12/2006
 */
 function connexion()
@@ -379,7 +394,7 @@ function connexion()
 
 /*
 Nom: auth
-But: Vérification du mot de passe soumis et connexion de l'utilisateur
+But: VÃ©rification du mot de passe soumis et connexion de l'utilisateur
 Info: Guillaume Florimond, 9/12/2006
 */
 function auth($passwd)
@@ -394,15 +409,15 @@ function auth($passwd)
     $data = mysql_fetch_assoc($req) or die("Erreur");
     $passwd = sha1($passwd);
 
-    //Hypothèse 1: identification correcte
+    //HypothÃ¨se 1: identification correcte
     if($passwd == $data['pass'])
     {
-        //Identification réussie
+        //Identification rÃ©ussie
         $_SESSION['auth'] = 1;
         $_SESSION['mauvais_mdp'] = false;
 
     }
-    //Hypothèse 2: identification incorrecte
+    //HypothÃ¨se 2: identification incorrecte
     else
     {
         $_SESSION['mauvais_mdp'] = true;
@@ -411,7 +426,7 @@ function auth($passwd)
 
 /*
 Nom: checkauth
-But: Vérifie si l'utilisateur est bien connecté avant de lui donner accès aux données
+But: VÃ©rifie si l'utilisateur est bien connectÃ© avant de lui donner accÃ¨s aux donnÃ©es
 Info: Guillaume Florimond, 9/12/2006
 */
 function checkauth()
@@ -446,16 +461,16 @@ function adminauth($passwd)
     $data = mysql_fetch_assoc($req) or die("Erreur");
     $passwd = sha1($passwd);
 
-    //Hypothèse 1: identification correcte
+    //HypothÃ¨se 1: identification correcte
     if($passwd == $data['adminpass'])
     {
-        //Identification réussie
+        //Identification rÃ©ussie
         $_SESSION['isadmin'] = 1;
         $_SESSION['auth'] = 1;
         $_SESSION['mauvais_mdp'] = false;
 
     }
-    //Hypothèse 2: identification incorrecte
+    //HypothÃ¨se 2: identification incorrecte
     else
     {
         $_SESSION['mauvais_mdp'] = true;
@@ -477,15 +492,15 @@ function isadmin()
 
 /*
 Nom: ajouter
-But: Ajoute une fiche à la base de données
+But: Ajoute une fiche Ã  la base de donnÃ©es
 Info: Guillaume Florimond, 9/12/2006
 */
 function ajouter($post)
 {
     connexion();
 
-    /* Collecte des données depuis le formulaire */
-    /* Cela permettra de manipuler ces données, p. ex. pour contrôler leur conformité */
+    /* Collecte des donnÃ©es depuis le formulaire */
+    /* Cela permettra de manipuler ces donnÃ©es, p. ex. pour contrÃ´ler leur conformitÃ© */
     $data["nom"] = addslashes(texte_vers_html(formater_nom($post["nom"])));
     $data["prenom"] = addslashes(texte_vers_html(formater_nom($post["prenom"])));
     $data["promotion"] = addslashes(texte_vers_html($post["promotion"]));
@@ -505,25 +520,25 @@ function ajouter($post)
     $data["secret_question"] = addslashes($post["secret_question"]);
     $data["secret_reponse"] = sha1($post["secret_reponse"]);
 
-    /* Système anti-doublons */
+    /* SystÃ¨me anti-doublons */
     $sql = "SELECT id FROM utilisateur WHERE nom='".$data["nom"]."' AND prenom='".$data["prenom"]."'";
     $req = mysql_query($sql) or die("Erreur: $sql<br />".mysql_error());
     $res = mysql_num_rows($req);
     if($res!=0) { message("doublon"); return "erreur"; }
 
-    /* Le champ "modif" représente la date de la dernière modification de la fiche, aujourd'hui*/
+    /* Le champ "modif" reprÃ©sente la date de la derniÃ¨re modification de la fiche, aujourd'hui*/
     $modif = date("Y-m-d");
 
-    /* Formulation de la requête */
+    /* Formulation de la requÃªte */
     $sql = "INSERT INTO utilisateur (nom, prenom, promotion, nationalite, naissance, adresse, email, q1, q2, q3, q4, q5, q6, q7, secret_question, secret_reponse, modif) VALUES ('".$data["nom"]."', '".$data["prenom"]."', '".$data["promotion"]."', '".$data["nationalite"]."', '".$data["naissance"]."', '".$data["adresse"]."', '".$data["email"]."', '".$data["q1"]."', '".$data["q2"]."', '".$data["q3"]."', '".$data["q4"]."', '".$data["q5"]."', '".$data["q6"]."', '".$data["q7"]."', '".$data["secret_question"]."', '".$data["secret_reponse"]."', '$modif');";
 
-    /* Exécution de la requête */
+    /* ExÃ©cution de la requÃªte */
     mysql_query($sql) or die ("Erreur: $sql<br />".mysql_error());
 
     /* Message ok */
     message("enre");
 
-    /* Récupération de l'id de l'enregistrement créé */
+    /* RÃ©cupÃ©ration de l'id de l'enregistrement crÃ©Ã© */
     $sql = "SELECT id FROM utilisateur ORDER BY id DESC";
     $req = mysql_query($sql);
     while($data = mysql_fetch_assoc($req))
@@ -548,22 +563,22 @@ function ajouter_photo($_UPLOADED_UPLOADED_FILES,$id)
     if(!$ext) // unknown file format
         die(dire("photo1"));
 
-    // Stockage des photos dans la base de données
+    // Stockage des photos dans la base de donnÃ©es
     if($_config["photos_storage"] == "DB") {
         $imgdata = file_get_contents($_UPLOADED_UPLOADED_FILES['image']['tmp_name']);
         $imgdata = addslashes($imgdata); // mysql_real_escape_string seems broken on some configurations...
-        //Insérer dans la bdd
+        //InsÃ©rer dans la bdd
         connexion();
         $sql = "INSERT INTO photo SET id='', user_id='$id', photo='$imgdata', extension='$ext', height='$height', width='$width'";
         @mysql_query($sql);
     }
-    // Stockage des photos dans le système de fichiers
+    // Stockage des photos dans le systÃ¨me de fichiers
     else {
         // Stockage
         // Le nom du fichier est : user_id.extension (i.e. 66.png)
         $destination = $_config['data_folder']."/photos/$id.$ext";
         move_uploaded_file($_FILES['image']['tmp_name'], $destination);
-        // Créer un lien vers ce fichier dans la BDD
+        // CrÃ©er un lien vers ce fichier dans la BDD
         connexion();
         $sql = "INSERT INTO photo SET id='', user_id='$id', photo='', extension='$ext', height='$height', width='$width'";
         @mysql_query($sql);
@@ -573,14 +588,14 @@ function ajouter_photo($_UPLOADED_UPLOADED_FILES,$id)
 
 /*
 Nom: modifier
-But: Modifie une fiche de la base de données
+But: Modifie une fiche de la base de donnÃ©es
 Info: Guillaume Florimond, 9/12/2006
 */
 function modifier($post)
 {
     connexion();
-    /* Collecte des données depuis le formulaire */
-    /* Cela permettra de manipuler ces données, p. ex. pour contrôler leur conformité */
+    /* Collecte des donnÃ©es depuis le formulaire */
+    /* Cela permettra de manipuler ces donnÃ©es, p. ex. pour contrÃ´ler leur conformitÃ© */
     $id = $post["id"];
     $data["nom"] = addslashes(texte_vers_html(formater_nom($post["nom"])));
     $data["prenom"] = addslashes(texte_vers_html(formater_nom($post["prenom"])));
@@ -598,10 +613,10 @@ function modifier($post)
     $data["q6"] = addslashes(texte_vers_html($post["q6"]));
     $data["q7"] = addslashes(texte_vers_html($post["q7"]));
 
-    /* Si l'utilisateur est administrateur on passe, sinon on teste la réponse secrete*/
+    /* Si l'utilisateur est administrateur on passe, sinon on teste la rÃ©ponse secrete*/
     if(!isadmin())
     {
-        /* On vérifie que la réponse secrète correspond à celle stockée dans la bdd */
+        /* On vÃ©rifie que la rÃ©ponse secrÃ¨te correspond Ã  celle stockÃ©e dans la bdd */
         $sql = "SELECT secret_reponse FROM utilisateur WHERE id='$id'";
         $req = mysql_query($sql) or die('Erreur');
         $dat = mysql_fetch_assoc($req);
@@ -612,10 +627,10 @@ function modifier($post)
         }
     }
 
-    /* Le champ "modif" représente la date de la dernière modification de la fiche, aujourd'hui*/
+    /* Le champ "modif" reprÃ©sente la date de la derniÃ¨re modification de la fiche, aujourd'hui*/
     $modif = date("Y-m-d");
 
-    /* Formulation de la requête */
+    /* Formulation de la requÃªte */
     $sql = "UPDATE utilisateur SET"
             ." nom='".$data["nom"]."',"
             ." prenom='".$data["prenom"]."',"
@@ -634,7 +649,7 @@ function modifier($post)
             ." modif='$modif'"
             ." WHERE id='$id';";
 
-    /* Exécution de la requête */
+    /* ExÃ©cution de la requÃªte */
     mysql_query($sql) or die ("Erreur: ".$sql);
 }
 
@@ -657,10 +672,10 @@ function modifier_photo($_UPLOADED_FILES,$id)
     if(!$ext) // unknown file format
         die(dire('photo1'));
 
-    /* Opérations sur la bdd */
+    /* OpÃ©rations sur la bdd */
     connexion();
 
-    // Rechercher si la photo existe déjà
+    // Rechercher si la photo existe dÃ©jÃ 
     $sql = "SELECT * FROM photo WHERE user_id='$id'";
     $num = mysql_num_rows(mysql_query($sql));
     // Si elle existe, la supprimer
@@ -670,7 +685,7 @@ function modifier_photo($_UPLOADED_FILES,$id)
         @mysql_query($sql);
     }
 
-    // Stockage des photos dans la base de données
+    // Stockage des photos dans la base de donnÃ©es
     if($_config["photos_storage"] == "DB") {
         $imgdata = file_get_contents($_UPLOADED_FILES['image']['tmp_name']);
         $imgdata = addslashes($imgdata); // mysql_real_escape_string seems broken on some configurations...
@@ -678,13 +693,13 @@ function modifier_photo($_UPLOADED_FILES,$id)
         $sql = "INSERT INTO photo SET id='', user_id='$id', photo='$imgdata', extension='$ext', height='$height', width='$width'";
         @mysql_query($sql);
     }
-    // Stockage des photos dans le système de fichiers
+    // Stockage des photos dans le systÃ¨me de fichiers
     else {
         // Stockage
         // Le nom du fichier est : user_id.extension (i.e. 66.png)
         $destination = $_config['data_folder']."/photos/$id.$ext";
         move_uploaded_file($_FILES['image']['tmp_name'], $destination);
-        // Créer un lien vers ce fichier dans la BDD
+        // CrÃ©er un lien vers ce fichier dans la BDD
         $sql = "INSERT INTO photo SET id='', user_id='$id', photo='', extension='$ext', height='$height', width='$width'";
         @mysql_query($sql);
     }
@@ -693,7 +708,7 @@ function modifier_photo($_UPLOADED_FILES,$id)
 
 /*
 Nom: supprimer
-But: Supprime une fiche de la base de données
+But: Supprime une fiche de la base de donnÃ©es
 Info: Guillaume Florimond, 17/12/2006
 */
 function supprimer($id)

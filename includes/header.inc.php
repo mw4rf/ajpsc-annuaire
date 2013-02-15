@@ -14,9 +14,8 @@
 
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>AJPSC.com::Annuaire</title>
-	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="Guillaume Florimond">
 	<!-- Date: 2006-12-08 -->
 
@@ -33,7 +32,7 @@
 	<!-- // JavaScript -->
 
 	<!-- Favicon -->
-	<LINK REL="SHORTCUT ICON" HREF="themes/<?php echo obtenir_theme(); ?>/favicon.ico">
+	<LINK REL="SHORTCUT ICON" HREF="lib/favicon.ico">
 
 	<!-- Style CSS -->
 	<style type="text/css" media="screen">

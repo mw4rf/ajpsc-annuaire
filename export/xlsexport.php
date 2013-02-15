@@ -93,9 +93,9 @@ if ($data == "") {
 $date = date("Ymd");
 
 /* Définition des header() PHP: le navigateur affiche un dialog de sauvegarde, mais pas cette page*/
-header("Content-Type: application/x-msdownload; charset=ISO-8859-1");
+header("Content-Type: application/x-msdownload; charset=UTF-8");
 header("Content-Disposition: attachment; filename=ajpsc_annuaire_".$date.".xls");
-header("Content-Encoding:iso-8859-1");
+header("Content-Encoding:UTF-8");
 header("Pragma: no-cache");
 header("Expires: 0");
 print "$header\n$data";

@@ -288,15 +288,16 @@ function ajouter_page($data)
 {
     global $_config;
 	// Nettoyer les données
-	foreach($data as $key=>$value)
-		$data[$key] = html_vers_texte(stripslashes($value));
+	foreach($data as $key=>$value) {
+		$data[$key] = from_utf8(html_vers_texte(stripslashes($value)));
+    }
 
 	// Ajouter une page
 	$this->AddPage();
 
 	// Bloc 1: nom et prénom
 	$this->SetFont('Times','B',24);
-	$this->Cell(0,7, formater_nom($data['prenom'])." ".formater_nom($data["nom"]), 0, 0);
+	$this->Cell(0,7, formater_nom($data['prenom'], "ISO-8859-1")." ".formater_nom($data["nom"], "ISO-8859-1"), 0, 0);
 
     // Bloc PHOTO
     if($_config['photos_storage'] == "FS" and !empty($data['extension'])) {
@@ -307,13 +308,13 @@ function ajouter_page($data)
 
 	// Bloc 2: promotion
 	$this->SetFont('Times','B',14);
-	$this->Cell(0,7, donner("c3")." ".$data["promotion"], 0, 2); // "R" pour placer à droite
+	$this->Cell(0,7, donner_latin1("c3")." ".$data["promotion"], 0, 2); // "R" pour placer à droite
 	$this->ln();
 
 	// Bloc 3: date et lieu de naissance
 	$this->SetFont('Times','',14);
-	$this->MultiCell(0,7, donner("ne-vp")." ".$data["nationalite"]." ".
-						 donner("ne-le")." ".convertir_date($data["naissance"]));
+	$this->MultiCell(0,7, donner_latin1("ne-vp")." ".$data["nationalite"]." ".
+						 donner_latin1("ne-le")." ".convertir_date($data["naissance"]));
 
 	// Bloc 4: adresse postale
 	$this->SetFont('Times','',14);
@@ -332,7 +333,7 @@ function ajouter_page($data)
 	if($data["q1"] != "")
 	{
 	$this->SetFont('Times','U',12);
-	$this->MultiCell(0,5, donner("r1"));
+	$this->MultiCell(0,5, donner_latin1("r1"));
 	$this->SetFont('Times','',12);
 	$this->MultiCell(0,5, $data["q1"]);
 	$this->ln();
@@ -342,7 +343,7 @@ function ajouter_page($data)
 	if($data["q2"] != "")
 	{
 	$this->SetFont('Times','U',12);
-	$this->MultiCell(0,5, donner("r2"));
+	$this->MultiCell(0,5, donner_latin1("r2"));
 	$this->SetFont('Times','',12);
 	$this->MultiCell(0,5, $data["q2"]);
 	$this->ln();
@@ -352,7 +353,7 @@ function ajouter_page($data)
 	if($data["q3"] != "")
 	{
 	$this->SetFont('Times','U',12);
-	$this->MultiCell(0,5, donner("r3"));
+	$this->MultiCell(0,5, donner_latin1("r3"));
 	$this->SetFont('Times','',12);
 	$this->MultiCell(0,5, $data["q3"]);
 	$this->ln();
@@ -362,7 +363,7 @@ function ajouter_page($data)
 	if($data["q4"] != "")
 	{
 	$this->SetFont('Times','U',12);
-	$this->MultiCell(0,5, donner("r4"));
+	$this->MultiCell(0,5, donner_latin1("r4"));
 	$this->SetFont('Times','',12);
 	$this->MultiCell(0,5, $data["q4"]);
 	$this->ln();
@@ -372,7 +373,7 @@ function ajouter_page($data)
 	if($data["q5"] != "")
 	{
 	$this->SetFont('Times','U',12);
-	$this->MultiCell(0,5, donner("r5"));
+	$this->MultiCell(0,5, donner_latin1("r5"));
 	$this->SetFont('Times','',12);
 	$this->MultiCell(0,5, $data["q5"]);
 	$this->ln();
@@ -382,7 +383,7 @@ function ajouter_page($data)
 	if($data["q6"] != "")
 	{
 	$this->SetFont('Times','U',12);
-	$this->MultiCell(0,5, donner("r6"));
+	$this->MultiCell(0,5, donner_latin1("r6"));
 	$this->SetFont('Times','',12);
 	$this->MultiCell(0,5, $data["q6"]);
 	$this->ln();
@@ -392,7 +393,7 @@ function ajouter_page($data)
 	if($data["q7"] != "")
 	{
 	$this->SetFont('Times','U',12);
-	$this->MultiCell(0,5, donner("r7"));
+	$this->MultiCell(0,5, donner_latin1("r7"));
 	$this->SetFont('Times','',12);
 	$this->MultiCell(0,5, $data["q7"]);
 	$this->ln();

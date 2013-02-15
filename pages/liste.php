@@ -1,18 +1,18 @@
 <?php
 connexion();
 
-/* PAGINATION */ /* $x doit être définie avant d'arriver à cet endroit du code */
+/* PAGINATION */ /* $x doit Ãªtre dÃ©finie avant d'arriver Ã  cet endroit du code */
 
-// A partir de combien d'enregistrements une nouvelle page est-elle créée ? A partir de $z
+// A partir de combien d'enregistrements une nouvelle page est-elle crÃ©Ã©e ? A partir de $z
 $z = $_config['pagination'];
 
-//Combien d'enregistrements au total dans la table ? Réponse: $t
+//Combien d'enregistrements au total dans la table ? RÃ©ponse: $t
 $sql = "SELECT * FROM utilisateur;";
 $req = mysql_query($sql);
 $t = mysql_num_rows($req);
 
 // Tri des enregistrements
-	// Cas 1 => Première visualisation de la page: session close: tri par défaut
+	// Cas 1 => PremiÃ¨re visualisation de la page: session close: tri par dÃ©faut
 	if (!isset($_SESSION['tri']))
 		$_SESSION['tri'] = "nom ASC";
 
@@ -25,7 +25,7 @@ $t = mysql_num_rows($req);
 		if($_GET['tri'] == "n-desc")
 			$_SESSION['tri'] = "nom DESC";
 
-		// Prénoms
+		// PrÃ©noms
 		if($_GET['tri'] == "pn-asc")
 			$_SESSION['tri'] = "prenom ASC";
 		if($_GET['tri'] == "pn-desc")
@@ -47,39 +47,39 @@ $t = mysql_num_rows($req);
 		if($_GET['tri'] == "no")
 			$_SESSION['tri'] = "id ASC";
 
-		// Par date de mise à jour
+		// Par date de mise Ã  jour
 		if($_GET['tri'] == "maj")
 			$_SESSION['tri'] = "modif DESC";
 	}
 
-	// Conclusion => un tri est déjà actif, soit parce que c'est le tri par défaut (cas 1)
-	// soit parce qu'il vient d'être défini (cas 2), soit encore parce qu'il est enregistré
+	// Conclusion => un tri est dÃ©jÃ  actif, soit parce que c'est le tri par dÃ©faut (cas 1)
+	// soit parce qu'il vient d'Ãªtre dÃ©fini (cas 2), soit encore parce qu'il est enregistrÃ©
 	// dans la session en cours.
 	$tri = $_SESSION['tri'];
 
-//Générer la requête avant de modifier les limites ($x)
+//GÃ©nÃ©rer la requÃªte avant de modifier les limites ($x)
 $sql = "SELECT * FROM utilisateur ORDER BY $tri LIMIT $x,$z;";
 $req = mysql_query($sql);
 
-// On stocke le $x actuel dans $xa, car $x va être modifié par la suite
+// On stocke le $x actuel dans $xa, car $x va Ãªtre modifiÃ© par la suite
 $xa = $x;
-// Barre de navigation / répartition des résultats sur plusieurs pages
+// Barre de navigation / rÃ©partition des rÃ©sultats sur plusieurs pages
 //Calculs
-// $y est le premier enregistrement de la plage à afficher (LIMIT Y,...)
-// $z est le seuil à partir duquel on passe à une autre page
-// $x est le nombre d'enregistrements qu'il reste à afficher
-	//Protéger y: il ne doit pas être négatif, car x peut être plus petit que z
+// $y est le premier enregistrement de la plage Ã  afficher (LIMIT Y,...)
+// $z est le seuil Ã  partir duquel on passe Ã  une autre page
+// $x est le nombre d'enregistrements qu'il reste Ã  afficher
+	//ProtÃ©ger y: il ne doit pas Ãªtre nÃ©gatif, car x peut Ãªtre plus petit que z
 	$y = $x - $z;
 	if($y < 0)
 		$y = 0;
 	//Le nouveau x est l'ancien + la grandeur du nouvel intervalle ($z)
 	$x = $x + $z;
-	// $l représente le premier enregistrement de la dernière page
+	// $l reprÃ©sente le premier enregistrement de la derniÃ¨re page
 	$l = $t-$z;
-	// $p représente le nombre de pages
-	$p = ceil($t / $z); //ceil() arrondit à la valeur supérieure
-	// $c représente la page courante
-	$c = ceil($x / $z); //ceil() arrondit à la valeur supérieure
+	// $p reprÃ©sente le nombre de pages
+	$p = ceil($t / $z); //ceil() arrondit Ã  la valeur supÃ©rieure
+	// $c reprÃ©sente la page courante
+	$c = ceil($x / $z); //ceil() arrondit Ã  la valeur supÃ©rieure
 
 
 /* /PAGINATION */
@@ -87,7 +87,7 @@ $xa = $x;
 
 <div class="container well">
     	<?php
-			/* Construction et affichage du système de pagination */
+			/* Construction et affichage du systÃ¨me de pagination */
 			$avant =      abbr2("p-");
 			$apres =      abbr2("p+");
 			$avantx =     donner("p-");
@@ -102,7 +102,7 @@ $xa = $x;
 			$result .= "<span class=\"label\">$il_y_a <b>".$t."</b> $fiches_sur <b>".$p."</b> $pages</span>";
 			$result .= "</td>";
 
-			// Combobox qui permet de sauter d'une page à l'autre
+			// Combobox qui permet de sauter d'une page Ã  l'autre
 			  $co  = "<select class=\"span1 btn\" name=\"menu_pagination\" "
 			       ."onchange=\"MM_jumpMenu('parent',this,0)\">";
 
@@ -116,12 +116,12 @@ $xa = $x;
 				// Autre page
 				else
 				{
-					/* $ix indique la page à laquelle on veut aller, mais quel sera la
+					/* $ix indique la page Ã  laquelle on veut aller, mais quel sera la
 					 valeur de x pour cette page (x=premier enregistrement de la page)
-					Réponse: page désirée ($ix) * seuil de pagination ($z)
-					MAIS: la première page porte le numéro 1, alors qu'elle est
-					construite avec un $x égal à 0 (limit $x=O,$z) => donc, il faut
-					en réalité utiliser ($ix - 1) au lieu de $ix*/
+					RÃ©ponse: page dÃ©sirÃ©e ($ix) * seuil de pagination ($z)
+					MAIS: la premiÃ¨re page porte le numÃ©ro 1, alors qu'elle est
+					construite avec un $x Ã©gal Ã  0 (limit $x=O,$z) => donc, il faut
+					en rÃ©alitÃ© utiliser ($ix - 1) au lieu de $ix*/
 					$xgo = ($ix - 1) * $z;
 
 					$co .= "<option value=\"index.php?action=page_liste&x=$xgo"
@@ -131,32 +131,32 @@ $xa = $x;
 			$co .= "</select>";
 
 			$provresult = "<td align=\"center\"><div class=\"btn-group\">";
-			// si $x>$z c'est qu'on est plus à la première page
+			// si $x>$z c'est qu'on est plus Ã  la premiÃ¨re page
 			if($x > $z)
 			{
 				$provresult	.="<a class=\"btn btn-small\" href=\"index.php?action=page_liste\"><i class=\"icon-fast-backward\"></i></a>"
 						." <a class=\"btn btn-small\" href=\"index.php?action=page_liste&x=$y\"><i class=\"icon-backward\"></i></a>";
 			}
-			// sinon c'est qu'on est à la première page
+			// sinon c'est qu'on est Ã  la premiÃ¨re page
 			else
 			{
 				$provresult .= "<a class=\"btn btn-small disabled\"><i class=\"icon-fast-backward\"></i></a> <a class=\"btn btn-small disabled\"><i class=\"icon-backward\"></i></a>";
 			}
 
-			//si $x<$t c'est qu'on n'est pas encore à la dernière page
+			//si $x<$t c'est qu'on n'est pas encore Ã  la derniÃ¨re page
 			if($x < $t)
 			{
 				$provresult	.=" <a class=\"btn btn-small\" href=\"index.php?action=page_liste&x=$x\"><i class=\"icon-forward\"></i></a>"
 						." <a class=\"btn btn-small\" href=\"index.php?action=page_liste&x=$l\"><i class=\"icon-fast-forward\"></i></a>";
 			}
-			// sinon c'est qu'on est à la dernière page
+			// sinon c'est qu'on est Ã  la derniÃ¨re page
 			else
 			{
 				$provresult .= " <a class=\"btn btn-small disabled\"><i class=\"icon-forward\"></i></a> <a class=\"btn btn-small disabled\"><i class=\"icon-fast-forward\"></i></a>";
 			}
 			$result .= $provresult."</div></td>";
 
-			// Pour désactiver le Combo, remplacer ci-dessous $co par $c
+			// Pour dÃ©sactiver le Combo, remplacer ci-dessous $co par $c
 			$result .= "<td align=\"right\"><span class=\"label\">$page</span> $co <span class=\"label\">/$p</span></td></tr></table>";
 
 			echo $result;
@@ -220,7 +220,7 @@ $xa = $x;
 <tbody>
 <?php
 // Pour l'exportation
-/* NB: il faut refuser l'exportation ici (false) pour que soit générée une requête SQL de base, exportant TOUS les enregistrements... et non seulement ceux qui sont sur la page courante*/
+/* NB: il faut refuser l'exportation ici (false) pour que soit gÃ©nÃ©rÃ©e une requÃªte SQL de base, exportant TOUS les enregistrements... et non seulement ceux qui sont sur la page courante*/
 $_SESSION["exportation_permission"] = false;
 $_SESSION["exportation_requete"] = $sql;
 

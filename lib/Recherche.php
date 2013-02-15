@@ -4,15 +4,15 @@ class Recherche
 {
 
 // Variables de classe
-var $tab; // stocke les résultats avant affichage
-var $num = 0; // stocke le nombre de résultats retournés par la recherche
-var $rq; // stocke la requête
+var $tab; // stocke les rÃ©sultats avant affichage
+var $num = 0; // stocke le nombre de rÃ©sultats retournÃ©s par la recherche
+var $rq; // stocke la requÃªte
 var $type; // le type de recherche: DEFAULT ; REGEX ; FULLTEXT
 
-// Mots-clés génériques qui doivent être exclus de la recherche
+// Mots-clÃ©s gÃ©nÃ©riques qui doivent Ãªtre exclus de la recherche
 
 var $gen = array(
-	// Français
+	// FranÃ§ais
 	"le", "la", "les", "de", "du", "des", "un", "une", "et", "a",
 	// Espagnol
 	"el", "los", "lo", "del", "uno", "una", "y", "en", "para", "por", "no", "o",
@@ -25,86 +25,86 @@ var $gen = array(
 /*
 ****** CONSTRUCTEUR *****
 Nom: Recherche
-But: constructeur de la classe Recherche. Effectue les traitements préliminaires sur les données transmises par le formulaire, et effectue la recherche.
+But: constructeur de la classe Recherche. Effectue les traitements prÃ©liminaires sur les donnÃ©es transmises par le formulaire, et effectue la recherche.
 Info: Guillaume Florimond, 07/04/2007
 Arguments:
- $rq est la requête (le contenu du champ de recherche)
+ $rq est la requÃªte (le contenu du champ de recherche)
  $ch est la valeur du champ modificateur (combobox)
 */
 function Recherche($rq = null, $ch = null)
 {
-	// Si $rq n'a pas été initialisée, c'est qu'on n'utilisera qu'une méthode statique
+	// Si $rq n'a pas Ã©tÃ© initialisÃ©e, c'est qu'on n'utilisera qu'une mÃ©thode statique
 	// donc: pas besoin de continuer le traitement ici
 	if(!isset($rq) or !isset($ch) or $rq == "") return;
 
-	// Enregistrement de la requête dans la session
-	$_SESSION["searchquery-rq"] = $rq; // la requête
-	$_SESSION["searchquery-ch"] = $ch; // le champ de délimitation
+	// Enregistrement de la requÃªte dans la session
+	$_SESSION["searchquery-rq"] = $rq; // la requÃªte
+	$_SESSION["searchquery-ch"] = $ch; // le champ de dÃ©limitation
 
-	/* Protection des requêtes SQL: l'espace étant un opérateur ET, il faut enlever les espaces au début et à la fin de la requête ; de plus, c'est important car l'analyse de la formation de la requête s'opère en prélevant des caractères spéciaux à des endroits précis (p. ex. le premier et le dernier caractères doivent être " pour une fulltext search) */
+	/* Protection des requÃªtes SQL: l'espace Ã©tant un opÃ©rateur ET, il faut enlever les espaces au dÃ©but et Ã  la fin de la requÃªte ; de plus, c'est important car l'analyse de la formation de la requÃªte s'opÃ¨re en prÃ©levant des caractÃ¨res spÃ©ciaux Ã  des endroits prÃ©cis (p. ex. le premier et le dernier caractÃ¨res doivent Ãªtre " pour une fulltext search) */
 	$rq = trim($rq);
 
-	/* On enlève les slash pour ne pas causer de problème lors de la vérification des conditions. On remettra plus tard les slash pour protéger la requête SQL. */
+	/* On enlÃ¨ve les slash pour ne pas causer de problÃ¨me lors de la vÃ©rification des conditions. On remettra plus tard les slash pour protÃ©ger la requÃªte SQL. */
 	$rq = stripslashes($rq);
 
-	// 1er cas: c'est une expression régulière
+	// 1er cas: c'est une expression rÃ©guliÃ¨re
 	if(strcasecmp(substr($rq, 0, 6) , "regex=") == 0)
 	{
 		$this->type = "REGEX";
 
-		// Note: la condition ci-dessus a 2 particularités:
-		// 1) la comparaison est insensible à la casse
-		// 2) la méthode strcasecmp retourne 0 si les deux chaînes comparées sont égales...
+		// Note: la condition ci-dessus a 2 particularitÃ©s:
+		// 1) la comparaison est insensible Ã  la casse
+		// 2) la mÃ©thode strcasecmp retourne 0 si les deux chaÃ®nes comparÃ©es sont Ã©gales...
 
-		// Extraire l'expression régulière
-		// Ne pas utiliser la fonction explode car elle est sensible à la casse...
+		// Extraire l'expression rÃ©guliÃ¨re
+		// Ne pas utiliser la fonction explode car elle est sensible Ã  la casse...
 		$regex =  substr($rq, 6);
-		// Protection des requêtes SQL: on protège les ' par des \
+		// Protection des requÃªtes SQL: on protÃ¨ge les ' par des \
 		$regex = addslashes($regex);
-		/* Construction de la requête et exécution */
+		/* Construction de la requÃªte et exÃ©cution */
 		$this->rq = $regex;
 		$this->executer_requete($this->construire_requete( $regex , $ch , true , false ));
 	}
 
-	// 2ème cas: c'est une recherche fulltext
+	// 2Ã¨me cas: c'est une recherche fulltext
 	elseif(substr($rq, 0, 1) == '(' and substr($rq, -1, 1) == ')')
 	{
 		$this->type = "FULLTEXT";
 
-		// Note: substr prélève une partie de la chaîne $rq
-		// 0,1 signifie 1 caractère depuis la position 0 (le premier caractère)
-		// -1,1 signifie 1 caractère depuis la position -1 (le dernière caractère)
+		// Note: substr prÃ©lÃ¨ve une partie de la chaÃ®ne $rq
+		// 0,1 signifie 1 caractÃ¨re depuis la position 0 (le premier caractÃ¨re)
+		// -1,1 signifie 1 caractÃ¨re depuis la position -1 (le derniÃ¨re caractÃ¨re)
 
 		// Extraire le motif (ce qui se trouve entre les guillemets)
 		$rqa = substr($rq, 1, -1);
-		// Protection des requêtes SQL: on protège les ' par des \
+		// Protection des requÃªtes SQL: on protÃ¨ge les ' par des \
 		$rqa = addslashes($rqa);
-		/* Construction de la requête et exécution */
+		/* Construction de la requÃªte et exÃ©cution */
 		$this->rq = $rqa;
 		$this->executer_requete( $this->construire_requete ( $rqa , $ch , false, true ) );
 	}
 
-	// 3ème cas: ce n'est PAS une expression régulière NI une recherche fulltext
+	// 3Ã¨me cas: ce n'est PAS une expression rÃ©guliÃ¨re NI une recherche fulltext
 	else
 	{
 		$this->type = "DEFAULT";
 
-		// Nettoyage: on enlève tous les mots-clés génériques
+		// Nettoyage: on enlÃ¨ve tous les mots-clÃ©s gÃ©nÃ©riques
 		$rq = $this->nettoyer_requete($rq);
-		// Protection des requêtes SQL: on protège les ' par des \
+		// Protection des requÃªtes SQL: on protÃ¨ge les ' par des \
 		$rq = addslashes($rq);
-		// On récupère les mots séparés: il y a autant d'espaces que de requêtes
+		// On rÃ©cupÃ¨re les mots sÃ©parÃ©s: il y a autant d'espaces que de requÃªtes
 		$rqa = explode(" ", $rq);
 		// Combien de mots dans ce tableau ?
 		$nbr = count($rqa);
-		// Recherche intelligente: on crée autant de requêtes SQL qu'il y a de mots
+		// Recherche intelligente: on crÃ©e autant de requÃªtes SQL qu'il y a de mots
 		for ( $i = 0 ; $i < $nbr ; $i++ )
 		{
-			/* Construction de la requête et exécution */
+			/* Construction de la requÃªte et exÃ©cution */
 			$this->rq[$i] = $rqa[$i];
 			$this->executer_requete($this->construire_requete($rqa[$i],$ch,false,false));
 		}
-		// Traitement des résultats
+		// Traitement des rÃ©sultats
 		$this->definir_pertinence();
 	}
 
@@ -116,7 +116,7 @@ function Recherche($rq = null, $ch = null)
 
 /*
 Nom: afficher_requete
-But: Renvoie la requête pour être affichée "proprement" (la transtype en string si elle est de type array)
+But: Renvoie la requÃªte pour Ãªtre affichÃ©e "proprement" (la transtype en string si elle est de type array)
 Info: Guillaume Florimond, 07/04/2007
 */
 function afficher_requete($req)
@@ -137,22 +137,22 @@ function afficher_requete($req)
 
 /*
 Nom: nettoyer_requete
-But: Elimine les mots-clés génériques de la chaîne passée en argument, tels que définis dans la variable de classe $gen.
+But: Elimine les mots-clÃ©s gÃ©nÃ©riques de la chaÃ®ne passÃ©e en argument, tels que dÃ©finis dans la variable de classe $gen.
 Info: Guillaume Florimond, 07/04/2007
 */
 function nettoyer_requete($req)
 {
-		/* La fonction remplace à l'intérieur des mots. Pour éviter d'enlever des lettres aux mots recherchés, il faut que ce qu'on enlève soient des mots complets, c'est-à-dire des chaînes entournées d'espaces... Le tableau $gen n'admettant pas d'espace de part et d'autre de ses composantes, pour des raisons de lisibilité, il convient d'en ajouter ici */
+		/* La fonction remplace Ã  l'intÃ©rieur des mots. Pour Ã©viter d'enlever des lettres aux mots recherchÃ©s, il faut que ce qu'on enlÃ¨ve soient des mots complets, c'est-Ã -dire des chaÃ®nes entournÃ©es d'espaces... Le tableau $gen n'admettant pas d'espace de part et d'autre de ses composantes, pour des raisons de lisibilitÃ©, il convient d'en ajouter ici */
 	for($i = 0 ; $i < count($this->gen) ; $i++ )
 		$mots[$i] = " ".$this->gen[$i]." ";
 
-	/* On ajoute un espace AVANT et APRES le mot à éliminer. Bien. Mais si ce mot est en début de chaîne, il n'aura pas d'espace avant lui. S'il est en fin de chaîne, il n'aura pas d'espace après lui. Il ne sera donc pas éliminé. Il faut donc ajouter ici un espace en début de chaîne et un espace en fin de chaîne, pour que l'analyse soit correcte. Il faudra par la suite retirer ces espaces à l'aide de la fonction trim() */
+	/* On ajoute un espace AVANT et APRES le mot Ã  Ã©liminer. Bien. Mais si ce mot est en dÃ©but de chaÃ®ne, il n'aura pas d'espace avant lui. S'il est en fin de chaÃ®ne, il n'aura pas d'espace aprÃ¨s lui. Il ne sera donc pas Ã©liminÃ©. Il faut donc ajouter ici un espace en dÃ©but de chaÃ®ne et un espace en fin de chaÃ®ne, pour que l'analyse soit correcte. Il faudra par la suite retirer ces espaces Ã  l'aide de la fonction trim() */
 	$req = " ".$req." ";
 
-	/* Cette fonction remplace les occurences des mots définis dans $mots rencontrés dans $req par des chaînes vides
-	NB 1: str_replace est sensible à la casse, str_ireplace ne l'est pas
+	/* Cette fonction remplace les occurences des mots dÃ©finis dans $mots rencontrÃ©s dans $req par des chaÃ®nes vides
+	NB 1: str_replace est sensible Ã  la casse, str_ireplace ne l'est pas
 	NB 2: la fonction se charge de parcourir le tableau $mots toute seule
-	NB 3: il faut remplacer PAR un espace, sinon les mots seront collés les uns autre autres
+	NB 3: il faut remplacer PAR un espace, sinon les mots seront collÃ©s les uns autre autres
 	*/
 	// PHP 4
 	if (!function_exists('str_ireplace'))
@@ -162,12 +162,12 @@ function nettoyer_requete($req)
 
 
 
-	/* La fonction ci-dessus remplace le mot clé par un caractère vide. Mais comme ce mot était séparé d'un espace de chaque côté, on se retrouve avec 2 espaces à la suite. Cela déclenche la fonction explode utilisée pour séparer les mots dans la requête, et cela génère une erreur car un espace n'est pas un motif de recherche valable... Il faut donc absolument réparer ce dommage et remplacer les espaces doubles par des espaces simples */
+	/* La fonction ci-dessus remplace le mot clÃ© par un caractÃ¨re vide. Mais comme ce mot Ã©tait sÃ©parÃ© d'un espace de chaque cÃ´tÃ©, on se retrouve avec 2 espaces Ã  la suite. Cela dÃ©clenche la fonction explode utilisÃ©e pour sÃ©parer les mots dans la requÃªte, et cela gÃ©nÃ¨re une erreur car un espace n'est pas un motif de recherche valable... Il faut donc absolument rÃ©parer ce dommage et remplacer les espaces doubles par des espaces simples */
 
 	//$req = str_ireplace("  ", " ", $req); // DEPRECATED
 	$req = preg_replace('/\s\s+/', ' ', $req);
 
-	// Retirer l'espace simple en début et fin de chaîne qui a été ajouté plus haut
+	// Retirer l'espace simple en dÃ©but et fin de chaÃ®ne qui a Ã©tÃ© ajoutÃ© plus haut
 	$req = trim($req);
 
 	// retour
@@ -176,22 +176,22 @@ function nettoyer_requete($req)
 
 /*
 Nom: definir_pertinence
-But: Calcule la pertinence de chacun des résultats de la recherche. Modifie le conteneur des résultats, $this->tab, pour y ajouter l'indice de pertinence de chaque résultat: $this->pertinence[X]["pertinence"]
+But: Calcule la pertinence de chacun des rÃ©sultats de la recherche. Modifie le conteneur des rÃ©sultats, $this->tab, pour y ajouter l'indice de pertinence de chaque rÃ©sultat: $this->pertinence[X]["pertinence"]
 Info: Guillaume Florimond, 07/04/2007
 */
 function definir_pertinence()
 {
-	// Retour s'il n'y a pas de résultat
+	// Retour s'il n'y a pas de rÃ©sultat
 	if($this->num == 0) return;
 
 	// Initialisation des variables
-	$note = 0; // La note du résultat (sa pertinence, sur une échelle de 0 à 10)
+	$note = 0; // La note du rÃ©sultat (sa pertinence, sur une Ã©chelle de 0 Ã  10)
 	$p = 0;// Variable de comptage
 	$ct = 0; // Variable de comptage
-	$rq = $this->rq; // Variable stockant la requête (tableau ou non)
-	$rs = $this->tab; // Variable stockant les résultats de la recherche
+	$rq = $this->rq; // Variable stockant la requÃªte (tableau ou non)
+	$rs = $this->tab; // Variable stockant les rÃ©sultats de la recherche
 
-	// Vérifier qu'en fait d'une requête simple ce soit une agrégation ou une comparaison
+	// VÃ©rifier qu'en fait d'une requÃªte simple ce soit une agrÃ©gation ou une comparaison
 	$regexa = "`^([[:digit:]]{2,4})<([[:digit:]]{2,4})$`"; // a < b
 	$regexb = "`^([[:digit:]]{2,4})>([[:digit:]]{2,4})$`"; // a > b
 	$regexc = "`^(.+)&&(.+)$`"; // a&&b
@@ -207,54 +207,54 @@ function definir_pertinence()
 
 	// 1. CALCULER LA PERTINENCE INDIVIDUELLE DE CHAQUE FICHE
 
-	// A. Si $rq est un tableau (si la requête contient plusieurs mots-clés)
+	// A. Si $rq est un tableau (si la requÃªte contient plusieurs mots-clÃ©s)
 	if(is_array($rq) and count($rq) > 1)
 	{
-		// Parcourir les résultats
+		// Parcourir les rÃ©sultats
 		for($i = 0; $i < count($rs) ; $i++)
 		{
-			// Parcourir les mots-clés (les mots qui composent la requête)
-			foreach( $rq as $key=>$val ) /* val contient les mots-clés */
+			// Parcourir les mots-clÃ©s (les mots qui composent la requÃªte)
+			foreach( $rq as $key=>$val ) /* val contient les mots-clÃ©s */
 			{
-				// Parcourir les champs de chaque résultat
+				// Parcourir les champs de chaque rÃ©sultat
 				foreach($rs[$i] as $k=>$v)
 				{
 					/* substr_count(A,B) compte le nombre d'occurrences de B dans A*/
-					/*si ce qu'on cherche est + petit ou = à que ce dans quoi on cherche!!*/
+					/*si ce qu'on cherche est + petit ou = Ã  que ce dans quoi on cherche!!*/
 					if(strlen($v) >= strlen($val))
 						$ct = substr_count( $v , $val );
 
 					$p = $p + $ct; // $p contient le nombre d'occurences
-					$ct = 0; // on réinitialise le compteur
+					$ct = 0; // on rÃ©initialise le compteur
 				}
 				$note = $note + $p; // note = somme des notes (p) pour chaque champ
-				$p = 0; // on réinitialise le compteur
+				$p = 0; // on rÃ©initialise le compteur
 				$rs[$i]["pertinence"] = $note; // on enregistre la note
 			}
-			$note = 0; // on réinitialise le compteur
+			$note = 0; // on rÃ©initialise le compteur
 		}
 	}
 
-	// B. Si $rq n'est pas un tableau (si la requête ne contient qu'une expression)
+	// B. Si $rq n'est pas un tableau (si la requÃªte ne contient qu'une expression)
 	else
 	{
-		// Parcourir les résultats
+		// Parcourir les rÃ©sultats
 		for($i = 0; $i < count($rs) ; $i++)
 		{
 			$val = $rq[0];
-			// Parcourir les champs de chaque résultat
+			// Parcourir les champs de chaque rÃ©sultat
 			foreach($rs[$i] as $k=>$v)
 			{
 				/* substr_count(A,B) compte le nombre d'occurrences de B dans A*/
-				/*si ce qu'on cherche est + petit ou = à que ce dans quoi on cherche!!*/
+				/*si ce qu'on cherche est + petit ou = Ã  que ce dans quoi on cherche!!*/
 				if(strlen($v) >= strlen($val))
 					$ct = substr_count( $v , $val );
 
 				$p = $p + $ct; // $p contient le nombre d'occurences
-				$ct = 0; // on réinitialise le compteur
+				$ct = 0; // on rÃ©initialise le compteur
 			}
 			$note = $p;
-			$p = 0; // on réinitialise le compteur
+			$p = 0; // on rÃ©initialise le compteur
 			$rs[$i]["pertinence"] = $note; // on enregistre la note
 		}
 	}
@@ -262,7 +262,7 @@ function definir_pertinence()
 	// 2. CALCULER LE POURCENTAGE DE PERTINENCE DE CHAQUE FICHE
 	$rs = $this->normaliser_pertinence($rs);
 
-	// 3. TRI DU TABLEAU PAR PERTINENCE DÉCROISSANTE
+	// 3. TRI DU TABLEAU PAR PERTINENCE DÃ‰CROISSANTE
 	foreach($rs as $key=>$val)
 		$tri[$key] = $val["pertinence"];
 	array_multisort($tri, SORT_DESC, $rs);
@@ -273,12 +273,12 @@ function definir_pertinence()
 
 /*
 Nom: normaliser_pertinence
-But: Calcule le pourcentage de pertinence de chaque résultat en fonction de la petinence des autres résultats (le plus pertinence est l'indice: 100%).
+But: Calcule le pourcentage de pertinence de chaque rÃ©sultat en fonction de la petinence des autres rÃ©sultats (le plus pertinence est l'indice: 100%).
 Info: Guillaume Florimond, 07/04/2007
 */
 function normaliser_pertinence($rs)
 {
-	// Retour s'il n'y a pas de résultat
+	// Retour s'il n'y a pas de rÃ©sultat
 	if($this->num == 0) return;
 
 	// Calculer la plus haute valeur de pertinence
@@ -287,7 +287,7 @@ function normaliser_pertinence($rs)
 		if($rs[$i]["pertinence"] > $max)
 			$max = $rs[$i]["pertinence"];
 
-	// Pour empêcher une future division par 0...
+	// Pour empÃªcher une future division par 0...
 	if($max == 0) $max = 1;
 
 	// Calculer le pourcentage de chaque pertinence ($max = 100%)
@@ -299,19 +299,19 @@ function normaliser_pertinence($rs)
 
 /*
 Nom: executer_requete
-But: Exécute la requête SQL passée en argument et appelle la fonction ajouter_ligne pour chaque résultat.
+But: ExÃ©cute la requÃªte SQL passÃ©e en argument et appelle la fonction ajouter_ligne pour chaque rÃ©sultat.
 Info: Guillaume Florimond, 07/04/2007
 */
 function executer_requete($sql)
 {
-	/* Exécution de la requête */
+	/* ExÃ©cution de la requÃªte */
 	connexion();
 	$req = mysql_query($sql) or die("Erreur ".$sql);
 
-	/* Calcul du nombre de résultats (remplissage de $this->num) -- Avec ce système de recherche, chaque motif de recherche séparé d'un espace donne lieu à sa propre requête. On doit donc INCREMENTER le compteur et non pas remplacer le compteur existant par une nouvelle valeur (d'où += au lieu de =), sinon seul le nombre de résultats de la dernière recherche sera affiché. */
+	/* Calcul du nombre de rÃ©sultats (remplissage de $this->num) -- Avec ce systÃ¨me de recherche, chaque motif de recherche sÃ©parÃ© d'un espace donne lieu Ã  sa propre requÃªte. On doit donc INCREMENTER le compteur et non pas remplacer le compteur existant par une nouvelle valeur (d'oÃ¹ += au lieu de =), sinon seul le nombre de rÃ©sultats de la derniÃ¨re recherche sera affichÃ©. */
 	$this->num += mysql_num_rows($req);
 
-	/* Remplissage du tableau ($this->tab) des résultats */
+	/* Remplissage du tableau ($this->tab) des rÃ©sultats */
 	while($data = mysql_fetch_assoc($req))
 	{
 		$afficher['nom'] = (formater_nom(stripslashes($data['nom'])));
@@ -335,22 +335,22 @@ function executer_requete($sql)
 		// Dans le cas d'une fulltext search
 		if(isset($data["pertinence"])) $afficher["pertinence"] = $data["pertinence"];
 
-		// Appelle la fonction qui ajoute une ligne qui correspond à un résultat.
+		// Appelle la fonction qui ajoute une ligne qui correspond Ã  un rÃ©sultat.
 		$this->ajouter_ligne($afficher);
 	}
 }
 
 /*
 Nom: ajouter_ligne
-But: Ajoute une ligne dans le tableau qui stocke les résultats, $this->tab. Fonction appelée par la fonction executer_requete pour chaque résultat de recherche.
+But: Ajoute une ligne dans le tableau qui stocke les rÃ©sultats, $this->tab. Fonction appelÃ©e par la fonction executer_requete pour chaque rÃ©sultat de recherche.
 Info: Guillaume Florimond, 07/04/2007
 */
 function ajouter_ligne($data)
 {
-	// On se place à la prochaine ligne
-	$i = count($this->tab); // pas de + 1 car tab est initialisé à 0, il a 1 élt de retard
+	// On se place Ã  la prochaine ligne
+	$i = count($this->tab); // pas de + 1 car tab est initialisÃ© Ã  0, il a 1 Ã©lt de retard
 
-	// On ajoute les données dans $tab
+	// On ajoute les donnÃ©es dans $tab
 	$this->tab[$i]["nom"] = $data["nom"];
 	$this->tab[$i]["prenom"] = $data["prenom"];
 	$this->tab[$i]["promotion"] = $data["promotion"];
@@ -375,28 +375,28 @@ function ajouter_ligne($data)
 
 /*
 Nom: afficher_resultats
-But: Affiche les résultats de la recherche à l'écran. Cette fonction affiche le contenu de la variable de classe $this->tab qui contient les résultats.
+But: Affiche les rÃ©sultats de la recherche Ã  l'Ã©cran. Cette fonction affiche le contenu de la variable de classe $this->tab qui contient les rÃ©sultats.
 Info: Guillaume Florimond, 07/04/2007
 Argument $ttype:
- DEFAULT => recherche intelligente, focalisée ou diffuse
- REGEX => expression régulière
+ DEFAULT => recherche intelligente, focalisÃ©e ou diffuse
+ REGEX => expression rÃ©guliÃ¨re
  FULLTEXT => full text search
-La définition de cet argument permet de déterminer quand afficher la pertinence des résultats. La pertinence n'est affichée que s'il est DEFAULT.
+La dÃ©finition de cet argument permet de dÃ©terminer quand afficher la pertinence des rÃ©sultats. La pertinence n'est affichÃ©e que s'il est DEFAULT.
 */
 function afficher_resultats($ttype = null)
 {
 	if(isset($this->type)) $ttype = $this->type;
 
-	// Déclaration du tableau
+	// DÃ©claration du tableau
 	$ligne = '<table width="80%" align="center" cellpadding="4" cellspacing="0" border="0" class="orange">';
 
-	// Nombre de résultats
+	// Nombre de rÃ©sultats
 	$ligne .= '<tr class="orange">';
 		$ligne .= '<td colspan="2"><b>';
-		// Afficher le nombre ou afficher "Aucun" (si 0 résultat) ?
+		// Afficher le nombre ou afficher "Aucun" (si 0 rÃ©sultat) ?
 		if ($this->num == 0) $ligne .= donner("rech_resultat_aucun").' ';
 		else $ligne .= $this->num.' ';
-		// Mot "résultat" au singulier ou au pluriel ?
+		// Mot "rÃ©sultat" au singulier ou au pluriel ?
 		if($this->num < 2 != 0) $ligne .= donner("rech_resultat_singulier");
 		else $ligne .= donner("rech_resultat_pluriel");
 	$ligne .= '</b></td>';
@@ -405,7 +405,7 @@ function afficher_resultats($ttype = null)
 	$ligne .= ' &gt; <i>'.$this->afficher_requete($this->rq).'</i></td>';
 	$ligne .= "</tr>";
 
-	// En-tête du tableau
+	// En-tÃªte du tableau
 	$ligne .= '<tr class="orange">';
 	  $ligne .= '<td style="border-top: 1px solid #FF8000;">'.donner("c1").'</td>';
 	  $ligne .= '<td style="border-top: 1px solid #FF8000;">'.donner("c2").'</td>';
@@ -416,11 +416,11 @@ function afficher_resultats($ttype = null)
 	$ligne .= '</tr>';
 	echo $ligne;
 
-	/* Avant d'afficher les résultats, on doit normaliser la pertinence s'il s'agit d'une fulltext search. La raison est la suivante: l'indice de pertinence des fulltext search est calculé directement par MySQL. Il n'est pas calculé par la fonction definir_pertinence comme l'indice de pertinence "classique" pour les recherches normales. Or, MySQL n'utilise pas un indice 100 comme cette classe. Il en résulte une distortion de l'indice de pertinence qu'il faut corriger. C'est pourquoi on appelle ici la fonction normaliser_pertinence sur les résultats de recherche s'il s'agit d'une fulltext search */
+	/* Avant d'afficher les rÃ©sultats, on doit normaliser la pertinence s'il s'agit d'une fulltext search. La raison est la suivante: l'indice de pertinence des fulltext search est calculÃ© directement par MySQL. Il n'est pas calculÃ© par la fonction definir_pertinence comme l'indice de pertinence "classique" pour les recherches normales. Or, MySQL n'utilise pas un indice 100 comme cette classe. Il en rÃ©sulte une distortion de l'indice de pertinence qu'il faut corriger. C'est pourquoi on appelle ici la fonction normaliser_pertinence sur les rÃ©sultats de recherche s'il s'agit d'une fulltext search */
 	if($ttype == "FULLTEXT")
 		$this->tab = $this->normaliser_pertinence($this->tab);
 
-	// Remplissage: $lignes = 1 résultat de recherche par ligne
+	// Remplissage: $lignes = 1 rÃ©sultat de recherche par ligne
 	for($i = 0; $i < count($this->tab) ; $i++)
 	{
 		// Calcul de la pertinence
@@ -451,11 +451,11 @@ function afficher_resultats($ttype = null)
 		$lignes[$i] .= "</tr>\n";
 	}
 
-	// Dédoublonnage (uniquement s'il y a plusieurs lignes...)
+	// DÃ©doublonnage (uniquement s'il y a plusieurs lignes...)
 	if(isset($lignes) and count($lignes) > 1)
 		$lignes = array_unique($lignes);
 
-	// Affichage final	(uniquement s'il y a des résultats, càd si $lignes existe...)
+	// Affichage final	(uniquement s'il y a des rÃ©sultats, cÃ d si $lignes existe...)
 	if(isset($lignes))
 		foreach($lignes as $key=>$val)
 			echo $val;
@@ -465,12 +465,12 @@ function afficher_resultats($ttype = null)
 
 /*
 Nom: construire_requete
-But: Cette fonction construit la requête SQL de recherche en fonction des arguments qui lui sont transmis.
+But: Cette fonction construit la requÃªte SQL de recherche en fonction des arguments qui lui sont transmis.
 Info: Guillaume Florimond, 07/04/2007
 Arguments:
- $rq => la chaîne ou l'expression régulière à rechercher
- $rc => le délimiteur du champ de recherche ($_POST["champ"])
- $regex => TRUE s'il s'agit d'une expression régulière, FALSE dans le cas contraire
+ $rq => la chaÃ®ne ou l'expression rÃ©guliÃ¨re Ã  rechercher
+ $rc => le dÃ©limiteur du champ de recherche ($_POST["champ"])
+ $regex => TRUE s'il s'agit d'une expression rÃ©guliÃ¨re, FALSE dans le cas contraire
  $fulltext => TRUE si on fait une recherche fulltext, FALSE dans le cas contraire
 */
 function construire_requete($rq, $rc, $regex, $fulltext)
@@ -478,8 +478,8 @@ function construire_requete($rq, $rc, $regex, $fulltext)
 	$recherche["requete"] = $rq;
 	$recherche["champ"] = $rc;
 
-	/* Construction de la racine de la requête SQL */
-	/* Ne pas faire de (SELECT * FROM...) pour éviter que les champs contenant la question personnelle et la réponse secrète soient exportés. */
+	/* Construction de la racine de la requÃªte SQL */
+	/* Ne pas faire de (SELECT * FROM...) pour Ã©viter que les champs contenant la question personnelle et la rÃ©ponse secrÃ¨te soient exportÃ©s. */
 	$sql = "SELECT id, nom, prenom, promotion, email, naissance, adresse, nationalite, q1, q2, q3, q4, q5, q6, q7 FROM utilisateur WHERE ";
 
 /* RECHERCHE FOCALISEE
@@ -490,14 +490,14 @@ function construire_requete($rq, $rc, $regex, $fulltext)
 	{
 		$sql .= $recherche["champ"];
 
-		// Si c'est une expression régulière
+		// Si c'est une expression rÃ©guliÃ¨re
 		if($regex)
 			$sql .= " REGEXP '".$recherche["requete"]."';";
 		// Si c'est une fulltext search
 		elseif($fulltext)
 			// la recherche fulltext ne fonctionne pas dans les colonnes DATE
 			$sql = "SELECT id, nom, prenom, promotion, email FROM utilisateur WHERE  MATCH(q1,q2,q3,q4,q5,q6,q7) AGAINST ('".$recherche["requete"]."');";
-		// Si ce n'est pas une expression régulière ni une fulltext search
+		// Si ce n'est pas une expression rÃ©guliÃ¨re ni une fulltext search
 		else
 			$sql .= "= '".$recherche["requete"]."';";
 	}
@@ -507,7 +507,7 @@ function construire_requete($rq, $rc, $regex, $fulltext)
 			and $recherche["champ"] == "tous"
 			and $recherche["champ"] != "defaut")
 	{
-		// Si c'est une expression régulière
+		// Si c'est une expression rÃ©guliÃ¨re
 		if($regex)
 		{
 			$sql .= "nom REGEXP '".$recherche["requete"]."' OR ";
@@ -534,7 +534,7 @@ function construire_requete($rq, $rc, $regex, $fulltext)
 
 			$sql = "SELECT id, nom, prenom, promotion, email, naissance, adresse, nationalite, q1, q2, q3, q4, q5, q6, q7, MATCH (q1,q2,q3,q4,q5,q6,q7) AGAINST ('".$recherche["requete"]."') AS pertinence FROM utilisateur WHERE MATCH (q1,q2,q3,q4,q5,q6,q7) AGAINST ('".$recherche["requete"]."');";
 		}
-		// Si ce n'est pas une expression régulière ni une fulltext search
+		// Si ce n'est pas une expression rÃ©guliÃ¨re ni une fulltext search
 		else
 		{
 			$sql .= "nom LIKE '%".$recherche["requete"]."%' OR ";
@@ -558,7 +558,7 @@ function construire_requete($rq, $rc, $regex, $fulltext)
 	else
 	{
 
-// 1. S'il s'agit d'une expression régulière
+// 1. S'il s'agit d'une expression rÃ©guliÃ¨re
 		if($regex)
 		{
 			$sql .= "nom REGEXP '".$recherche["requete"]."' OR ";
@@ -586,7 +586,7 @@ function construire_requete($rq, $rc, $regex, $fulltext)
 // 2. S'il s'agit d'une fulltext search
 		if($fulltext)
 		{
-			// Requête générale
+			// RequÃªte gÃ©nÃ©rale
 
 			/* Ancienne forme: avant pertinence: DEPRECATED
 			$sql = "SELECT id, nom, prenom, promotion, email  FROM utilisateur WHERE  MATCH(q1,q2,q3,q4,q5,q6,q7) AGAINST ('".$recherche["requete"]."');";
@@ -601,33 +601,33 @@ function construire_requete($rq, $rc, $regex, $fulltext)
 			return $sql;
 		}
 
-/* 3. Si ce n'est pas une expression régulière ni une fulltext search, on continue le traitement... */
+/* 3. Si ce n'est pas une expression rÃ©guliÃ¨re ni une fulltext search, on continue le traitement... */
 
-		/* Combien y a-t-il d'opérateurs ET ? (&&)
-		S'il n'y en a pas, le tableau $rqb aura tout de même 1 instance, qui contiendra la chaîne de recherche entière= $rqb[0];*/
+		/* Combien y a-t-il d'opÃ©rateurs ET ? (&&)
+		S'il n'y en a pas, le tableau $rqb aura tout de mÃªme 1 instance, qui contiendra la chaÃ®ne de recherche entiÃ¨re= $rqb[0];*/
 		$rqb = explode("&&", $recherche["requete"]);
 
-		/* On exécute la boucle de recherche autant de fois qu'il y a de termes dans la boucle ET (p. ex. A&&B&&C&&D = 4 fois ; A = 1 fois). S'il n'y a aucun "ET", il y a tout de même 1 terme dans la recherche, et la boucle est exécutée 1 fois (l'opérateur AND n'est pas ajouté dans ce cas, c'est un ; qui termine l'instruction qui le remplace) */
+		/* On exÃ©cute la boucle de recherche autant de fois qu'il y a de termes dans la boucle ET (p. ex. A&&B&&C&&D = 4 fois ; A = 1 fois). S'il n'y a aucun "ET", il y a tout de mÃªme 1 terme dans la recherche, et la boucle est exÃ©cutÃ©e 1 fois (l'opÃ©rateur AND n'est pas ajoutÃ© dans ce cas, c'est un ; qui termine l'instruction qui le remplace) */
 		for ( $i = 0 ; $i < count($rqb) ; $i++ )
 		{
-			// Détermine s'il existe un opérateur de comparaison pour la suite
-			// Les régex exigent entre 2 et 4 chiffres, < ou >, et entre 2 et 4 chiffres.
+			// DÃ©termine s'il existe un opÃ©rateur de comparaison pour la suite
+			// Les rÃ©gex exigent entre 2 et 4 chiffres, < ou >, et entre 2 et 4 chiffres.
 
 			$regexa = "`^([[:digit:]]{2,4})<([[:digit:]]{2,4})$`";
 			$regexb = "`^([[:digit:]]{2,4})>([[:digit:]]{2,4})$`";
 
-			// 1. Si l'opérateur de comparaison est présent, il est exclusif du reste
+			// 1. Si l'opÃ©rateur de comparaison est prÃ©sent, il est exclusif du reste
 			if(preg_match($regexa,$rqb[$i]) or preg_match($regexb,$rqb[$i]))
 			{
-				// Si c'est l'opérateur < qui est utilisé
+				// Si c'est l'opÃ©rateur < qui est utilisÃ©
 				if(preg_match($regexa,$rqb[$i],$taba))
 					$sql .= "promotion BETWEEN ".$taba[1]." AND ".$taba[2];
-				// Si c'est l'opérateur > qui est utilisé
+				// Si c'est l'opÃ©rateur > qui est utilisÃ©
 				if(preg_match($regexb,$rqb[$i],$tabb))
 					$sql .= "promotion BETWEEN ".$tabb[2]." AND ".$tabb[1];
 			}
 
-			// 2. Si l'opérateur de comparaison n'est pas présent, continuer le traitement
+			// 2. Si l'opÃ©rateur de comparaison n'est pas prÃ©sent, continuer le traitement
 			else
 			{
 				/* Si on recherche une promotion ou une date de naissance... */
@@ -653,7 +653,7 @@ function construire_requete($rq, $rc, $regex, $fulltext)
 				}
 			}
 
-			// On n'ajoute AND que si la boucle va s'exécuter encore une fois au moins
+			// On n'ajoute AND que si la boucle va s'exÃ©cuter encore une fois au moins
 			if($i+1 < count($rqb))
 				$sql .= " AND ";
 			else

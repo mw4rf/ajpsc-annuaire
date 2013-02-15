@@ -1,30 +1,21 @@
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+-- Adminer 3.6.3 MySQL dump
 
---
--- Database: `ajpsc_annuaire`
---
+SET NAMES utf8;
+SET foreign_key_checks = 0;
+SET time_zone = 'SYSTEM';
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
--- --------------------------------------------------------
-
---
--- Table structure for table `admin`
---
-
-CREATE TABLE IF NOT EXISTS `admin` (
+DROP TABLE IF EXISTS `admin`;
+CREATE TABLE `admin` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `pass` text NOT NULL,
   `adminpass` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
 
---
--- Table structure for table `photo`
---
-
-CREATE TABLE IF NOT EXISTS `photo` (
+DROP TABLE IF EXISTS `photo`;
+CREATE TABLE `photo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `photo` longblob NOT NULL,
@@ -32,15 +23,11 @@ CREATE TABLE IF NOT EXISTS `photo` (
   `height` int(11) NOT NULL,
   `width` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
 
---
--- Table structure for table `utilisateur`
---
-
-CREATE TABLE IF NOT EXISTS `utilisateur` (
+DROP TABLE IF EXISTS `utilisateur`;
+CREATE TABLE `utilisateur` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nom` text NOT NULL,
   `prenom` text NOT NULL,
@@ -61,4 +48,7 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `modif` date NOT NULL DEFAULT '0000-00-00',
   PRIMARY KEY (`id`),
   FULLTEXT KEY `ftindex` (`q1`,`q2`,`q3`,`q4`,`q5`,`q6`,`q7`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+
+-- 2013-02-15 18:11:31

@@ -102,34 +102,34 @@ while ($data = mysql_fetch_array($req))
 	$export .= "\t<donnees>\n";
 
 		$export .= "\t\t<nom>\n";
-		$export .= "\t\t".utf8_encode(strip_tags(stripslashes($data['nom'])))."\n";
+		$export .= "\t\t".strip_tags(stripslashes($data['nom']))."\n";
 		$export .= "\t\t</nom>\n";
 
 		$export .= "\t\t<prenom>\n";
-		$export .= "\t\t".utf8_encode(strip_tags(stripslashes($data['prenom'])))."\n";
+		$export .= "\t\t".strip_tags(stripslashes($data['prenom']))."\n";
 		$export .= "\t\t</prenom>\n";
 
 		$export .= "\t\t<promotion>\n";
-		$export .= "\t\t".utf8_encode(strip_tags(stripslashes($data['promotion'])))."\n";
+		$export .= "\t\t".strip_tags(stripslashes($data['promotion']))."\n";
 		$export .= "\t\t</promotion>\n";
 
 		if($exporter_tout)
 		{
 		$export .= "\t\t<lieu_naissance>\n";
-		$export .= "\t\t".utf8_encode(strip_tags(stripslashes($data['nationalite'])))."\n";
+		$export .= "\t\t".strip_tags(stripslashes($data['nationalite']))."\n";
 		$export .= "\t\t</lieu_naissance>\n";
 
 		$export .= "\t\t<date_naissance>\n";
-		$export .= "\t\t".utf8_encode(strip_tags(stripslashes($data['naissance'])))."\n";
+		$export .= "\t\t".strip_tags(stripslashes($data['naissance']))."\n";
 		$export .= "\t\t</date_naissance>\n";
 
 		$export .= "\t\t<adresse>\n";
-		$export .= "\t\t".utf8_encode(strip_tags(stripslashes($data['adresse'])))."\n";
+		$export .= "\t\t".strip_tags(stripslashes($data['adresse']))."\n";
 		$export .= "\t\t</adresse>\n";
 		}
 
 		$export .= "\t\t<e-mail>\n";
-		$export .= "\t\t".utf8_encode(strip_tags(stripslashes($data['email'])))."\n";
+		$export .= "\t\t".strip_tags(stripslashes($data['email']))."\n";
 		$export .= "\t\t</e-mail>\n";
 
 	$export .= "\t</donnees>\n";
@@ -139,31 +139,31 @@ while ($data = mysql_fetch_array($req))
 	$export .= "\t<questions>\n";
 
 		$export .= "\t\t<reponse1>\n";
-		$export .= "\t\t".utf8_encode(strip_tags(stripslashes($data['q1'])))."\n";
+		$export .= "\t\t".strip_tags(stripslashes($data['q1']))."\n";
 		$export .= "\t\t</reponse1>\n";
 
 		$export .= "\t\t<reponse2>\n";
-		$export .= "\t\t".utf8_encode(strip_tags(stripslashes($data['q2'])))."\n";
+		$export .= "\t\t".strip_tags(stripslashes($data['q2']))."\n";
 		$export .= "\t\t</reponse2>\n";
 
 		$export .= "\t\t<reponse3>\n";
-		$export .= "\t\t".utf8_encode(strip_tags(stripslashes($data['q3'])))."\n";
+		$export .= "\t\t".strip_tags(stripslashes($data['q3']))."\n";
 		$export .= "\t\t</reponse3>\n";
 
 		$export .= "\t\t<reponse4>\n";
-		$export .= "\t\t".utf8_encode(strip_tags(stripslashes($data['q4'])))."\n";
+		$export .= "\t\t".strip_tags(stripslashes($data['q4']))."\n";
 		$export .= "\t\t</reponse4>\n";
 
 		$export .= "\t\t<reponse5>\n";
-		$export .= "\t\t".utf8_encode(strip_tags(stripslashes($data['q5'])))."\n";
+		$export .= "\t\t".strip_tags(stripslashes($data['q5']))."\n";
 		$export .= "\t\t</reponse5>\n";
 
 		$export .= "\t\t<reponse6>\n";
-		$export .= "\t\t".utf8_encode(strip_tags(stripslashes($data['q6'])))."\n";
+		$export .= "\t\t".strip_tags(stripslashes($data['q6']))."\n";
 		$export .= "\t\t</reponse6>\n";
 
 		$export .= "\t\t<notes>\n";
-		$export .= "\t\t".utf8_encode(strip_tags(stripslashes($data['q7'])))."\n";
+		$export .= "\t\t".strip_tags(stripslashes($data['q7']))."\n";
 		$export .= "\t\t</notes>\n";
 
 	$export .= "\t</questions>\n";
