@@ -382,6 +382,7 @@ function donner_latin1($str)
     return from_utf8(donner($str));
 }
 
+
 /*
 Nom: connexion
 But: Connexion à la base de données
