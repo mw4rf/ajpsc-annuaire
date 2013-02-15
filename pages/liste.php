@@ -175,8 +175,8 @@ $xa = $x;
     		<a class="btn btn-mini" href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=n-desc">
     			<i class="icon-chevron-down"></i>
     		</a>
+            <a class="btn btn-mini disabled"><?php dire("c1"); ?></a>
         </span>
-        <?php dire("c1"); ?>
 	</th>
     <th width="25%">
         <span class="btn-group">
@@ -186,8 +186,8 @@ $xa = $x;
             <a class="btn btn-mini" href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=pn-desc">
                 <i class="icon-chevron-down"></i>
             </a>
+            <a class="btn btn-mini disabled"><?php dire("c2"); ?></a>
         </span>
-        <?php dire("c2"); ?>
 	</th>
     <th>
         <span class="btn-group">
@@ -197,8 +197,8 @@ $xa = $x;
             <a class="btn btn-mini" href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=pr-desc">
                 <i class="icon-chevron-down"></i>
             </a>
+            <a class="btn btn-mini disabled"><?php dire("c3"); ?></a>
         </span>
-        <?php dire("c3"); ?>
 	</th>
     <th>
         <span class="btn-group">
@@ -208,8 +208,9 @@ $xa = $x;
             <a class="btn btn-mini" href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=em-desc">
                 <i class="icon-chevron-down"></i>
             </a>
+            <a class="btn btn-mini disabled"><?php dire("c7"); ?></a>
         </span>
-        <?php dire("c7"); ?>
+    </th>
 	<th>
 		<a class="btn btn-mini" href="index.php?action=page_liste&x=<?php echo $xa; ?>&tri=no">
 			<i class="icon-remove"></i>
