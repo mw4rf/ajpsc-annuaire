@@ -18,7 +18,7 @@ if(isset($_GET["action"]) and $_GET["action"] == "adminlogin" and isset($_GET["a
 	adminauth($_GET['adminpass']);
 }
 
-/* Changer la langue pour la durée de la session */
+/* Changer la langue pour la durÃ©e de la session */
 if(isset($_GET["action"]) and $_GET["action"] == "action_langue")
 {
 	if(isset($_GET["lang"]))
@@ -31,7 +31,7 @@ if(isset($_GET["action"]) and $_GET["action"] == "action_langue")
 	}
 }
 
-/* Changer le thème pour la durée de la session */
+/* Changer le thÃ¨me pour la durÃ©e de la session */
 if(isset($_GET["action"]) and $_GET["action"] == "action_themes")
 {
 	if(isset($_GET["theme"]))
@@ -45,7 +45,7 @@ if(isset($_GET["action"]) and $_GET["action"] == "action_themes")
 	}
 }
 
-/* SI L'UTILISATEUR N'EST PAS IDENTIFIÉ (MOT DE PASSE NON SAISI)*/
+/* SI L'UTILISATEUR N'EST PAS IDENTIFIÃ‰ (MOT DE PASSE NON SAISI)*/
 if(!checkauth())
 {
 	include('includes/header.inc.php');
@@ -66,16 +66,16 @@ if(!checkauth())
 		Bienvenue sur l'annuaire AJPSC.
 	</p>
 	<p align="center">
-		L'annuaire en ligne n'est accessible qu'aux étudiants et anciens étudiants de la double-maîtrise inscrits comme tels sur les forums AJPSC.com.
+		L'annuaire en ligne n'est accessible qu'aux Ã©tudiants et anciens Ã©tudiants de la double-maÃ®trise inscrits comme tels sur les forums AJPSC.com.
 	</p>
 
 	<p align="center">
-		Besoin d'aide ? Regardez la <a href="ftp://downloads.valhalla.fr/stsmhdan/ajpsc/ajpsc_annuaire.avi">vidéo de présentation</a>.
+		Besoin d'aide ? Regardez la <a href="ftp://downloads.valhalla.fr/stsmhdan/ajpsc/ajpsc_annuaire.avi">vidÃ©o de prÃ©sentation</a>.
 	</p>
 
 	<?php if($_config['int_auth'] == 1) {?>
 	<p align="center">
-		Pour connaître le mot de passe,
+		Pour connaÃ®tre le mot de passe,
 		<a href="<?php echo $_config['int_auth_address']; ?>">cliquez ici</a>.
 	</p>
 	<?php } ?>
@@ -87,7 +87,7 @@ if(!checkauth())
 	    <td>
 			<?php if(isset($_GET['rem_auto']) and $_config['int_auth'] == 1)
 				  {
-					/**** ATTENTION: CECI EST UNE FAILLE DE SECURITE, LE MOT DE PASSE EST TRANSMIS EN CLAIR DANS L'URL DE LA PAGE !!!!!!!!! N'UTILISEZ CE SYSTEME QUE SI LA PROTECTION DOIT ÊTRE SOMMAIRE ET QUE LE MOT DE PASSE N'EST PAS UN "VRAI" SECRET. VOUS POUVEZ DÉSACTIVER CE SYSTÈME DANS LE FICHIER CONFIG.INC.PHP. D'un autre côté, si le mot de passe est transmis en clair par redirection depuis vBulletin, c'est que l'utilisateur a eu accès au forum de redirection vBulletin protégé par le système d'identification de vBulletin... donc ce n'est pas plus grave que lui donner le mot de passe sur un bout de papier: il est légitime à l'avoir, et s'il y a des fuites c'est qu'il aura donné ce mot de passe à des personnes qui ne sont pas censées l'avoir... */
+					/**** ATTENTION: CECI EST UNE FAILLE DE SECURITE, LE MOT DE PASSE EST TRANSMIS EN CLAIR DANS L'URL DE LA PAGE !!!!!!!!! N'UTILISEZ CE SYSTEME QUE SI LA PROTECTION DOIT ÃŠTRE SOMMAIRE ET QUE LE MOT DE PASSE N'EST PAS UN "VRAI" SECRET. VOUS POUVEZ DÃ‰SACTIVER CE SYSTÃˆME DANS LE FICHIER CONFIG.INC.PHP. D'un autre cÃ´tÃ©, si le mot de passe est transmis en clair par redirection depuis vBulletin, c'est que l'utilisateur a eu accÃ¨s au forum de redirection vBulletin protÃ©gÃ© par le systÃ¨me d'identification de vBulletin... donc ce n'est pas plus grave que lui donner le mot de passe sur un bout de papier: il est lÃ©gitime Ã  l'avoir, et s'il y a des fuites c'est qu'il aura donnÃ© ce mot de passe Ã  des personnes qui ne sont pas censÃ©es l'avoir... */
 					?>
 					<input type="password"
 						   name="pass"
@@ -135,7 +135,7 @@ if(isset($_GET["action"])) /* if 2*/
 *
 */
 
-/* Se déconnecter */
+/* Se dÃ©connecter */
 if($_GET["action"] == "logout")
 {
 	$_SESSION = array();
@@ -167,17 +167,17 @@ elseif($_GET["action"] == "action_modifier")
 /* Supprimer une fiche */
 elseif($_GET["action"] == "action_supprimer")
 {
-	// Si id et op sont définis, on peut procéder
+	// Si id et op sont dÃ©finis, on peut procÃ©der
 	if(isset($_GET['id']) and isset($_GET["op"]) and is_numeric($_GET['id']))
 	{
-		// Récupération de l'id de la fiche
+		// RÃ©cupÃ©ration de l'id de la fiche
 		$id = $_GET['id'];
-		// Récupération de l'opération (confirmation ou suppression)
+		// RÃ©cupÃ©ration de l'opÃ©ration (confirmation ou suppression)
 		$op = $_GET["op"];
-		// On procède
+		// On procÃ¨de
 		include("pages/supprimer.php");
 	}
-	// Si id et op ne sont pas définis, on affiche le message d'erreur...
+	// Si id et op ne sont pas dÃ©finis, on affiche le message d'erreur...
 	else { message("err-sup"); }
 }
 
@@ -244,7 +244,7 @@ elseif($_GET["action"] == "page_modifier"  and is_numeric($_GET['id']))
 	include("pages/modifier.php");
 }
 
-/* Afficher la page d'accueil après la connexion */
+/* Afficher la page d'accueil aprÃ¨s la connexion */
 elseif($_GET["action"] == "login")
 {
 	include("pages/accueil.php");
@@ -298,13 +298,13 @@ elseif($_GET["action"] == "admindeco" and isadmin())
 
 } /* if 2 */
 
-/* Afficher la page d'accueil si aucune action n'est définie */
+/* Afficher la page d'accueil si aucune action n'est dÃ©finie */
 else
 {
 	include("pages/accueil.php");
 }
 
-/* Préserver le &nbsp; => hack pour éliminer un espace blanc entre div:corps et div:footer */
+/* PrÃ©server le &nbsp; => hack pour Ã©liminer un espace blanc entre div:corps et div:footer */
 ?>
 &nbsp;
 </div>
