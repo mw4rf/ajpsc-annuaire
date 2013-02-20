@@ -1,4 +1,5 @@
 <?php
+error_reporting(0); // production
 session_start();
 
 include('includes/config.inc.php');
