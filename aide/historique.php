@@ -1,5 +1,11 @@
 <div class="container">
 
+<p>Version 2.0.1 (20/02/2013)
+<ul>
+    <li />Correction de bugs résultant du passage à l'UTF-8.
+</ul>
+</p>
+
 <p>Version 2.0.0 (20/02/2013)
 <ul>
     <li />Nouvelle interface.
