@@ -1,5 +1,13 @@
 <div class="container">
 
+<p>Version 2.0.0 (20/02/2013)
+<ul>
+    <li />Nouvelle interface.
+    <li />Photos dans le PDF généré.
+    <li />Passage du charset ISO-Latin-1 à l'UTF-8.
+</ul>
+</p>
+
 <p>Version 1.5.0 (13/02/2013)
 <ul>
     <li />Retour du moteur de recherche.
