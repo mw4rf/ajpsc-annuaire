@@ -227,10 +227,10 @@ $_SESSION["exportation_requete"] = $sql;
 
 while($data = mysql_fetch_assoc($req))
 {
-	$afficher['nom'] = htmlentities(formater_nom(stripslashes($data['nom'])));
-	$afficher['prenom'] = htmlentities(formater_nom(stripslashes($data['prenom'])));
-	$afficher['promotion'] = htmlentities(stripslashes($data['promotion']));
-	$afficher['email'] = htmlentities(stripslashes($data['email']));
+	$afficher['nom'] = (formater_nom(stripslashes($data['nom'])));
+	$afficher['prenom'] = (formater_nom(stripslashes($data['prenom'])));
+	$afficher['promotion'] = (stripslashes($data['promotion']));
+	$afficher['email'] = (stripslashes($data['email']));
 
 	$fiche = "index.php?action=page_voir&id=".$data['id'];
 

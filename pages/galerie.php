@@ -172,9 +172,9 @@ while($data = mysql_fetch_assoc($req))
 	// récupérer les données de l'utilisateur
 	$photoid = $data['id'];
 	$userid = $data['user_id'];
-	$afficher['nom'] = htmlentities(formater_nom(stripslashes($data['nom'])));
-	$afficher['prenom'] = htmlentities(formater_nom(stripslashes($data['prenom'])));
-	$afficher['promotion'] = htmlentities(stripslashes($data['promotion']));
+	$afficher['nom'] = (formater_nom(stripslashes($data['nom'])));
+	$afficher['prenom'] = (formater_nom(stripslashes($data['prenom'])));
+	$afficher['promotion'] = (stripslashes($data['promotion']));
 
 	// récupérer l'id de l'image
 	$sql2 = "SELECT * FROM photo WHERE user_id = '$userid'";

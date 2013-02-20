@@ -394,6 +394,12 @@ function connexion()
     global $_config;
     $db = mysql_connect($_config["host"], $_config["user"], $_config["passwd"]);
     mysql_select_db($_config["base"],$db);
+    // Fix charset
+    if (!function_exists('mysql_set_charset')) {
+        mysql_query("set names utf8",$db);
+    } else {
+        mysql_set_charset('utf8', $db);
+    }
 }
 
 /*

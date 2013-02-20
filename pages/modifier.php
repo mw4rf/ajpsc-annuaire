@@ -143,7 +143,7 @@ $afficher['secret_question'] = stripslashes($data['secret_question']);
 
     <tr>
       <td colspan="2"><div align="center">
-        <input type="submit" name="Submit" value="<?php dire("o2"); ?>" />
+        <input type="submit" class="btn btn-large btn-success" name="Submit" value="<?php dire("o2"); ?>" />
       </div></td>
     </tr>
   </table>
