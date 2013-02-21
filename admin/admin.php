@@ -182,7 +182,7 @@ include("admin/adminfct.php");
 		<span class="adminsoustitre"><?php dire("admin_menu2b"); ?></span>
 	</p>
 	<form id="sha1" name="sha1" method="post" action="index.php?action=admin&op=repsecrt">
-	  <?php dire("admin_menu2c"); ?>&nbsp;
+	  <b><?php dire("admin_menu2c"); ?></b>&nbsp;
 	  <input
 			name="sha1hash"
 			type="text"
@@ -223,6 +223,67 @@ include("admin/adminfct.php");
 </li>
 
 
+<!-- 6. Question secrète -->
+<li>
+    <p>
+        <span class="admintitre">Changer la question d'un utilisateur</span>
+    </p>
+    <form id="sha1" name="sha1" method="post" action="index.php?action=admin&op=chquestion">
+      Insérer la question suivante&nbsp;
+      <input
+            name="question"
+            type="text"
+            size="50"
+            value="" />
+      <br />
+      <?php dire("admin_menu2d"); ?>
+      <input name="iduser" type="text" size="5" />
+      <br />
+      <input type="submit" name="Submit" value="<?php dire("admin_menu2e"); ?>" />
+    </form>
+
+    <?php
+    // On affiche le résultat après soumission du formulaire
+    if(isset($_GET["op"]) and isset($_POST["sha1hash"]) and isset($_POST["iduser"])
+    and $_GET["op"] == "repsecrt")
+    {
+        if(changer_reponse_secrete($_POST["sha1hash"], $_POST["iduser"]))
+        {
+    ?>
+        <p>
+            <?php dire("admin_resultat"); ?>:&nbsp;
+            <span class="adminresultat">
+            <?php dire("admin_menu2f"); ?>
+            </span>
+        </p>
+    <?php
+        }
+        else
+        {
+            dire("admin_erreur");
+        }
+    }
+
+    // Changer la question de l'utilisateur
+    if(isset($_GET["op"]) and isset($_POST["question"]) and isset($_POST["iduser"])
+    and $_GET["op"] == "chquestion")
+    {
+        if(changer_question($_POST["question"], $_POST["iduser"]))
+        {
+    ?>
+        <p>
+            La question a bien été changée !
+        </p>
+    <?php
+        }
+        else
+        {
+            dire("admin_erreur");
+        }
+    }
+
+    ?>
+</li>
 
 
 
