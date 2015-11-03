@@ -1,6 +1,6 @@
 <?php
 
-$_version = "2.0.1";
+$_version = "2.0.2";
 
 /*
 Configuration de la base de données:

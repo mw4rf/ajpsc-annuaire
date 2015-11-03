@@ -598,7 +598,7 @@ $phrase["en"]["01"] = "January";
 $phrase["en"]["02"] = "February";
 $phrase["en"]["03"] = "March";
 $phrase["en"]["04"] = "April";
-$phrase["en"]["05"] = "Aay";
+$phrase["en"]["05"] = "May";
 $phrase["en"]["06"] = "June";
 $phrase["en"]["07"] = "July";
 $phrase["en"]["08"] = "August";
@@ -621,7 +621,7 @@ $phrase["en"]["menu_a"] = "Home";
 $phrase["en"]["menu0"] = "Search...";
 $phrase["en"]["menu1"] = "Logout";
 
-$phrase["en"]["menu2"] = "Cards...";
+$phrase["en"]["menu2"] = "Cards";
 $phrase["en"]["@menu2"] = "Click to expand/collapse the Cards submenu";
 $phrase["en"]["menu2a"] = "Add Card";
 $phrase["en"]["menu2b"] = "Show Cards";
@@ -633,16 +633,16 @@ $phrase["en"]["menu2g"] = "Show Cards - Sort by Promotion (1->2)";
 $phrase["en"]["menu2h"] = "Show Cards - Sort by Promotion (2->1)";
 $phrase["en"]["menu2i"] = "Sort by update date";
 
-$phrase["en"]["menu3"] = "Language...";
+$phrase["en"]["menu3"] = "Language";
 $phrase["en"]["@menu3"] = "Click to expand/collapse the Language submenu. You can choose in this submenu the language of the user interface. This choice doesn't change the language used in the Cards.";
 $phrase["en"]["menu3a"] = "French";
 $phrase["en"]["menu3b"] = "Spanish";
 $phrase["en"]["menu3c"] = "English";
 
-$phrase["en"]["menu4"] = "Themes...";
+$phrase["en"]["menu4"] = "Themes";
 $phrase["en"]["@menu4"] = "Click to expand/collapse the Export submenu. You can choose in this submenu the theme you prefer for the annuaire interface.";
 
-$phrase["en"]["menu5"] = "Help...";
+$phrase["en"]["menu5"] = "Help";
 $phrase["en"]["@menu5"] = "Click to expand/collapse the Help submenu. You'll find here answers to the Frequently Asked Questions as well as the development log and the famous about box.";
 $phrase["en"]["menu5a"] = "About";
 $phrase["en"]["menu5b"] = "Help & FAQ";
@@ -650,7 +650,7 @@ $phrase["en"]["menu5c"] = "Development log";
 $phrase["en"]["menu5d"] = "Administration";
 $phrase["en"]["@menu5d"] = "Access restricted to Administrators.";
 
-$phrase["en"]["menu6"] = "Export...";
+$phrase["en"]["menu6"] = "Export";
 $phrase["en"]["@menu6"] = "Click to expand/collapse the Export submenu";
 $phrase["en"]["menu6l"] = "Quick Export (CVS)";
 $phrase["en"]["menu6m"] = "Quick Export (Excel)";

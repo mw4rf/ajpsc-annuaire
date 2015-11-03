@@ -1,5 +1,11 @@
 <div class="container">
 
+<p>Version 2.0.2 (03/11/2015)
+<ul>
+    <li />Correction de bugs dans la traduction anglaise.
+</ul>
+</p>
+
 <p>Version 2.0.1 (20/02/2013)
 <ul>
     <li />Correction de bugs résultant du passage à l'UTF-8.
