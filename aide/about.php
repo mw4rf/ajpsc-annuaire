@@ -5,10 +5,9 @@
     </div>
 
     <ul class="aide_section_light">
-    	<li />Auteur: Guillaume Florimond (<script type="text/javascript">document.write("tsybevzbaq\100nwcfp\056pbz".replace(/[a-zA-Z]/g, function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);}));</script>)
-    	<li />Contrat de licence: <a href="http://creativecommons.org/licenses/by-sa/2.0/fr/legalcode">Creative Commons Paternité-ShareAlike 2.0 France</a>
-    	<li />Licence 2006-<?php echo date("Y");?> pour AJPSC.Com
-    	<li />Code source disponible: <a href="https://bitbucket.org/mw4rf/ajpsc-annuaire">Bitbucket Git</a>
+    	<li />Copyright 2006-<?php echo date("Y");?> Guillaume FLORIMOND
+    	<li />Contrat de licence: <a href="https://www.gnu.org/licenses/gpl-3.0.fr.html">GNU GPL v3</a>
+    	<li />Code source: <a href="https://bitbucket.org/mw4rf/ajpsc-annuaire">Bitbucket Git</a>
     </ul>
 
     <p class="aide_chapitre">
@@ -16,10 +15,10 @@
     </p>
 
     <ul class="aide_section_light">
-    	<li />Version installée: 2.0
-    	<li />Version en date: du XX XXXX XXXX
-    	<li />Développement initié: le 7 décembre 2006
+    	<li />Version installée: 2.0.2
+    	<li />Version en date: du 20 février 2018
     	<li />Date de lancement: 21 février 2007 (version 1.0)
+        <li />Développement initié: le 7 décembre 2006
     	<li />Contenu: <a href="divers/tables.sql">schema MySQL</a>
     </ul>
 
